@@ -47,6 +47,10 @@
   height:0;
 }
 
+.md-header-nav__title {
+  padding:0;
+}
+
 .md-footer-nav__link {
   padding-top: 1rem;
   padding-bottom: 0rem;
@@ -60,6 +64,9 @@
   font-size:1rem;
 }
 
+.navlast {
+  margin-right:0.8rem;
+}
 
 .md-ellipsis:not(:first-child) {
   z-index: 1;
@@ -67,7 +74,6 @@
   opacity:1;
   position:relative;
   width:auto;
-  margin-right:1rem;
   float: right;
   pointer-events:all;
   padding-left:0.5rem;
@@ -377,9 +383,15 @@ span.reverse {
   #left_content {
     display:none;
     margin-left:0rem;
+    position: absolute;
   }
   #content {
     width:100%;
     border-radius:5px;
+  }
+
+@media only screen and (max-width: 450px) {
+  .menutext {
+    display:none;
   }
 }

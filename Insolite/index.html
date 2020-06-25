@@ -1,0 +1,3023 @@
+
+
+
+<!doctype html>
+<html lang="fr" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      <link rel="shortcut icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-5.3.2">
+    
+    
+      
+        <title>Insolite - YoutubeMap</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.fe0cca5b.min.css">
+      
+        <link rel="stylesheet" href="../assets/stylesheets/palette.a46bcfb3.min.css">
+      
+      
+        
+        
+        <meta name="theme-color" content="#ef5350">
+      
+    
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono",SFMono-Regular,Consolas,Menlo,monospace}</style>
+      
+    
+    
+    
+      <link rel="stylesheet" href="../extra.css">
+    
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="red" data-md-color-accent="red">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#insolite" class="md-skip">
+          Aller au contenu
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+<header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid" aria-label="Header">
+    <a href=".." title="YoutubeMap" class="md-header-nav__button md-logo" aria-label="YoutubeMap">
+      
+  <img src="../yt.png" alt="logo">
+
+    </a>
+    <label class="md-header-nav__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header-nav__title" data-md-component="header-title">
+        <div class="md-header-nav__ellipsis md-ellipsis">
+          <span class="md-header-nav__topic md-ellipsis">          
+          Insolite
+        </span>
+        <span class="md-header-nav__topic md-ellipsis">
+          <a href="chaines/">
+          <i class="fa fa-list-ul" aria-hidden="true"></i>         
+          Chaînes
+        </a>
+        </span>
+        <span class="md-header-nav__topic md-ellipsis" onclick="random_page()">   
+          <i class="fa fa-random" aria-hidden="true"></i>       
+          Au hasard
+        </span>
+        </div>
+    </div>
+    
+      <label class="md-header-nav__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Rechercher" placeholder="Rechercher" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active">
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" data-md-component="search-reset" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+</header>
+
+    <div class="md-container" data-md-component="container">
+      
+        
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="YoutubeMap" class="md-nav__button md-logo" aria-label="YoutubeMap">
+      
+  <img src="../yt.png" alt="logo">
+
+    </a>
+    YoutubeMap
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href=".." title="Bienvenue sur Youtube Map !" class="md-nav__link">
+      Bienvenue sur Youtube Map !
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../Divertissement/" title="Divertissement" class="md-nav__link">
+      Divertissement
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+    
+    <label class="md-nav__link" for="nav-3">
+      Ecologie
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
+      </span>
+    </label>
+    <nav class="md-nav" aria-label="Ecologie" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        </span>
+        Ecologie
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Ecologie/" title="Ecologie" class="md-nav__link">
+      Ecologie
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3-2" type="checkbox" id="nav-3-2">
+    
+    <label class="md-nav__link" for="nav-3-2">
+      Energies
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
+      </span>
+    </label>
+    <nav class="md-nav" aria-label="Energies" data-md-level="2">
+      <label class="md-nav__title" for="nav-3-2">
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        </span>
+        Energies
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Ecologie/Energies/" title="Energies" class="md-nav__link">
+      Energies
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Ecologie/Energies/Nucl%C3%A9aire/" title="Nucléaire" class="md-nav__link">
+      Nucléaire
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Insolite
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 9h14V7H3v2m0 4h14v-2H3v2m0 4h14v-2H3v2m16 0h2v-2h-2v2m0-10v2h2V7h-2m0 6h2v-2h-2v2z"/></svg>
+        </span>
+      </label>
+    
+    <a href="./" title="Insolite" class="md-nav__link md-nav__link--active">
+      Insolite
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#corps-humain" class="md-nav__link">
+    Corps humain
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#personnalites" class="md-nav__link">
+    Personnalités
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#voyage" class="md-nav__link">
+    Voyage
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#et-si" class="md-nav__link">
+    Et si... ?
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../Musique/" title="Musique" class="md-nav__link">
+      Musique
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../Mythes%20et%20traditions/" title="Mythes et traditions" class="md-nav__link">
+      Mythes et traditions
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-7" type="checkbox" id="nav-7">
+    
+    <label class="md-nav__link" for="nav-7">
+      Philosophie
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
+      </span>
+    </label>
+    <nav class="md-nav" aria-label="Philosophie" data-md-level="1">
+      <label class="md-nav__title" for="nav-7">
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        </span>
+        Philosophie
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Philosophie/" title="Philosophie" class="md-nav__link">
+      Philosophie
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Philosophie/Philosophie%20morale/" title="Philosophie morale" class="md-nav__link">
+      Philosophie morale
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-8" type="checkbox" id="nav-8">
+    
+    <label class="md-nav__link" for="nav-8">
+      Sciences appliquées
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
+      </span>
+    </label>
+    <nav class="md-nav" aria-label="Sciences appliquées" data-md-level="1">
+      <label class="md-nav__title" for="nav-8">
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        </span>
+        Sciences appliquées
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Sciences%20appliqu%C3%A9es/" title="Sciences appliquées" class="md-nav__link">
+      Sciences appliquées
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Sciences%20appliqu%C3%A9es/Informatique/" title="Informatique" class="md-nav__link">
+      Informatique
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Sciences%20appliqu%C3%A9es/Ing%C3%A9nierie/" title="Ingénierie" class="md-nav__link">
+      Ingénierie
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Sciences%20appliqu%C3%A9es/Maths/" title="Maths" class="md-nav__link">
+      Maths
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-8-5" type="checkbox" id="nav-8-5">
+    
+    <label class="md-nav__link" for="nav-8-5">
+      Médecine
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
+      </span>
+    </label>
+    <nav class="md-nav" aria-label="Médecine" data-md-level="2">
+      <label class="md-nav__title" for="nav-8-5">
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        </span>
+        Médecine
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Sciences%20appliqu%C3%A9es/M%C3%A9decine/" title="Médecine" class="md-nav__link">
+      Médecine
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Sciences%20appliqu%C3%A9es/M%C3%A9decine/Maladies/" title="Maladies" class="md-nav__link">
+      Maladies
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Sciences%20appliqu%C3%A9es/Statistiques/" title="Statistiques" class="md-nav__link">
+      Statistiques
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-9" type="checkbox" id="nav-9">
+    
+    <label class="md-nav__link" for="nav-9">
+      Sciences de la nature
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
+      </span>
+    </label>
+    <nav class="md-nav" aria-label="Sciences de la nature" data-md-level="1">
+      <label class="md-nav__title" for="nav-9">
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        </span>
+        Sciences de la nature
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Sciences%20de%20la%20nature/" title="Sciences de la nature" class="md-nav__link">
+      Sciences de la nature
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Sciences%20de%20la%20nature/Biologie/" title="Biologie" class="md-nav__link">
+      Biologie
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Sciences%20de%20la%20nature/Physique/" title="Physique" class="md-nav__link">
+      Physique
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-10" type="checkbox" id="nav-10">
+    
+    <label class="md-nav__link" for="nav-10">
+      Sciences formelles
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
+      </span>
+    </label>
+    <nav class="md-nav" aria-label="Sciences formelles" data-md-level="1">
+      <label class="md-nav__title" for="nav-10">
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        </span>
+        Sciences formelles
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Sciences%20formelles/" title="Sciences formelles" class="md-nav__link">
+      Sciences formelles
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Sciences%20formelles/Informatique%20th%C3%A9orique/" title="Informatique théorique" class="md-nav__link">
+      Informatique théorique
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Sciences%20formelles/Maths/" title="Maths" class="md-nav__link">
+      Maths
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-11" type="checkbox" id="nav-11">
+    
+    <label class="md-nav__link" for="nav-11">
+      Sciences humaines
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
+      </span>
+    </label>
+    <nav class="md-nav" aria-label="Sciences humaines" data-md-level="1">
+      <label class="md-nav__title" for="nav-11">
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        </span>
+        Sciences humaines
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Sciences%20humaines/" title="Sciences humaines" class="md-nav__link">
+      Sciences humaines
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Sciences%20humaines/Anthropologie/" title="Anthropologie" class="md-nav__link">
+      Anthropologie
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Sciences%20humaines/Economie/" title="Economie" class="md-nav__link">
+      Economie
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-11-4" type="checkbox" id="nav-11-4">
+    
+    <label class="md-nav__link" for="nav-11-4">
+      Histoire
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
+      </span>
+    </label>
+    <nav class="md-nav" aria-label="Histoire" data-md-level="2">
+      <label class="md-nav__title" for="nav-11-4">
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        </span>
+        Histoire
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Sciences%20humaines/Histoire/" title="Histoire" class="md-nav__link">
+      Histoire
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Sciences%20humaines/Histoire/Antiquit%C3%A9/" title="Antiquité" class="md-nav__link">
+      Antiquité
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Sciences%20humaines/Histoire/XIX%C3%A8me%20si%C3%A8cle/" title="XIXème siècle" class="md-nav__link">
+      XIXème siècle
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-11-4-4" type="checkbox" id="nav-11-4-4">
+    
+    <label class="md-nav__link" for="nav-11-4-4">
+      XXème siècle
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
+      </span>
+    </label>
+    <nav class="md-nav" aria-label="XXème siècle" data-md-level="3">
+      <label class="md-nav__title" for="nav-11-4-4">
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        </span>
+        XXème siècle
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Sciences%20humaines/Histoire/XX%C3%A8me%20si%C3%A8cle/" title="XXème siècle" class="md-nav__link">
+      XXème siècle
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Sciences%20humaines/Histoire/XX%C3%A8me%20si%C3%A8cle/2%C3%A8me%20guerre%20mondiale/" title="2ème guerre mondiale" class="md-nav__link">
+      2ème guerre mondiale
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Sciences%20humaines/Linguistique/" title="Linguistique" class="md-nav__link">
+      Linguistique
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-12" type="checkbox" id="nav-12">
+    
+    <label class="md-nav__link" for="nav-12">
+      Société
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
+      </span>
+    </label>
+    <nav class="md-nav" aria-label="Société" data-md-level="1">
+      <label class="md-nav__title" for="nav-12">
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        </span>
+        Société
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Soci%C3%A9t%C3%A9/" title="Société" class="md-nav__link">
+      Société
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Soci%C3%A9t%C3%A9/%20Politique/" title="Société/ Politique" class="md-nav__link">
+      Société/ Politique
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Soci%C3%A9t%C3%A9/Esprit%20Critique/" title="Esprit Critique" class="md-nav__link">
+      Esprit Critique
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#corps-humain" class="md-nav__link">
+    Corps humain
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#personnalites" class="md-nav__link">
+    Personnalités
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#voyage" class="md-nav__link">
+    Voyage
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#et-si" class="md-nav__link">
+    Et si... ?
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+
+<div id="left_content">
+  <div id="arrow" style="width:90%;display:none;margin-top:-1rem;" onclick="backsmallscreen()">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" style="height:2rem;fill:#777;">
+    <path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"></path></svg>
+  </div>
+    <div style="position:relative;padding-top:56.25%;">
+    <iframe id="frame" class="youtube-player" type="text/html" src="" frameborder="0" allowfullscreen
+      style=""></iframe></div>
+
+      <div id="description">
+          <div id="pvidtitle"></div>
+          <div id="pchanlogo"><img id="pchanlogo_img" src="" style="margin-top:0;border-radius:20px;" /></div>
+        <div id="pchan_name"></div>
+      </div>
+      <div id="desc_extract">
+        
+        <div id="pvid_desc"></div>
+        <span id="extr" title="Extrait de description originale" style="display:none;color:#888;">
+        <i class="fa fa-info-circle" aria-hidden="true"></i></span>
+        
+        </div>
+</div>
+<div id="content">
+  <h1 id="insolite">Insolite</h1>
+<div id="X0sUeP-NrCvo" class="videoline vidfr" onclick="changevid('0sUeP-NrCvo')">
+  <div class="chanlogo">
+    <img class="chanlogo_img" src="https://yt3.ggpht.com/a/AATXAJzilcmC-OiWwMG76scOHNtD7kkmTlhlyc-yag=s88" style="margin:0" />
+  </div>
+<div class="chan_name"><a href="https://youtube.com/channel/UCP46_MXP_WG_auH88FnfS1A" class="chanlink" style="color:slategrey;text-decoration:none">Nota Bene</a></div>
+<div class="vid_desc">Retour sur quelques évènements absurdes de l'histoire</div>
+
+<div class="vidlogo"><div class="length">17:45</div>
+<div class="imgdiv seen" style="background-image: url(https://i.ytimg.com/vi/0sUeP-NrCvo/hqdefault.jpg);"> 
+
+<div class="opaque 0sUeP-NrCvo"><div class="check"><i class="fa fa-check read-icon"></i></div></div>
+</div>
+</div> 
+<div class="vidtitle">5 trucs totalement absurdes de l'Histoire - Nota Bene #37</div>
+<span class="viddesc" style="display:none">Un pyromane qui a peur qu'on l'oublie, un type qui n'a pas eu de chance quand un volcan explosait, des prix nobels de la paix un peu tendancieux ou encore des cercueils high-tech qui se vendent comme des petits pains...aujourd'hui on fait le point sur quelques histoires totalement improbables !</span>
+</div>
+
+<div id="X49BqgoSIQP0" class="videoline vidfr" onclick="changevid('49BqgoSIQP0')">
+  <div class="chanlogo">
+    <img class="chanlogo_img" src="https://yt3.ggpht.com/a/AATXAJzeRYyUEzcydzC8dwjACVKktVB9STFQLpbcrw=s88" style="margin:0" />
+  </div>
+<div class="chan_name"><a href="https://youtube.com/channel/UC2_OG1L8DLTzQ7UrZVOk7OA" class="chanlink" style="color:slategrey;text-decoration:none">Axolot</a></div>
+<div class="vid_desc">Quelques histoires de chats...</div>
+
+<div class="vidlogo"><div class="length">7:47</div>
+<div class="imgdiv seen" style="background-image: url(https://i.ytimg.com/vi/49BqgoSIQP0/hqdefault.jpg);"> 
+
+<div class="opaque 49BqgoSIQP0"><div class="check"><i class="fa fa-check read-icon"></i></div></div>
+</div>
+</div> 
+<div class="vidtitle">Axolot #3 : L'Opération Chaton Acoustique</div>
+<span class="viddesc" style="display:none">Dans ce troisième épisode d'Axolot, vous découvrirez le projet le plus surréaliste de la CIA, ainsi que d'autres histoires stupéfiantes à base de chats.</span>
+</div>
+
+<div id="XCMVSyxU1SdE" class="videoline vidfr" onclick="changevid('CMVSyxU1SdE')">
+  <div class="chanlogo">
+    <img class="chanlogo_img" src="https://yt3.ggpht.com/a/AATXAJzeRYyUEzcydzC8dwjACVKktVB9STFQLpbcrw=s88" style="margin:0" />
+  </div>
+<div class="chan_name"><a href="https://youtube.com/channel/UC2_OG1L8DLTzQ7UrZVOk7OA" class="chanlink" style="color:slategrey;text-decoration:none">Axolot</a></div>
+<div class="vid_desc">Présentation de quelques îles étranges...</div>
+
+<div class="vidlogo"><div class="length">8:23</div>
+<div class="imgdiv seen" style="background-image: url(https://i.ytimg.com/vi/CMVSyxU1SdE/hqdefault.jpg);"> 
+
+<div class="opaque CMVSyxU1SdE"><div class="check"><i class="fa fa-check read-icon"></i></div></div>
+</div>
+</div> 
+<div class="vidtitle">Axolot #5 : L'île la plus étrange du monde</div>
+<span class="viddesc" style="display:none">Ce 5ème épisode d'Axolot est consacré aux îles les plus étonnantes de la planète...</span>
+</div>
+
+<div id="XIhyY6CdTKbU" class="videoline vidfr" onclick="changevid('IhyY6CdTKbU')">
+  <div class="chanlogo">
+    <img class="chanlogo_img" src="https://yt3.ggpht.com/a/AATXAJwbMMZoNnPvTpsZHPFqOQJx-SDHRNIyFvvHkQ=s88" style="margin:0" />
+  </div>
+<div class="chan_name"><a href="https://youtube.com/channel/UCofQxJWd4qkqc7ZgaLkZfcw" class="chanlink" style="color:slategrey;text-decoration:none">Linguisticae</a></div>
+<div class="vid_desc">D'où viennent les chiffres "arabes" ?</div>
+
+<div class="vidlogo"><div class="length">6:16</div>
+<div class="imgdiv seen" style="background-image: url(https://i.ytimg.com/vi/IhyY6CdTKbU/hqdefault.jpg);"> 
+
+<div class="opaque IhyY6CdTKbU"><div class="check"><i class="fa fa-check read-icon"></i></div></div>
+</div>
+</div> 
+<div class="vidtitle">Les chiffres... arabes ? - MLTP#17</div>
+<span class="viddesc" style="display:none">On entend plein de trucs sur nos chiffres : ils seraient andalous, arabes ou indiens, sans expliquer pourquoi en arabe et en Inde, justement, ces symboles sont souvent différents.</span>
+</div>
+
+<div id="XIq9jY5ILN8c" class="videoline vidfr" onclick="changevid('Iq9jY5ILN8c')">
+  <div class="chanlogo">
+    <img class="chanlogo_img" src="https://yt3.ggpht.com/a/AATXAJzeRYyUEzcydzC8dwjACVKktVB9STFQLpbcrw=s88" style="margin:0" />
+  </div>
+<div class="chan_name"><a href="https://youtube.com/channel/UC2_OG1L8DLTzQ7UrZVOk7OA" class="chanlink" style="color:slategrey;text-decoration:none">Axolot</a></div>
+<div class="vid_desc">Présentation de "monstres" réels ou imaginaires...</div>
+
+<div class="vidlogo"><div class="length">9:48</div>
+<div class="imgdiv seen" style="background-image: url(https://i.ytimg.com/vi/Iq9jY5ILN8c/hqdefault.jpg);"> 
+
+<div class="opaque Iq9jY5ILN8c"><div class="check"><i class="fa fa-check read-icon"></i></div></div>
+</div>
+</div> 
+<div class="vidtitle">Axolot #11 : Freakshow</div>
+<span class="viddesc" style="display:none">Qu’ils soient réels ou imaginaires, les monstres nous fascinent depuis la nuit des temps. Dans cet épisode, en explorant leur rôle à travers l’histoire, nous cherchons à comprendre ce qu’ils nous disent de l’humanité, et de son futur…</span>
+</div>
+
+<div id="XIvMzllKrJEQ" class="videoline vidfr" onclick="changevid('IvMzllKrJEQ')">
+  <div class="chanlogo">
+    <img class="chanlogo_img" src="https://yt3.ggpht.com/a/AATXAJzeRYyUEzcydzC8dwjACVKktVB9STFQLpbcrw=s88" style="margin:0" />
+  </div>
+<div class="chan_name"><a href="https://youtube.com/channel/UC2_OG1L8DLTzQ7UrZVOk7OA" class="chanlink" style="color:slategrey;text-decoration:none">Axolot</a></div>
+<div class="vid_desc">Quelques histoires de fake news...</div>
+
+<div class="vidlogo"><div class="length">14:08</div>
+<div class="imgdiv seen" style="background-image: url(https://i.ytimg.com/vi/IvMzllKrJEQ/hqdefault.jpg);"> 
+
+<div class="opaque IvMzllKrJEQ"><div class="check"><i class="fa fa-check read-icon"></i></div></div>
+</div>
+</div> 
+<div class="vidtitle">Axolot #8 : Fake !</div>
+<span class="viddesc" style="display:none">Ce 8ème épisode d'Axolot vous invite à vous méfier des apparences...</span>
+</div>
+
+<div id="XO8QWYECrkeU" class="videoline vidfr" onclick="changevid('O8QWYECrkeU')">
+  <div class="chanlogo">
+    <img class="chanlogo_img" src="https://yt3.ggpht.com/a/AATXAJzJhxZqaeN1ZPfYZleVzK_Dcb5vFFOY8s3GiQ=s88" style="margin:0" />
+  </div>
+<div class="chan_name"><a href="https://youtube.com/channel/UCeR8BYZS7IHYjk_9Mh5JgkA" class="chanlink" style="color:slategrey;text-decoration:none">Scilabus</a></div>
+<div class="vid_desc">Comment fabrique-t-on du sirop d'érable ?</div>
+
+<div class="vidlogo"><div class="length">6:23</div>
+<div class="imgdiv seen" style="background-image: url(https://i.ytimg.com/vi/O8QWYECrkeU/hqdefault.jpg);"> 
+
+<div class="opaque O8QWYECrkeU"><div class="check"><i class="fa fa-check read-icon"></i></div></div>
+</div>
+</div> 
+<div class="vidtitle">La fabrication du sirop d'érable - Scilabus 28</div>
+<span class="viddesc" style="display:none">Comment le sirop d'érable est-il fabriqué ? Pourquoi ne fabrique t-on pas du sirop avec tous les arbres ? Qu'est-ce qui rend l'érable si particulier ?</span>
+</div>
+
+<div id="XPAJMKVjm9fo" class="videoline vidfr" onclick="changevid('PAJMKVjm9fo')">
+  <div class="chanlogo">
+    <img class="chanlogo_img" src="https://yt3.ggpht.com/a/AATXAJxVWL2n9vuNO6uo7PHa8Q15e2ENxsEydZK88w=s88" style="margin:0" />
+  </div>
+<div class="chan_name"><a href="https://youtube.com/channel/UCZxLew-WXWm5dhRZBgEFl-Q" class="chanlink" style="color:slategrey;text-decoration:none">Le Vortex</a></div>
+<div class="vid_desc">Qu'est-ce qu'une capsule temporelle ?</div>
+
+<div class="vidlogo"><div class="length">10:02</div>
+<div class="imgdiv seen" style="background-image: url(https://i.ytimg.com/vi/PAJMKVjm9fo/hqdefault.jpg);"> 
+
+<div class="opaque PAJMKVjm9fo"><div class="check"><i class="fa fa-check read-icon"></i></div></div>
+</div>
+</div> 
+<div class="vidtitle">Mario Party et voyages dans le temps | Axolot feat tout le monde | Le Vortex #24</div>
+<span class="viddesc" style="display:none">Cette colocation touche à sa fin et pour les habitants, il est grand temps de répondre à la question qu’ils se sont posés pendant toute la durée de leur séjour : « Comment laisser une trace de leur passage pour les générations futures ? » Axolot n’en démord pas et propose de construire une capsule temporelle, cet objet qui traverse les âges et qui donne bien du fil à retordre aux chercheurs pour les déchiffrer. Mais qu’est-ce que nos colocataires vont bien vouloir transmettre ?</span>
+</div>
+
+<div id="XPFaYsgaB7eM" class="videoline vidfr" onclick="changevid('PFaYsgaB7eM')">
+  <div class="chanlogo">
+    <img class="chanlogo_img" src="https://yt3.ggpht.com/a/AATXAJzilcmC-OiWwMG76scOHNtD7kkmTlhlyc-yag=s88" style="margin:0" />
+  </div>
+<div class="chan_name"><a href="https://youtube.com/channel/UCP46_MXP_WG_auH88FnfS1A" class="chanlink" style="color:slategrey;text-decoration:none">Nota Bene</a></div>
+<div class="vid_desc">Retour sur les morts insolites de l'histoire</div>
+
+<div class="vidlogo"><div class="length">26:10</div>
+<div class="imgdiv seen" style="background-image: url(https://i.ytimg.com/vi/PFaYsgaB7eM/hqdefault.jpg);"> 
+
+<div class="opaque PFaYsgaB7eM"><div class="check"><i class="fa fa-check read-icon"></i></div></div>
+</div>
+</div> 
+<div class="vidtitle">Les morts insolites de l’Histoire IV</div>
+<span class="viddesc" style="display:none">Ils ont marqué l’Histoire et laissé leur empreinte de par leurs actions et pourtant ils sont mort de façon...assez insolite ! Dans cet épisode, on revient ensemble sur les morts très différentes de trois protagonistes qui vont nous faire voyager un peu !</span>
+</div>
+
+<div id="XWECKD23xo_M" class="videoline vidfr" onclick="changevid('WECKD23xo_M')">
+  <div class="chanlogo">
+    <img class="chanlogo_img" src="https://yt3.ggpht.com/a/AATXAJzeRYyUEzcydzC8dwjACVKktVB9STFQLpbcrw=s88" style="margin:0" />
+  </div>
+<div class="chan_name"><a href="https://youtube.com/channel/UC2_OG1L8DLTzQ7UrZVOk7OA" class="chanlink" style="color:slategrey;text-decoration:none">Axolot</a></div>
+<div class="vid_desc">Que peut-on trouver sur la Lune ?</div>
+
+<div class="vidlogo"><div class="length">4:46</div>
+<div class="imgdiv seen" style="background-image: url(https://i.ytimg.com/vi/WECKD23xo_M/hqdefault.jpg);"> 
+
+<div class="opaque WECKD23xo_M"><div class="check"><i class="fa fa-check read-icon"></i></div></div>
+</div>
+</div> 
+<div class="vidtitle">Axolot #2 : 5 choses improbables qui se trouvent sur la Lune</div>
+<span class="viddesc" style="display:none">Qu'a-t-on laissé sur la Lune? Un drapeau? Quelques empreintes? Dans cet épisode d'Axolot, vous découvrirez que le satellite préféré des loups-garous abrite des choses...inattendues.</span>
+</div>
+
+<div id="XWZhocuqlSr0" class="videoline vidfr" onclick="changevid('WZhocuqlSr0')">
+  <div class="chanlogo">
+    <img class="chanlogo_img" src="https://yt3.ggpht.com/a/AATXAJzeRYyUEzcydzC8dwjACVKktVB9STFQLpbcrw=s88" style="margin:0" />
+  </div>
+<div class="chan_name"><a href="https://youtube.com/channel/UC2_OG1L8DLTzQ7UrZVOk7OA" class="chanlink" style="color:slategrey;text-decoration:none">Axolot</a></div>
+<div class="vid_desc">Quelques histoires autour de la mort...</div>
+
+<div class="vidlogo"><div class="length">16:55</div>
+<div class="imgdiv seen" style="background-image: url(https://i.ytimg.com/vi/WZhocuqlSr0/hqdefault.jpg);"> 
+
+<div class="opaque WZhocuqlSr0"><div class="check"><i class="fa fa-check read-icon"></i></div></div>
+</div>
+</div> 
+<div class="vidtitle">Axolot #9 : Memento Mori</div>
+<span class="viddesc" style="display:none">Ce 9ème épisode d'Axolot vous invite à franchir les rives du Styx...</span>
+</div>
+
+<div id="XZX-AbJR3AE4" class="videoline vidfr" onclick="changevid('ZX-AbJR3AE4')">
+  <div class="chanlogo">
+    <img class="chanlogo_img" src="https://yt3.ggpht.com/a/AATXAJzeRYyUEzcydzC8dwjACVKktVB9STFQLpbcrw=s88" style="margin:0" />
+  </div>
+<div class="chan_name"><a href="https://youtube.com/channel/UC2_OG1L8DLTzQ7UrZVOk7OA" class="chanlink" style="color:slategrey;text-decoration:none">Axolot</a></div>
+<div class="vid_desc">Présentation de quelques objets particuliers...</div>
+
+<div class="vidlogo"><div class="length">9:44</div>
+<div class="imgdiv seen" style="background-image: url(https://i.ytimg.com/vi/ZX-AbJR3AE4/hqdefault.jpg);"> 
+
+<div class="opaque ZX-AbJR3AE4"><div class="check"><i class="fa fa-check read-icon"></i></div></div>
+</div>
+</div> 
+<div class="vidtitle">Axolot #6 : Cabinet de curiosités</div>
+<span class="viddesc" style="display:none">Pour ce sixième épisode, Axolot vous invite à découvrir des curiosités à l'histoire extraordinaire...</span>
+</div>
+
+<div id="Xejr4n9a33gc" class="videoline vidfr" onclick="changevid('ejr4n9a33gc')">
+  <div class="chanlogo">
+    <img class="chanlogo_img" src="https://yt3.ggpht.com/a/AATXAJzilcmC-OiWwMG76scOHNtD7kkmTlhlyc-yag=s88" style="margin:0" />
+  </div>
+<div class="chan_name"><a href="https://youtube.com/channel/UCP46_MXP_WG_auH88FnfS1A" class="chanlink" style="color:slategrey;text-decoration:none">Nota Bene</a></div>
+<div class="vid_desc">Retour sur quelques morts ridicules de rois - 1</div>
+
+<div class="vidlogo"><div class="length">8:30</div>
+<div class="imgdiv seen" style="background-image: url(https://i.ytimg.com/vi/ejr4n9a33gc/hqdefault.jpg);"> 
+
+<div class="opaque ejr4n9a33gc"><div class="check"><i class="fa fa-check read-icon"></i></div></div>
+</div>
+</div> 
+<div class="vidtitle">Les 7 morts insolites des rois - Nota Bene #2</div>
+<span class="viddesc" style="display:none">C'est pas parce que c'est de l'histoire, qu'on peut pas en raconter! Deuxième épisode de Nota Bene consacré aux morts insolites des rois. De Charles VIII à Henri II, ces grands hommes qui ont participé à faire notre histoire ne se doutaient sûrement pas qu'ils allaient finir d'une triste manière...</span>
+</div>
+
+<div id="XgzJxYB-rLIU" class="videoline vidfr" onclick="changevid('gzJxYB-rLIU')">
+  <div class="chanlogo">
+    <img class="chanlogo_img" src="https://yt3.ggpht.com/a/AATXAJzJhxZqaeN1ZPfYZleVzK_Dcb5vFFOY8s3GiQ=s88" style="margin:0" />
+  </div>
+<div class="chan_name"><a href="https://youtube.com/channel/UCeR8BYZS7IHYjk_9Mh5JgkA" class="chanlink" style="color:slategrey;text-decoration:none">Scilabus</a></div>
+<div class="vid_desc">Pourquoi les labyrinthes sont-ils simples ?</div>
+
+<div class="vidlogo"><div class="length">8:28</div>
+<div class="imgdiv seen" style="background-image: url(https://i.ytimg.com/vi/gzJxYB-rLIU/hqdefault.jpg);"> 
+
+<div class="opaque gzJxYB-rLIU"><div class="check"><i class="fa fa-check read-icon"></i></div></div>
+</div>
+</div> 
+<div class="vidtitle">Comment s'évader d'un labyrinthe à tous les coups ? ft Manon Bril</div>
+<span class="viddesc" style="display:none">Manon Bril (de la chaîne "c'est une autre histoire") nous raconte comment Thésée, figure de la mythologie, a pu sortir d'un labyrinthe soit disant complexe.... ce qui nous fait une très bonne excuse pour parler de la façon dont on peut sortir de différents labyrinthes.</span>
+</div>
+
+<div id="XjjMH2Skw390" class="videoline vidfr" onclick="changevid('jjMH2Skw390')">
+  <div class="chanlogo">
+    <img class="chanlogo_img" src="https://yt3.ggpht.com/a/AATXAJxnyKG6wP80O0G3pEQpuANKn64wFw3HIaYLwg=s88" style="margin:0" />
+  </div>
+<div class="chan_name"><a href="https://youtube.com/channel/UCnf0fDz1vTYW-sl36wbVMbg" class="chanlink" style="color:slategrey;text-decoration:none">Les Revues du Monde</a></div>
+<div class="vid_desc">Présentation de cinq lieux difficilement acccessibles</div>
+
+<div class="vidlogo"><div class="length">8:14</div>
+<div class="imgdiv seen" style="background-image: url(https://i.ytimg.com/vi/jjMH2Skw390/hqdefault.jpg);"> 
+
+<div class="opaque jjMH2Skw390"><div class="check"><i class="fa fa-check read-icon"></i></div></div>
+</div>
+</div> 
+<div class="vidtitle">5 lieux tenus secrets et très difficilement visitables - RDM #4</div>
+<span class="viddesc" style="display:none">Les Revues du Monde, pour tous les curieux ! C'est après quelques mois d'absences que je vous invite à découvrir ces 5 lieux quasi impossibles à visiter : Rendez-vous à Fort Knox, dans les archives secrètes du Vatican, au Mont Météo Emergency Operation center, dans le mystérieux sanctuaire d'Ise, et dans le très privé club 33.</span>
+</div>
+
+<div id="XkgTFiIRiefs" class="videoline vidfr" onclick="changevid('kgTFiIRiefs')">
+  <div class="chanlogo">
+    <img class="chanlogo_img" src="https://yt3.ggpht.com/a/AATXAJzeRYyUEzcydzC8dwjACVKktVB9STFQLpbcrw=s88" style="margin:0" />
+  </div>
+<div class="chan_name"><a href="https://youtube.com/channel/UC2_OG1L8DLTzQ7UrZVOk7OA" class="chanlink" style="color:slategrey;text-decoration:none">Axolot</a></div>
+<div class="vid_desc">Qu'est-ce que la relique d'Aksoum ?</div>
+
+<div class="vidlogo"><div class="length">5:12</div>
+<div class="imgdiv seen" style="background-image: url(https://i.ytimg.com/vi/kgTFiIRiefs/hqdefault.jpg);"> 
+
+<div class="opaque kgTFiIRiefs"><div class="check"><i class="fa fa-check read-icon"></i></div></div>
+</div>
+</div> 
+<div class="vidtitle">Axolot #1 : La relique d'Aksoum</div>
+<span class="viddesc" style="display:none">Ce premier épisode d'Axolot est consacré à une relique si particulière que personne au monde ne peut la voir, sauf son gardien.</span>
+</div>
+
+<div id="Xlck67wOJs7U" class="videoline vidfr" onclick="changevid('lck67wOJs7U')">
+  <div class="chanlogo">
+    <img class="chanlogo_img" src="https://yt3.ggpht.com/a/AATXAJzeRYyUEzcydzC8dwjACVKktVB9STFQLpbcrw=s88" style="margin:0" />
+  </div>
+<div class="chan_name"><a href="https://youtube.com/channel/UC2_OG1L8DLTzQ7UrZVOk7OA" class="chanlink" style="color:slategrey;text-decoration:none">Axolot</a></div>
+<div class="vid_desc">Quelques histoires sous terre...</div>
+
+<div class="vidlogo"><div class="length">9:12</div>
+<div class="imgdiv seen" style="background-image: url(https://i.ytimg.com/vi/lck67wOJs7U/hqdefault.jpg);"> 
+
+<div class="opaque lck67wOJs7U"><div class="check"><i class="fa fa-check read-icon"></i></div></div>
+</div>
+</div> 
+<div class="vidtitle">Axolot #7 : Sous Terre</div>
+<span class="viddesc" style="display:none"></span>
+</div>
+
+<div id="Xplk4ps45lXM" class="videoline vidfr" onclick="changevid('plk4ps45lXM')">
+  <div class="chanlogo">
+    <img class="chanlogo_img" src="https://yt3.ggpht.com/a/AATXAJxF1BJvGevYRzmRNHBKy675ggjm9Po9MvLjww=s88" style="margin:0" />
+  </div>
+<div class="chan_name"><a href="https://youtube.com/channel/UCKjDY4joMPcoRMmd-G1yz1Q" class="chanlink" style="color:slategrey;text-decoration:none">C'est une autre histoire</a></div>
+<div class="vid_desc">Que s'est-il passé avec le cercueil de Charlot ?</div>
+
+<div class="vidlogo"><div class="length">4:13</div>
+<div class="imgdiv seen" style="background-image: url(https://i.ytimg.com/vi/plk4ps45lXM/hqdefault.jpg);"> 
+
+<div class="opaque plk4ps45lXM"><div class="check"><i class="fa fa-check read-icon"></i></div></div>
+</div>
+</div> 
+<div class="vidtitle">Quand on a volé le cercueil de Charlot - Ft. Adrien Ménielle et Florent Bernard</div>
+<span class="viddesc" style="display:none">Saviez-vous que le cercueil de Charlot avait été enlevé ? Maintenant oui.</span>
+</div>
+
+<div id="XuGKNnPE8ZNw" class="videoline vidfr" onclick="changevid('uGKNnPE8ZNw')">
+  <div class="chanlogo">
+    <img class="chanlogo_img" src="https://yt3.ggpht.com/a/AATXAJzilcmC-OiWwMG76scOHNtD7kkmTlhlyc-yag=s88" style="margin:0" />
+  </div>
+<div class="chan_name"><a href="https://youtube.com/channel/UCP46_MXP_WG_auH88FnfS1A" class="chanlink" style="color:slategrey;text-decoration:none">Nota Bene</a></div>
+<div class="vid_desc">Retour sur quelques morts ridicules de rois - 3</div>
+
+<div class="vidlogo"><div class="length">15:03</div>
+<div class="imgdiv seen" style="background-image: url(https://i.ytimg.com/vi/uGKNnPE8ZNw/hqdefault.jpg);"> 
+
+<div class="opaque uGKNnPE8ZNw"><div class="check"><i class="fa fa-check read-icon"></i></div></div>
+</div>
+</div> 
+<div class="vidtitle">Les 5 morts insolites des rois - partie 2 - Nota Bene #12</div>
+<span class="viddesc" style="display:none">C'est pas parce que c'est de l'histoire, qu'on peut pas en raconter! Douzième épisode de Nota Bene sur les morts insolites des rois! Suite de l'épisode diffusé il y a 7 mois, découvrez de nouvelles morts totalement absurde des dirigeants de nos ancêtres !</span>
+</div>
+
+<div id="XzJZgSY7anO0" class="videoline vidfr" onclick="changevid('zJZgSY7anO0')">
+  <div class="chanlogo">
+    <img class="chanlogo_img" src="https://yt3.ggpht.com/a/AATXAJzilcmC-OiWwMG76scOHNtD7kkmTlhlyc-yag=s88" style="margin:0" />
+  </div>
+<div class="chan_name"><a href="https://youtube.com/channel/UCP46_MXP_WG_auH88FnfS1A" class="chanlink" style="color:slategrey;text-decoration:none">Nota Bene</a></div>
+<div class="vid_desc">Retour sur quelques morts ridicules de rois - 2</div>
+
+<div class="vidlogo"><div class="length">19:21</div>
+<div class="imgdiv seen" style="background-image: url(https://i.ytimg.com/vi/zJZgSY7anO0/hqdefault.jpg);"> 
+
+<div class="opaque zJZgSY7anO0"><div class="check"><i class="fa fa-check read-icon"></i></div></div>
+</div>
+</div> 
+<div class="vidtitle">3 morts totalement absurdes de rois - Nota Bene #32</div>
+<span class="viddesc" style="display:none">Il faut se l’avouer, même si la mort d’un homme n’a rien de réjouissant, un empereur qui s'étouffe en bouffant une poire, ça donne envie de se la fendre... n’est ce pas Claudius Drusus ?! Aujourd'hui on revient sur les morts insolites de Mithridate VI, Baybars et Stanislas 1er !</span>
+</div>
+
+<h2 id="corps-humain">Corps humain</h2>
+<div id="X-nAGXmUi6j0" class="videoline vidfr" onclick="changevid('-nAGXmUi6j0')">
+  <div class="chanlogo">
+    <img class="chanlogo_img" src="https://yt3.ggpht.com/a/AATXAJzJhxZqaeN1ZPfYZleVzK_Dcb5vFFOY8s3GiQ=s88" style="margin:0" />
+  </div>
+<div class="chan_name"><a href="https://youtube.com/channel/UCeR8BYZS7IHYjk_9Mh5JgkA" class="chanlink" style="color:slategrey;text-decoration:none">Scilabus</a></div>
+<div class="vid_desc">Comment sait-on d'où viennent les sons ?</div>
+
+<div class="vidlogo"><div class="length">8:05</div>
+<div class="imgdiv seen" style="background-image: url(https://i.ytimg.com/vi/-nAGXmUi6j0/hqdefault.jpg);"> 
+
+<div class="opaque -nAGXmUi6j0"><div class="check"><i class="fa fa-check read-icon"></i></div></div>
+</div>
+</div> 
+<div class="vidtitle">Pourquoi la forme de l'oreille est-elle si compliquée ?</div>
+<span class="viddesc" style="display:none">Branchez votre casque et venez tester comment vous pouvez localiser les sons qui ont été enregistrés en 3D (audio binaural). Mais on va aller au delà de ce que vous connaissez, et il y a de bonnes chances que vous soyez déboussolés par ce que vous allez entendre.</span>
+</div>
+
+<div id="X18-VT9wwEyU" class="videoline vidfr" onclick="changevid('18-VT9wwEyU')">
+  <div class="chanlogo">
+    <img class="chanlogo_img" src="https://yt3.ggpht.com/a/AATXAJzL3BssRoXUCyqdn7Z4HfW3h8ttbk822YJTLw=s88" style="margin:0" />
+  </div>
+<div class="chan_name"><a href="https://youtube.com/channel/UCtqICqGbPSbTN09K1_7VZ3Q" class="chanlink" style="color:slategrey;text-decoration:none">DirtyBiology</a></div>
+<div class="vid_desc">Comment notre corps réagit-il lorsqu'il est plongé dans l'eau froide ?</div>
+
+<div class="vidlogo"><div class="length">5:11</div>
+<div class="imgdiv seen" style="background-image: url(https://i.ytimg.com/vi/18-VT9wwEyU/hqdefault.jpg);"> 
+
+<div class="opaque 18-VT9wwEyU"><div class="check"><i class="fa fa-check read-icon"></i></div></div>
+</div>
+</div> 
+<div class="vidtitle">La science du Ice Bucket Challenge - DBY #6</div>
+<span class="viddesc" style="display:none"></span>
+</div>
+
+<div id="X6IKQjxvQgVE" class="videoline vidfr" onclick="changevid('6IKQjxvQgVE')">
+  <div class="chanlogo">
+    <img class="chanlogo_img" src="https://yt3.ggpht.com/a/AATXAJzJhxZqaeN1ZPfYZleVzK_Dcb5vFFOY8s3GiQ=s88" style="margin:0" />
+  </div>
+<div class="chan_name"><a href="https://youtube.com/channel/UCeR8BYZS7IHYjk_9Mh5JgkA" class="chanlink" style="color:slategrey;text-decoration:none">Scilabus</a></div>
+<div class="vid_desc">A quoi sert le hoquet ?</div>
+
+<div class="vidlogo"><div class="length">10:07</div>
+<div class="imgdiv seen" style="background-image: url(https://i.ytimg.com/vi/6IKQjxvQgVE/hqdefault.jpg);"> 
+
+<div class="opaque 6IKQjxvQgVE"><div class="check"><i class="fa fa-check read-icon"></i></div></div>
+</div>
+</div> 
+<div class="vidtitle">Faut-il faire passer le hoquet ?</div>
+<span class="viddesc" style="display:none"></span>
+</div>
+
+<div id="X8JpCI1-U5yo" class="videoline vidfr" onclick="changevid('8JpCI1-U5yo')">
+  <div class="chanlogo">
+    <img class="chanlogo_img" src="https://yt3.ggpht.com/a/AATXAJzJhxZqaeN1ZPfYZleVzK_Dcb5vFFOY8s3GiQ=s88" style="margin:0" />
+  </div>
+<div class="chan_name"><a href="https://youtube.com/channel/UCeR8BYZS7IHYjk_9Mh5JgkA" class="chanlink" style="color:slategrey;text-decoration:none">Scilabus</a></div>
+<div class="vid_desc">Réponses à quelques questions sur notre perception de la chaleur</div>
+
+<div class="vidlogo"><div class="length">9:47</div>
+<div class="imgdiv seen" style="background-image: url(https://i.ytimg.com/vi/8JpCI1-U5yo/hqdefault.jpg);"> 
+
+<div class="opaque 8JpCI1-U5yo"><div class="check"><i class="fa fa-check read-icon"></i></div></div>
+</div>
+</div> 
+<div class="vidtitle">Chaleurs extrêmes, comment le corps se protège t-il ?</div>
+<span class="viddesc" style="display:none">Pourquoi avons-nous chaud quand il fait 37C dehors… alors que c’est la température du corps humain ? Pourquoi un ventilateur donne une impression de frais ? Est-ce utile pendant une canicule ? En quoi le fait de transpirer permet de se refroidir ?</span>
+</div>
+
+<div id="XDofWZW2l5Hc" class="videoline vidfr" onclick="changevid('DofWZW2l5Hc')">
+  <div class="chanlogo">
+    <img class="chanlogo_img" src="https://yt3.ggpht.com/a/AATXAJwndeI8bzCKEKXvYr_uT_hmEy3gKTcvLSv8=s88" style="margin:0" />
+  </div>
+<div class="chan_name"><a href="https://youtube.com/channel/UC-4WUubuVGowG_R7gdgesPA" class="chanlink" style="color:slategrey;text-decoration:none">Max Bird</a></div>
+<div class="vid_desc">Les roux vont-ils disparaître ?</div>
+
+<div class="vidlogo"><div class="length">6:19</div>
+<div class="imgdiv seen" style="background-image: url(https://i.ytimg.com/vi/DofWZW2l5Hc/hqdefault.jpg);"> 
+
+<div class="opaque DofWZW2l5Hc"><div class="check"><i class="fa fa-check read-icon"></i></div></div>
+</div>
+</div> 
+<div class="vidtitle">IDÉE REÇUE #26 : Les roux vont disparaître ? (feat. Cyril/SuperKonar)</div>
+<span class="viddesc" style="display:none"></span>
+</div>
+
+<div id="XIRtm7Ca34rY" class="videoline vidfr" onclick="changevid('IRtm7Ca34rY')">
+  <div class="chanlogo">
+    <img class="chanlogo_img" src="https://yt3.ggpht.com/a/AATXAJwndeI8bzCKEKXvYr_uT_hmEy3gKTcvLSv8=s88" style="margin:0" />
+  </div>
+<div class="chan_name"><a href="https://youtube.com/channel/UC-4WUubuVGowG_R7gdgesPA" class="chanlink" style="color:slategrey;text-decoration:none">Max Bird</a></div>
+<div class="vid_desc">Les filles saignent-elles la première fois ? </div>
+
+<div class="vidlogo"><div class="length">4:14</div>
+<div class="imgdiv seen" style="background-image: url(https://i.ytimg.com/vi/IRtm7Ca34rY/hqdefault.jpg);"> 
+
+<div class="opaque IRtm7Ca34rY"><div class="check"><i class="fa fa-check read-icon"></i></div></div>
+</div>
+</div> 
+<div class="vidtitle">IDÉE REÇUE #13 : Les filles saignent la 1ère fois ?</div>
+<span class="viddesc" style="display:none">Comment sait-on qu'une femme est vierge lors du premier rapport ? Parce qu'elle saigne ? Découvrez combien cet argument est infondé.</span>
+</div>
+
+<div id="XLp2PS3rFeVM" class="videoline vidfr" onclick="changevid('Lp2PS3rFeVM')">
+  <div class="chanlogo">
+    <img class="chanlogo_img" src="https://yt3.ggpht.com/a/AATXAJzJhxZqaeN1ZPfYZleVzK_Dcb5vFFOY8s3GiQ=s88" style="margin:0" />
+  </div>
+<div class="chan_name"><a href="https://youtube.com/channel/UCeR8BYZS7IHYjk_9Mh5JgkA" class="chanlink" style="color:slategrey;text-decoration:none">Scilabus</a></div>
+<div class="vid_desc">Jusqu'à quelle profondeur peut-on respirer avec un tuba ?</div>
+
+<div class="vidlogo"><div class="length">7:05</div>
+<div class="imgdiv seen" style="background-image: url(https://i.ytimg.com/vi/Lp2PS3rFeVM/hqdefault.jpg);"> 
+
+<div class="opaque Lp2PS3rFeVM"><div class="check"><i class="fa fa-check read-icon"></i></div></div>
+</div>
+</div> 
+<div class="vidtitle">Jusqu'à quelle profondeur peut-on aller avec un tuba ? Scilabus 19</div>
+<span class="viddesc" style="display:none">Mais pourquoi donc ne font-ils pas les tubas plus longs ? Les coraux à observer sont rarement à 30cm de profondeur ! Et bien aujourd’hui, on découvre que les fabricants de tuba ont une bonne raison de les faire aussi courts… nous faisons l’expérience de la profondeur maximale que l’on peut atteindre avec un long tuba. Sur le chemin de la découverte de la réponse, nous nous heurtons à plusieurs problèmes que l’on résout pour la plupart. Mais y a-t-il d’autres problèmes liés à un tuba plus long que nous n’avons pas eu l’occasion de tester ? Je vous laisse répondre dans les commentaires.</span>
+</div>
+
+<div id="XMFmwlkM420g" class="videoline vidfr" onclick="changevid('MFmwlkM420g')">
+  <div class="chanlogo">
+    <img class="chanlogo_img" src="https://yt3.ggpht.com/a/AATXAJzJhxZqaeN1ZPfYZleVzK_Dcb5vFFOY8s3GiQ=s88" style="margin:0" />
+  </div>
+<div class="chan_name"><a href="https://youtube.com/channel/UCeR8BYZS7IHYjk_9Mh5JgkA" class="chanlink" style="color:slategrey;text-decoration:none">Scilabus</a></div>
+<div class="vid_desc">Les coureurs rapides utilisent-ils plus d'énergie que les coureurs lents ?</div>
+
+<div class="vidlogo"><div class="length">15:08</div>
+<div class="imgdiv seen" style="background-image: url(https://i.ytimg.com/vi/MFmwlkM420g/hqdefault.jpg);"> 
+
+<div class="opaque MFmwlkM420g"><div class="check"><i class="fa fa-check read-icon"></i></div></div>
+</div>
+</div> 
+<div class="vidtitle">Coureur lent VS rapide : qui dépense le plus d'énergie ?</div>
+<span class="viddesc" style="display:none">Que se passe t-il lorsque l'on court un marathon ? Pourquoi est-ce si difficile ?</span>
+</div>
+
+<div id="XO6WN2nNWJJk" class="videoline vidfr" onclick="changevid('O6WN2nNWJJk')">
+  <div class="chanlogo">
+    <img class="chanlogo_img" src="https://yt3.ggpht.com/a/AATXAJwndeI8bzCKEKXvYr_uT_hmEy3gKTcvLSv8=s88" style="margin:0" />
+  </div>
+<div class="chan_name"><a href="https://youtube.com/channel/UC-4WUubuVGowG_R7gdgesPA" class="chanlink" style="color:slategrey;text-decoration:none">Max Bird</a></div>
+<div class="vid_desc">Est-il dangereux de s'écorcher un grain de beauté ?</div>
+
+<div class="vidlogo"><div class="length">6:21</div>
+<div class="imgdiv seen" style="background-image: url(https://i.ytimg.com/vi/O6WN2nNWJJk/hqdefault.jpg);"> 
+
+<div class="opaque O6WN2nNWJJk"><div class="check"><i class="fa fa-check read-icon"></i></div></div>
+</div>
+</div> 
+<div class="vidtitle">IDÉE REÇUE #17 : Écorcher un grain de beauté (feat. Oldelaf)</div>
+<span class="viddesc" style="display:none">Tout est cancérigène de nos jours, mais s'entailler un grain de beauté, ça, c'est vraiment risqué... HAHAHA ! Bon... Voyons ce qu'il en est réellement.</span>
+</div>
+
+<div id="XRTCimgk4RgQ" class="videoline vidfr" onclick="changevid('RTCimgk4RgQ')">
+  <div class="chanlogo">
+    <img class="chanlogo_img" src="https://yt3.ggpht.com/a/AATXAJzJhxZqaeN1ZPfYZleVzK_Dcb5vFFOY8s3GiQ=s88" style="margin:0" />
+  </div>
+<div class="chan_name"><a href="https://youtube.com/channel/UCeR8BYZS7IHYjk_9Mh5JgkA" class="chanlink" style="color:slategrey;text-decoration:none">Scilabus</a></div>
+<div class="vid_desc">Que devient la graisse quand on perd du poids ?</div>
+
+<div class="vidlogo"><div class="length">3:56</div>
+<div class="imgdiv seen" style="background-image: url(https://i.ytimg.com/vi/RTCimgk4RgQ/hqdefault.jpg);"> 
+
+<div class="opaque RTCimgk4RgQ"><div class="check"><i class="fa fa-check read-icon"></i></div></div>
+</div>
+</div> 
+<div class="vidtitle">Perte de poids : Où est passée la graisse ? - Scilabus 24</div>
+<span class="viddesc" style="display:none">Savez-vous où la graisse s’en va lorsque l’on perd du poids ?</span>
+</div>
+
+<div id="XXCC75frWSfo" class="videoline vidfr" onclick="changevid('XCC75frWSfo')">
+  <div class="chanlogo">
+    <img class="chanlogo_img" src="https://yt3.ggpht.com/a/AATXAJzJhxZqaeN1ZPfYZleVzK_Dcb5vFFOY8s3GiQ=s88" style="margin:0" />
+  </div>
+<div class="chan_name"><a href="https://youtube.com/channel/UCeR8BYZS7IHYjk_9Mh5JgkA" class="chanlink" style="color:slategrey;text-decoration:none">Scilabus</a></div>
+<div class="vid_desc">Pourquoi le squat asiatique est-il si difficile ?</div>
+
+<div class="vidlogo"><div class="length">18:52</div>
+<div class="imgdiv seen" style="background-image: url(https://i.ytimg.com/vi/XCC75frWSfo/hqdefault.jpg);"> 
+
+<div class="opaque XCC75frWSfo"><div class="check"><i class="fa fa-check read-icon"></i></div></div>
+</div>
+</div> 
+<div class="vidtitle">Pourquoi le squat asiatique est-il si difficile ? Feat. Major Mouvement</div>
+<span class="viddesc" style="display:none">Faire le "squat asiatique" avec les talons bien collés au sol peut être un enfer pour certain d'entre nous. Mais pourquoi ? Pourquoi est-ce d'une simplicité affligeante pour certains alors que c'est douloureux voire impossible pour d'autres ? Il va falloir essayer par nous même pour trouver ces réponses !</span>
+</div>
+
+<div id="XY5-Yy8PZbgs" class="videoline vidfr" onclick="changevid('Y5-Yy8PZbgs')">
+  <div class="chanlogo">
+    <img class="chanlogo_img" src="https://yt3.ggpht.com/a/AATXAJzJhxZqaeN1ZPfYZleVzK_Dcb5vFFOY8s3GiQ=s88" style="margin:0" />
+  </div>
+<div class="chan_name"><a href="https://youtube.com/channel/UCeR8BYZS7IHYjk_9Mh5JgkA" class="chanlink" style="color:slategrey;text-decoration:none">Scilabus</a></div>
+<div class="vid_desc">Sommes-nous plus grands le matin que le soir ?</div>
+
+<div class="vidlogo"><div class="length">5:58</div>
+<div class="imgdiv seen" style="background-image: url(https://i.ytimg.com/vi/Y5-Yy8PZbgs/hqdefault.jpg);"> 
+
+<div class="opaque Y5-Yy8PZbgs"><div class="check"><i class="fa fa-check read-icon"></i></div></div>
+</div>
+</div> 
+<div class="vidtitle">Mythe : est-on plus grand le matin que le soir ? - Scilabus 25</div>
+<span class="viddesc" style="display:none">Notre taille varie-t-elle avec le temps à l’échelle d’une journée ? Découvrez la surprenante réponse dans cette vidéo. Vous en apprendrez plus sur une structure du corps humain essentielle à notre vie quotidienne.</span>
+</div>
+
+<div id="XYxIOU3KC51c" class="videoline vidfr" onclick="changevid('YxIOU3KC51c')">
+  <div class="chanlogo">
+    <img class="chanlogo_img" src="https://yt3.ggpht.com/a/AATXAJzJhxZqaeN1ZPfYZleVzK_Dcb5vFFOY8s3GiQ=s88" style="margin:0" />
+  </div>
+<div class="chan_name"><a href="https://youtube.com/channel/UCeR8BYZS7IHYjk_9Mh5JgkA" class="chanlink" style="color:slategrey;text-decoration:none">Scilabus</a></div>
+<div class="vid_desc">Est-ce que l'odorat humain est meilleur que ce qu'on croit ?</div>
+
+<div class="vidlogo"><div class="length">11:12</div>
+<div class="imgdiv seen" style="background-image: url(https://i.ytimg.com/vi/YxIOU3KC51c/hqdefault.jpg);"> 
+
+<div class="opaque YxIOU3KC51c"><div class="check"><i class="fa fa-check read-icon"></i></div></div>
+</div>
+</div> 
+<div class="vidtitle">Notre odorat est meilleur que nous le pensons</div>
+<span class="viddesc" style="display:none">Peut-on sentir à l'odeur que quelqu'un dégage si cette personne est malade ? Nous ne sommes pas au niveau de certains animaux mais notre odorat nous donne quelques clefs !</span>
+</div>
+
+<div id="X_CkAjWurVdM" class="videoline vidfr" onclick="changevid('_CkAjWurVdM')">
+  <div class="chanlogo">
+    <img class="chanlogo_img" src="https://yt3.ggpht.com/a/AATXAJzJhxZqaeN1ZPfYZleVzK_Dcb5vFFOY8s3GiQ=s88" style="margin:0" />
+  </div>
+<div class="chan_name"><a href="https://youtube.com/channel/UCeR8BYZS7IHYjk_9Mh5JgkA" class="chanlink" style="color:slategrey;text-decoration:none">Scilabus</a></div>
+<div class="vid_desc">Retour sur quelques phénomènes autour des poils</div>
+
+<div class="vidlogo"><div class="length">6:37</div>
+<div class="imgdiv seen" style="background-image: url(https://i.ytimg.com/vi/_CkAjWurVdM/hqdefault.jpg);"> 
+
+<div class="opaque _CkAjWurVdM"><div class="check"><i class="fa fa-check read-icon"></i></div></div>
+</div>
+</div> 
+<div class="vidtitle">BONUS Poil : calvitie, chair de poule et douceur – Scilabus 49</div>
+<span class="viddesc" style="display:none">La calvitie n'implique pas la perte de cheveux, les poils frisés sont similaire à des rubans de cadeaux, et la douceur des poils est plus complexe qu'il n'y parait. Tout un programme.</span>
+</div>
+
+<div id="X_ehRWgOUsPw" class="videoline vidfr" onclick="changevid('_ehRWgOUsPw')">
+  <div class="chanlogo">
+    <img class="chanlogo_img" src="https://yt3.ggpht.com/a/AATXAJwndeI8bzCKEKXvYr_uT_hmEy3gKTcvLSv8=s88" style="margin:0" />
+  </div>
+<div class="chan_name"><a href="https://youtube.com/channel/UC-4WUubuVGowG_R7gdgesPA" class="chanlink" style="color:slategrey;text-decoration:none">Max Bird</a></div>
+<div class="vid_desc">Se raser rend-il les poils plus épais ?</div>
+
+<div class="vidlogo"><div class="length">6:13</div>
+<div class="imgdiv seen" style="background-image: url(https://i.ytimg.com/vi/_ehRWgOUsPw/hqdefault.jpg);"> 
+
+<div class="opaque _ehRWgOUsPw"><div class="check"><i class="fa fa-check read-icon"></i></div></div>
+</div>
+</div> 
+<div class="vidtitle">IDÉE REÇUE #45 : Se raser rend les poils plus épais ?</div>
+<span class="viddesc" style="display:none"></span>
+</div>
+
+<div id="XaSGhvNMGe7A" class="videoline vidfr" onclick="changevid('aSGhvNMGe7A')">
+  <div class="chanlogo">
+    <img class="chanlogo_img" src="https://yt3.ggpht.com/a/AATXAJzJhxZqaeN1ZPfYZleVzK_Dcb5vFFOY8s3GiQ=s88" style="margin:0" />
+  </div>
+<div class="chan_name"><a href="https://youtube.com/channel/UCeR8BYZS7IHYjk_9Mh5JgkA" class="chanlink" style="color:slategrey;text-decoration:none">Scilabus</a></div>
+<div class="vid_desc">Retour sur quelques mythes autour des poils</div>
+
+<div class="vidlogo"><div class="length">6:54</div>
+<div class="imgdiv seen" style="background-image: url(https://i.ytimg.com/vi/aSGhvNMGe7A/hqdefault.jpg);"> 
+
+<div class="opaque aSGhvNMGe7A"><div class="check"><i class="fa fa-check read-icon"></i></div></div>
+</div>
+</div> 
+<div class="vidtitle">5 mythes sur le rasage et l'épilation des poils - Scilabus 48</div>
+<span class="viddesc" style="display:none">Découvrez les 5 mythes les plus tenaces sur les poils. Sont-ils vrais ?</span>
+</div>
+
+<div id="XbGSi4zO5CQc" class="videoline vidfr" onclick="changevid('bGSi4zO5CQc')">
+  <div class="chanlogo">
+    <img class="chanlogo_img" src="https://yt3.ggpht.com/a/AATXAJzJhxZqaeN1ZPfYZleVzK_Dcb5vFFOY8s3GiQ=s88" style="margin:0" />
+  </div>
+<div class="chan_name"><a href="https://youtube.com/channel/UCeR8BYZS7IHYjk_9Mh5JgkA" class="chanlink" style="color:slategrey;text-decoration:none">Scilabus</a></div>
+<div class="vid_desc">Peut-on soigner le daltonisme avec des lunettes ?</div>
+
+<div class="vidlogo"><div class="length">12:16</div>
+<div class="imgdiv seen" style="background-image: url(https://i.ytimg.com/vi/bGSi4zO5CQc/hqdefault.jpg);"> 
+
+<div class="opaque bGSi4zO5CQc"><div class="check"><i class="fa fa-check read-icon"></i></div></div>
+</div>
+</div> 
+<div class="vidtitle">Peut-on voir des couleurs que l'on a jamais vues ? TEST lunettes pour daltonien</div>
+<span class="viddesc" style="display:none">Les daltoniens n’ont pas une vision normale, mais cela se soigne t-il avec des lunettes ?</span>
+</div>
+
+<div id="Xd3v49PlO1ys" class="videoline vidfr" onclick="changevid('d3v49PlO1ys')">
+  <div class="chanlogo">
+    <img class="chanlogo_img" src="https://yt3.ggpht.com/a/AATXAJzilcmC-OiWwMG76scOHNtD7kkmTlhlyc-yag=s88" style="margin:0" />
+  </div>
+<div class="chan_name"><a href="https://youtube.com/channel/UCP46_MXP_WG_auH88FnfS1A" class="chanlink" style="color:slategrey;text-decoration:none">Nota Bene</a></div>
+<div class="vid_desc">Comment planquer un corps ?</div>
+
+<div class="vidlogo"><div class="length">16:07</div>
+<div class="imgdiv seen" style="background-image: url(https://i.ytimg.com/vi/d3v49PlO1ys/hqdefault.jpg);"> 
+
+<div class="opaque d3v49PlO1ys"><div class="check"><i class="fa fa-check read-icon"></i></div></div>
+</div>
+</div> 
+<div class="vidtitle">COMMENT PLANQUER UN CADAVRE ?</div>
+<span class="viddesc" style="display:none">Un mort sur les bras ? Pas de panique ! L'Histoire a de quoi vous fournir les scénarios de films les plus tordus pour mener votre entreprise à bien ! En 1566, Soliman s'engage pour la dernière fois dans la conquête de la Hongrie. Mais tout ne va pas se passer comme prévu...</span>
+</div>
+
+<div id="XguqCzdIZC7I" class="videoline vidfr" onclick="changevid('guqCzdIZC7I')">
+  <div class="chanlogo">
+    <img class="chanlogo_img" src="https://yt3.ggpht.com/a/AATXAJwndeI8bzCKEKXvYr_uT_hmEy3gKTcvLSv8=s88" style="margin:0" />
+  </div>
+<div class="chan_name"><a href="https://youtube.com/channel/UC-4WUubuVGowG_R7gdgesPA" class="chanlink" style="color:slategrey;text-decoration:none">Max Bird</a></div>
+<div class="vid_desc">Que faire en cas de brûlure de méduse ?</div>
+
+<div class="vidlogo"><div class="length">5:07</div>
+<div class="imgdiv seen" style="background-image: url(https://i.ytimg.com/vi/guqCzdIZC7I/hqdefault.jpg);"> 
+
+<div class="opaque guqCzdIZC7I"><div class="check"><i class="fa fa-check read-icon"></i></div></div>
+</div>
+</div> 
+<div class="vidtitle">IDÉE REÇUE #25 : L'urine et les piqûres de méduse (feat. Professeur Feuillage)</div>
+<span class="viddesc" style="display:none"></span>
+</div>
+
+<div id="Xhz58kLnqz1c" class="videoline vidfr" onclick="changevid('hz58kLnqz1c')">
+  <div class="chanlogo">
+    <img class="chanlogo_img" src="https://yt3.ggpht.com/a/AATXAJwndeI8bzCKEKXvYr_uT_hmEy3gKTcvLSv8=s88" style="margin:0" />
+  </div>
+<div class="chan_name"><a href="https://youtube.com/channel/UC-4WUubuVGowG_R7gdgesPA" class="chanlink" style="color:slategrey;text-decoration:none">Max Bird</a></div>
+<div class="vid_desc">Est-ce qu'on utilise vraiment que 10% de notre cerveau ?</div>
+
+<div class="vidlogo"><div class="length">2:45</div>
+<div class="imgdiv seen" style="background-image: url(https://i.ytimg.com/vi/hz58kLnqz1c/hqdefault.jpg);"> 
+
+<div class="opaque hz58kLnqz1c"><div class="check"><i class="fa fa-check read-icon"></i></div></div>
+</div>
+</div> 
+<div class="vidtitle">IDÉE REÇUE #7 : Le cerveau (feat. Pierre Croce)</div>
+<span class="viddesc" style="display:none">On entend souvent dire que toute une partie de notre cerveau reste inutilisée... Découvrez comment même les gens qui croient à cette légende utilisent bien tout leur cerveau.</span>
+</div>
+
+<div id="XoIpbj3DdpCg" class="videoline vidfr" onclick="changevid('oIpbj3DdpCg')">
+  <div class="chanlogo">
+    <img class="chanlogo_img" src="https://yt3.ggpht.com/a/AATXAJwndeI8bzCKEKXvYr_uT_hmEy3gKTcvLSv8=s88" style="margin:0" />
+  </div>
+<div class="chan_name"><a href="https://youtube.com/channel/UC-4WUubuVGowG_R7gdgesPA" class="chanlink" style="color:slategrey;text-decoration:none">Max Bird</a></div>
+<div class="vid_desc">Faire craquer ses doigts provoque-t-il de l'arthrite ?</div>
+
+<div class="vidlogo"><div class="length">4:39</div>
+<div class="imgdiv seen" style="background-image: url(https://i.ytimg.com/vi/oIpbj3DdpCg/hqdefault.jpg);"> 
+
+<div class="opaque oIpbj3DdpCg"><div class="check"><i class="fa fa-check read-icon"></i></div></div>
+</div>
+</div> 
+<div class="vidtitle">IDÉE REÇUE #19 : Craquer ses doigts provoque de l'arthrite ? (feat. Gérald Dahan)</div>
+<span class="viddesc" style="display:none">Ne fais pas craquer tes doigts ! Plus tard tu auras de l'arthrite ! ...Vraiment ? Sur quoi est fondée cette légende urbaine ? Et, au fait, quelle est l'origine de ce bruit ?</span>
+</div>
+
+<div id="XuI0tmxA-Pfg" class="videoline vidfr" onclick="changevid('uI0tmxA-Pfg')">
+  <div class="chanlogo">
+    <img class="chanlogo_img" src="https://yt3.ggpht.com/a/AATXAJwndeI8bzCKEKXvYr_uT_hmEy3gKTcvLSv8=s88" style="margin:0" />
+  </div>
+<div class="chan_name"><a href="https://youtube.com/channel/UC-4WUubuVGowG_R7gdgesPA" class="chanlink" style="color:slategrey;text-decoration:none">Max Bird</a></div>
+<div class="vid_desc">Manger des carottes améliore-t-il la vue ?</div>
+
+<div class="vidlogo"><div class="length">7:26</div>
+<div class="imgdiv seen" style="background-image: url(https://i.ytimg.com/vi/uI0tmxA-Pfg/hqdefault.jpg);"> 
+
+<div class="opaque uI0tmxA-Pfg"><div class="check"><i class="fa fa-check read-icon"></i></div></div>
+</div>
+</div> 
+<div class="vidtitle">IDÉE REÇUE #32 : La vérité sur les carottes ! (feat. Poisson Fécond)</div>
+<span class="viddesc" style="display:none"></span>
+</div>
+
+<div id="XucddttjEULw" class="videoline vidfr" onclick="changevid('ucddttjEULw')">
+  <div class="chanlogo">
+    <img class="chanlogo_img" src="https://yt3.ggpht.com/a/AATXAJwndeI8bzCKEKXvYr_uT_hmEy3gKTcvLSv8=s88" style="margin:0" />
+  </div>
+<div class="chan_name"><a href="https://youtube.com/channel/UC-4WUubuVGowG_R7gdgesPA" class="chanlink" style="color:slategrey;text-decoration:none">Max Bird</a></div>
+<div class="vid_desc">Peut-on réveiller un somnambule quand il dort ?</div>
+
+<div class="vidlogo"><div class="length">3:17</div>
+<div class="imgdiv seen" style="background-image: url(https://i.ytimg.com/vi/ucddttjEULw/hqdefault.jpg);"> 
+
+<div class="opaque ucddttjEULw"><div class="check"><i class="fa fa-check read-icon"></i></div></div>
+</div>
+</div> 
+<div class="vidtitle">IDÉE REÇUE #10 : Réveiller un somnambule, ça peut le tuer ?</div>
+<span class="viddesc" style="display:none">Que se passe-t-il quand on réveille un somnambule ? Est-ce dangereux ? Vraiment ? Bon, dans le doute...</span>
+</div>
+
+<div id="XzDMgrZeA6OY" class="videoline vidfr" onclick="changevid('zDMgrZeA6OY')">
+  <div class="chanlogo">
+    <img class="chanlogo_img" src="https://yt3.ggpht.com/a/AATXAJwndeI8bzCKEKXvYr_uT_hmEy3gKTcvLSv8=s88" style="margin:0" />
+  </div>
+<div class="chan_name"><a href="https://youtube.com/channel/UC-4WUubuVGowG_R7gdgesPA" class="chanlink" style="color:slategrey;text-decoration:none">Max Bird</a></div>
+<div class="vid_desc">Peut-on agrandir son pénis ?</div>
+
+<div class="vidlogo"><div class="length">7:01</div>
+<div class="imgdiv seen" style="background-image: url(https://i.ytimg.com/vi/zDMgrZeA6OY/hqdefault.jpg);"> 
+
+<div class="opaque zDMgrZeA6OY"><div class="check"><i class="fa fa-check read-icon"></i></div></div>
+</div>
+</div> 
+<div class="vidtitle">IDÉE REÇUE #43 : On peut se faire agrandir le pénis</div>
+<span class="viddesc" style="display:none"></span>
+</div>
+
+<h2 id="personnalites">Personnalités</h2>
+<div id="X01FvYaBJdBs" class="videoline vidfr" onclick="changevid('01FvYaBJdBs')">
+  <div class="chanlogo">
+    <img class="chanlogo_img" src="https://yt3.ggpht.com/a/AATXAJwCevVu_FMnOojiJesgg-xOsfHZ4XBXvaGvHw=s88" style="margin:0" />
+  </div>
+<div class="chan_name"><a href="https://youtube.com/channel/UC_Ll41JS0VQO9L1iOv6LDQg" class="chanlink" style="color:slategrey;text-decoration:none">Aude GG</a></div>
+<div class="vid_desc">Qui était Christine de Pisan ?</div>
+
+<div class="vidlogo"><div class="length">3:14</div>
+<div class="imgdiv seen" style="background-image: url(https://i.ytimg.com/vi/01FvYaBJdBs/hqdefault.jpg);"> 
+
+<div class="opaque 01FvYaBJdBs"><div class="check"><i class="fa fa-check read-icon"></i></div></div>
+</div>
+</div> 
+<div class="vidtitle">#8 - Être féministe au Moyen-âge - Virago - Christine de Pisan</div>
+<span class="viddesc" style="display:none"></span>
+</div>
+
+<div id="X0atfseYL4dI" class="videoline vidfr" onclick="changevid('0atfseYL4dI')">
+  <div class="chanlogo">
+    <img class="chanlogo_img" src="https://yt3.ggpht.com/a/AATXAJwCevVu_FMnOojiJesgg-xOsfHZ4XBXvaGvHw=s88" style="margin:0" />
+  </div>
+<div class="chan_name"><a href="https://youtube.com/channel/UC_Ll41JS0VQO9L1iOv6LDQg" class="chanlink" style="color:slategrey;text-decoration:none">Aude GG</a></div>
+<div class="vid_desc">Qui était Nina Simone ?</div>
+
+<div class="vidlogo"><div class="length">4:26</div>
+<div class="imgdiv seen" style="background-image: url(https://i.ytimg.com/vi/0atfseYL4dI/hqdefault.jpg);"> 
+
+<div class="opaque 0atfseYL4dI"><div class="check"><i class="fa fa-check read-icon"></i></div></div>
+</div>
+</div> 
+<div class="vidtitle">#12 - Musicienne et activiste - Virago - Nina Simone Ft. Jina Djemba</div>
+<span class="viddesc" style="display:none"></span>
+</div>
+
+<div id="X0b2KCLc625A" class="videoline vidfr" onclick="changevid('0b2KCLc625A')">
+  <div class="chanlogo">
+    <img class="chanlogo_img" src="https://yt3.ggpht.com/a/AATXAJzilcmC-OiWwMG76scOHNtD7kkmTlhlyc-yag=s88" style="margin:0" />
+  </div>
+<div class="chan_name"><a href="https://youtube.com/channel/UCP46_MXP_WG_auH88FnfS1A" class="chanlink" style="color:slategrey;text-decoration:none">Nota Bene</a></div>
+<div class="vid_desc">Qui était Zheng He ?</div>
+
+<div class="vidlogo"><div class="length">9:08</div>
+<div class="imgdiv seen" style="background-image: url(https://i.ytimg.com/vi/0b2KCLc625A/hqdefault.jpg);"> 
+
+<div class="opaque 0b2KCLc625A"><div class="check"><i class="fa fa-check read-icon"></i></div></div>
+</div>
+</div> 
+<div class="vidtitle">ZHENG HE, la folle histoire du grand explorateur eunuque !</div>
+<span class="viddesc" style="display:none">Et si je vous disais qu’un des explorateurs les plus incroyables de l’Histoire n’avait jamais mis les pieds sur un bateau avant que son empereur lui ai confié comme mission capitale de développer son réseau commercial et diplomatique sur les mers ? C’est la destinée hors norme de l’amiral Zheng He, qui dirigea une des plus grandes flottes d’exploration de l’Histoire !</span>
+</div>
+
+<div id="X0fMpSmx9Kek" class="videoline vidfr" onclick="changevid('0fMpSmx9Kek')">
+  <div class="chanlogo">
+    <img class="chanlogo_img" src="https://yt3.ggpht.com/a/AATXAJwCevVu_FMnOojiJesgg-xOsfHZ4XBXvaGvHw=s88" style="margin:0" />
+  </div>
+<div class="chan_name"><a href="https://youtube.com/channel/UC_Ll41JS0VQO9L1iOv6LDQg" class="chanlink" style="color:slategrey;text-decoration:none">Aude GG</a></div>
+<div class="vid_desc">Qui était Frida Kahlo ?</div>
+
+<div class="vidlogo"><div class="length">3:31</div>
+<div class="imgdiv seen" style="background-image: url(https://i.ytimg.com/vi/0fMpSmx9Kek/hqdefault.jpg);"> 
+
+<div class="opaque 0fMpSmx9Kek"><div class="check"><i class="fa fa-check read-icon"></i></div></div>
+</div>
+</div> 
+<div class="vidtitle">#14 - Peintre handicapée, féministe et révolutionnaire - Virago - Frida Kahlo Ft. Mélissa Billard</div>
+<span class="viddesc" style="display:none"></span>
+</div>
+
+<div id="X1yxVYlpF6ig" class="videoline vidfr" onclick="changevid('1yxVYlpF6ig')">
+  <div class="chanlogo">
+    <img class="chanlogo_img" src="https://yt3.ggpht.com/a/AATXAJwCevVu_FMnOojiJesgg-xOsfHZ4XBXvaGvHw=s88" style="margin:0" />
+  </div>
+<div class="chan_name"><a href="https://youtube.com/channel/UC_Ll41JS0VQO9L1iOv6LDQg" class="chanlink" style="color:slategrey;text-decoration:none">Aude GG</a></div>
+<div class="vid_desc">Qui était Caroline Herschel ?</div>
+
+<div class="vidlogo"><div class="length">3:04</div>
+<div class="imgdiv seen" style="background-image: url(https://i.ytimg.com/vi/1yxVYlpF6ig/hqdefault.jpg);"> 
+
+<div class="opaque 1yxVYlpF6ig"><div class="check"><i class="fa fa-check read-icon"></i></div></div>
+</div>
+</div> 
+<div class="vidtitle">#15 - Dénicheuse de galaxies - Virago Ft. Florence Porcel - Caroline Herschel</div>
+<span class="viddesc" style="display:none"></span>
+</div>
+
+<div id="X3rNq8P1amP8" class="videoline vidfr" onclick="changevid('3rNq8P1amP8')">
+  <div class="chanlogo">
+    <img class="chanlogo_img" src="https://yt3.ggpht.com/a/AATXAJwCevVu_FMnOojiJesgg-xOsfHZ4XBXvaGvHw=s88" style="margin:0" />
+  </div>
+<div class="chan_name"><a href="https://youtube.com/channel/UC_Ll41JS0VQO9L1iOv6LDQg" class="chanlink" style="color:slategrey;text-decoration:none">Aude GG</a></div>
+<div class="vid_desc">Qui était Irène Joliot-Curie ?</div>
+
+<div class="vidlogo"><div class="length">4:18</div>
+<div class="imgdiv seen" style="background-image: url(https://i.ytimg.com/vi/3rNq8P1amP8/hqdefault.jpg);"> 
+
+<div class="opaque 3rNq8P1amP8"><div class="check"><i class="fa fa-check read-icon"></i></div></div>
+</div>
+</div> 
+<div class="vidtitle">#10 - Le radium en héritage - Virago Ft. E-penser- Irène Joliot-Curie</div>
+<span class="viddesc" style="display:none"></span>
+</div>
+
+<div id="X3yWuX8spp_E" class="videoline vidfr" onclick="changevid('3yWuX8spp_E')">
+  <div class="chanlogo">
+    <img class="chanlogo_img" src="https://yt3.ggpht.com/a/AATXAJxnyKG6wP80O0G3pEQpuANKn64wFw3HIaYLwg=s88" style="margin:0" />
+  </div>
+<div class="chan_name"><a href="https://youtube.com/channel/UCnf0fDz1vTYW-sl36wbVMbg" class="chanlink" style="color:slategrey;text-decoration:none">Les Revues du Monde</a></div>
+<div class="vid_desc">Retour sur deux chasseurs de trésor</div>
+
+<div class="vidlogo"><div class="length">10:37</div>
+<div class="imgdiv seen" style="background-image: url(https://i.ytimg.com/vi/3yWuX8spp_E/hqdefault.jpg);"> 
+
+<div class="opaque 3yWuX8spp_E"><div class="check"><i class="fa fa-check read-icon"></i></div></div>
+</div>
+</div> 
+<div class="vidtitle">Deux Chasseurs de Trésors ( + Chasse au trésor organisée ! ) - RDM #21</div>
+<span class="viddesc" style="display:none"></span>
+</div>
+
+<div id="X6bJZP3fIdCc" class="videoline vidfr" onclick="changevid('6bJZP3fIdCc')">
+  <div class="chanlogo">
+    <img class="chanlogo_img" src="https://yt3.ggpht.com/a/AATXAJwCevVu_FMnOojiJesgg-xOsfHZ4XBXvaGvHw=s88" style="margin:0" />
+  </div>
+<div class="chan_name"><a href="https://youtube.com/channel/UC_Ll41JS0VQO9L1iOv6LDQg" class="chanlink" style="color:slategrey;text-decoration:none">Aude GG</a></div>
+<div class="vid_desc">Qui est Kathrine Switzer ?</div>
+
+<div class="vidlogo"><div class="length">2:20</div>
+<div class="imgdiv seen" style="background-image: url(https://i.ytimg.com/vi/6bJZP3fIdCc/hqdefault.jpg);"> 
+
+<div class="opaque 6bJZP3fIdCc"><div class="check"><i class="fa fa-check read-icon"></i></div></div>
+</div>
+</div> 
+<div class="vidtitle">#19 - Interdite de marathon ! - Virago - Kathrine Switzer</div>
+<span class="viddesc" style="display:none"></span>
+</div>
+
+<div id="X83E4gDRgPqE" class="videoline vidfr" onclick="changevid('83E4gDRgPqE')">
+  <div class="chanlogo">
+    <img class="chanlogo_img" src="https://yt3.ggpht.com/a/AATXAJzilcmC-OiWwMG76scOHNtD7kkmTlhlyc-yag=s88" style="margin:0" />
+  </div>
+<div class="chan_name"><a href="https://youtube.com/channel/UCP46_MXP_WG_auH88FnfS1A" class="chanlink" style="color:slategrey;text-decoration:none">Nota Bene</a></div>
+<div class="vid_desc">Retour sur quelques histoires d'imposture</div>
+
+<div class="vidlogo"><div class="length">15:55</div>
+<div class="imgdiv seen" style="background-image: url(https://i.ytimg.com/vi/83E4gDRgPqE/hqdefault.jpg);"> 
+
+<div class="opaque 83E4gDRgPqE"><div class="check"><i class="fa fa-check read-icon"></i></div></div>
+</div>
+</div> 
+<div class="vidtitle">Les 3 incroyables impostures - Nota Bene #13</div>
+<span class="viddesc" style="display:none">C'est pas parce que c'est de l'histoire, qu'on peut pas en raconter! Treizième épisode de Nota Bene sur les incroyables impostures dans l'histoire. Du paysan avide de reconnaissance au général baffoué révant de sa revanche découvrez les champions de l'usurpation d'identité !</span>
+</div>
+
+<div id="XDV_edg69lRU" class="videoline vidfr" onclick="changevid('DV_edg69lRU')">
+  <div class="chanlogo">
+    <img class="chanlogo_img" src="https://yt3.ggpht.com/a/AATXAJwCevVu_FMnOojiJesgg-xOsfHZ4XBXvaGvHw=s88" style="margin:0" />
+  </div>
+<div class="chan_name"><a href="https://youtube.com/channel/UC_Ll41JS0VQO9L1iOv6LDQg" class="chanlink" style="color:slategrey;text-decoration:none">Aude GG</a></div>
+<div class="vid_desc">Qui était Hypatie d'Alexandrie ?</div>
+
+<div class="vidlogo"><div class="length">2:48</div>
+<div class="imgdiv seen" style="background-image: url(https://i.ytimg.com/vi/DV_edg69lRU/hqdefault.jpg);"> 
+
+<div class="opaque DV_edg69lRU"><div class="check"><i class="fa fa-check read-icon"></i></div></div>
+</div>
+</div> 
+<div class="vidtitle">#6 - Mathématicienne et philosophe, écartelée pour son savoir - Virago - Hypatie</div>
+<span class="viddesc" style="display:none"></span>
+</div>
+
+<div id="XDXaOX0pv9qQ" class="videoline vidfr" onclick="changevid('DXaOX0pv9qQ')">
+  <div class="chanlogo">
+    <img class="chanlogo_img" src="https://yt3.ggpht.com/a/AATXAJzeRYyUEzcydzC8dwjACVKktVB9STFQLpbcrw=s88" style="margin:0" />
+  </div>
+<div class="chan_name"><a href="https://youtube.com/channel/UC2_OG1L8DLTzQ7UrZVOk7OA" class="chanlink" style="color:slategrey;text-decoration:none">Axolot</a></div>
+<div class="vid_desc">Qui fut Elmer McCurdy ?</div>
+
+<div class="vidlogo"><div class="length">6:14</div>
+<div class="imgdiv seen" style="background-image: url(https://i.ytimg.com/vi/DXaOX0pv9qQ/hqdefault.jpg);"> 
+
+<div class="opaque DXaOX0pv9qQ"><div class="check"><i class="fa fa-check read-icon"></i></div></div>
+</div>
+</div> 
+<div class="vidtitle">Axoportraits #1 : Le Bandit Embaumé</div>
+<span class="viddesc" style="display:none">Pour ce premier numéro des axoportraits, nous allons parler d'un gangster raté qui a terminé sa carrière en momie....</span>
+</div>
+
+<div id="XFsV0J4nW_ws" class="videoline vidfr" onclick="changevid('FsV0J4nW_ws')">
+  <div class="chanlogo">
+    <img class="chanlogo_img" src="https://yt3.ggpht.com/a/AATXAJwCevVu_FMnOojiJesgg-xOsfHZ4XBXvaGvHw=s88" style="margin:0" />
+  </div>
+<div class="chan_name"><a href="https://youtube.com/channel/UC_Ll41JS0VQO9L1iOv6LDQg" class="chanlink" style="color:slategrey;text-decoration:none">Aude GG</a></div>
+<div class="vid_desc">Qui était Imogen Cunningham ?</div>
+
+<div class="vidlogo"><div class="length">2:17</div>
+<div class="imgdiv seen" style="background-image: url(https://i.ytimg.com/vi/FsV0J4nW_ws/hqdefault.jpg);"> 
+
+<div class="opaque FsV0J4nW_ws"><div class="check"><i class="fa fa-check read-icon"></i></div></div>
+</div>
+</div> 
+<div class="vidtitle">#3 - À poil les bonshommes ! - Virago - Imogen Cunningham</div>
+<span class="viddesc" style="display:none"></span>
+</div>
+
+<div id="XGKZE9pXVJoI" class="videoline vidfr" onclick="changevid('GKZE9pXVJoI')">
+  <div class="chanlogo">
+    <img class="chanlogo_img" src="https://yt3.ggpht.com/a/AATXAJwCevVu_FMnOojiJesgg-xOsfHZ4XBXvaGvHw=s88" style="margin:0" />
+  </div>
+<div class="chan_name"><a href="https://youtube.com/channel/UC_Ll41JS0VQO9L1iOv6LDQg" class="chanlink" style="color:slategrey;text-decoration:none">Aude GG</a></div>
+<div class="vid_desc">Qui était Fatima Mernissi ?</div>
+
+<div class="vidlogo"><div class="length">5:19</div>
+<div class="imgdiv seen" style="background-image: url(https://i.ytimg.com/vi/GKZE9pXVJoI/hqdefault.jpg);"> 
+
+<div class="opaque GKZE9pXVJoI"><div class="check"><i class="fa fa-check read-icon"></i></div></div>
+</div>
+</div> 
+<div class="vidtitle">#23 - Féministe au Maghreb - Virago - Fatima Mernissi Ft. Souad Amidou</div>
+<span class="viddesc" style="display:none"></span>
+</div>
+
+<div id="XGXGrDUT_TV0" class="videoline vidfr" onclick="changevid('GXGrDUT_TV0')">
+  <div class="chanlogo">
+    <img class="chanlogo_img" src="https://yt3.ggpht.com/a/AATXAJwtxsjBtH_Drcvl6fORe6U8VVjKLI5YmtDmBw=s88" style="margin:0" />
+  </div>
+<div class="chan_name"><a href="https://youtube.com/channel/UCK3inMNRNAVUleEbpDU1k2g" class="chanlink" style="color:slategrey;text-decoration:none">SEB</a></div>
+<div class="vid_desc">L'histoire d'une légende: Sixto Rodriguez.</div>
+
+<div class="vidlogo"><div class="length">20:02</div>
+<div class="imgdiv seen" style="background-image: url(https://i.ytimg.com/vi/GXGrDUT_TV0/hqdefault.jpg);"> 
+
+<div class="opaque GXGrDUT_TV0"><div class="check"><i class="fa fa-check read-icon"></i></div></div>
+</div>
+</div> 
+<div class="vidtitle">L'HISTOIRE DE SIXTO RODRIGUEZ ! - SEB</div>
+<span class="viddesc" style="display:none">Sûrement l'une des histoires les plus folles et insolites de l'histoire de la musique, celle de : Sixto Rodriguez.</span>
+</div>
+
+<div id="XIyryWZuCSy8" class="videoline vidfr" onclick="changevid('IyryWZuCSy8')">
+  <div class="chanlogo">
+    <img class="chanlogo_img" src="https://yt3.ggpht.com/a/AATXAJzeRYyUEzcydzC8dwjACVKktVB9STFQLpbcrw=s88" style="margin:0" />
+  </div>
+<div class="chan_name"><a href="https://youtube.com/channel/UC2_OG1L8DLTzQ7UrZVOk7OA" class="chanlink" style="color:slategrey;text-decoration:none">Axolot</a></div>
+<div class="vid_desc">Quelques histoires de scientifiques...</div>
+
+<div class="vidlogo"><div class="length">10:31</div>
+<div class="imgdiv seen" style="background-image: url(https://i.ytimg.com/vi/IyryWZuCSy8/hqdefault.jpg);"> 
+
+<div class="opaque IyryWZuCSy8"><div class="check"><i class="fa fa-check read-icon"></i></div></div>
+</div>
+</div> 
+<div class="vidtitle">Axolot #4 : 6 savants fous qui se sont sacrifiés pour la science</div>
+<span class="viddesc" style="display:none">Dans ce quatrième épisode d'Axolot, vous découvrirez que l'histoire de la science n'a rien à envier à Jackass!</span>
+</div>
+
+<div id="XKh0ppsYSiAY" class="videoline vidfr" onclick="changevid('Kh0ppsYSiAY')">
+  <div class="chanlogo">
+    <img class="chanlogo_img" src="https://yt3.ggpht.com/a/AATXAJwCevVu_FMnOojiJesgg-xOsfHZ4XBXvaGvHw=s88" style="margin:0" />
+  </div>
+<div class="chan_name"><a href="https://youtube.com/channel/UC_Ll41JS0VQO9L1iOv6LDQg" class="chanlink" style="color:slategrey;text-decoration:none">Aude GG</a></div>
+<div class="vid_desc">Qui était Gertrude Bell ?</div>
+
+<div class="vidlogo"><div class="length">3:14</div>
+<div class="imgdiv seen" style="background-image: url(https://i.ytimg.com/vi/Kh0ppsYSiAY/hqdefault.jpg);"> 
+
+<div class="opaque Kh0ppsYSiAY"><div class="check"><i class="fa fa-check read-icon"></i></div></div>
+</div>
+</div> 
+<div class="vidtitle">#21- Alpiniste, archéologue et espionne ! - Virago Ft. Charlie Danger - Gertrude Bell</div>
+<span class="viddesc" style="display:none"></span>
+</div>
+
+<div id="XMPGZs0s-ZJw" class="videoline vidfr" onclick="changevid('MPGZs0s-ZJw')">
+  <div class="chanlogo">
+    <img class="chanlogo_img" src="https://yt3.ggpht.com/a/AATXAJwCevVu_FMnOojiJesgg-xOsfHZ4XBXvaGvHw=s88" style="margin:0" />
+  </div>
+<div class="chan_name"><a href="https://youtube.com/channel/UC_Ll41JS0VQO9L1iOv6LDQg" class="chanlink" style="color:slategrey;text-decoration:none">Aude GG</a></div>
+<div class="vid_desc">Qui était Marguerite Durand ?</div>
+
+<div class="vidlogo"><div class="length">2:59</div>
+<div class="imgdiv seen" style="background-image: url(https://i.ytimg.com/vi/MPGZs0s-ZJw/hqdefault.jpg);"> 
+
+<div class="opaque MPGZs0s-ZJw"><div class="check"><i class="fa fa-check read-icon"></i></div></div>
+</div>
+</div> 
+<div class="vidtitle">#7 - Comédienne, patronne de presse et féministe - Virago - Marguerite Durand</div>
+<span class="viddesc" style="display:none"></span>
+</div>
+
+<div id="XNRerp2LTSaI" class="videoline vidfr" onclick="changevid('NRerp2LTSaI')">
+  <div class="chanlogo">
+    <img class="chanlogo_img" src="https://yt3.ggpht.com/a/AATXAJwCevVu_FMnOojiJesgg-xOsfHZ4XBXvaGvHw=s88" style="margin:0" />
+  </div>
+<div class="chan_name"><a href="https://youtube.com/channel/UC_Ll41JS0VQO9L1iOv6LDQg" class="chanlink" style="color:slategrey;text-decoration:none">Aude GG</a></div>
+<div class="vid_desc">Qui était Alice Guy ?</div>
+
+<div class="vidlogo"><div class="length">2:51</div>
+<div class="imgdiv seen" style="background-image: url(https://i.ytimg.com/vi/NRerp2LTSaI/hqdefault.jpg);"> 
+
+<div class="opaque NRerp2LTSaI"><div class="check"><i class="fa fa-check read-icon"></i></div></div>
+</div>
+</div> 
+<div class="vidtitle">#24 - L'inventrice du Cinéma ! - Virago Ft. Le Fossoyeur de Films - Alice Guy</div>
+<span class="viddesc" style="display:none"></span>
+</div>
+
+<div id="XPPsGlTCKtqQ" class="videoline vidfr" onclick="changevid('PPsGlTCKtqQ')">
+  <div class="chanlogo">
+    <img class="chanlogo_img" src="https://yt3.ggpht.com/a/AATXAJwCevVu_FMnOojiJesgg-xOsfHZ4XBXvaGvHw=s88" style="margin:0" />
+  </div>
+<div class="chan_name"><a href="https://youtube.com/channel/UC_Ll41JS0VQO9L1iOv6LDQg" class="chanlink" style="color:slategrey;text-decoration:none">Aude GG</a></div>
+<div class="vid_desc">Qui était Bertha von Suttner ?</div>
+
+<div class="vidlogo"><div class="length">3:12</div>
+<div class="imgdiv seen" style="background-image: url(https://i.ytimg.com/vi/PPsGlTCKtqQ/hqdefault.jpg);"> 
+
+<div class="opaque PPsGlTCKtqQ"><div class="check"><i class="fa fa-check read-icon"></i></div></div>
+</div>
+</div> 
+<div class="vidtitle">#18 - Premier Prix Nobel de la Paix - Virago - Bertha Von Suttner</div>
+<span class="viddesc" style="display:none"></span>
+</div>
+
+<div id="XPTIxexrn1A8" class="videoline vidfr" onclick="changevid('PTIxexrn1A8')">
+  <div class="chanlogo">
+    <img class="chanlogo_img" src="https://yt3.ggpht.com/a/AATXAJwCevVu_FMnOojiJesgg-xOsfHZ4XBXvaGvHw=s88" style="margin:0" />
+  </div>
+<div class="chan_name"><a href="https://youtube.com/channel/UC_Ll41JS0VQO9L1iOv6LDQg" class="chanlink" style="color:slategrey;text-decoration:none">Aude GG</a></div>
+<div class="vid_desc">Qui était Mumtaz Shaikh ?</div>
+
+<div class="vidlogo"><div class="length">3:09</div>
+<div class="imgdiv seen" style="background-image: url(https://i.ytimg.com/vi/PTIxexrn1A8/hqdefault.jpg);"> 
+
+<div class="opaque PTIxexrn1A8"><div class="check"><i class="fa fa-check read-icon"></i></div></div>
+</div>
+</div> 
+<div class="vidtitle">#16 - Qui a le droit de pisser ? -  Virago -  Mumtaz Shaikh</div>
+<span class="viddesc" style="display:none"></span>
+</div>
+
+<div id="XRd7yE86wops" class="videoline vidfr" onclick="changevid('Rd7yE86wops')">
+  <div class="chanlogo">
+    <img class="chanlogo_img" src="https://yt3.ggpht.com/a/AATXAJzeRYyUEzcydzC8dwjACVKktVB9STFQLpbcrw=s88" style="margin:0" />
+  </div>
+<div class="chan_name"><a href="https://youtube.com/channel/UC2_OG1L8DLTzQ7UrZVOk7OA" class="chanlink" style="color:slategrey;text-decoration:none">Axolot</a></div>
+<div class="vid_desc">Qui fut Peter Freuchen ?</div>
+
+<div class="vidlogo"><div class="length">8:33</div>
+<div class="imgdiv seen" style="background-image: url(https://i.ytimg.com/vi/Rd7yE86wops/hqdefault.jpg);"> 
+
+<div class="opaque Rd7yE86wops"><div class="check"><i class="fa fa-check read-icon"></i></div></div>
+</div>
+</div> 
+<div class="vidtitle">Axoportraits #3 : Le Viking Vagabond</div>
+<span class="viddesc" style="display:none">Ce troisième axoportrait est consacré à la vie incroyable de Peter Freuchen, explorateur, écrivain, acteur, anthropologue, et géant barbu. Entre autres.</span>
+</div>
+
+<div id="XRdAoJhs1yR0" class="videoline vidfr" onclick="changevid('RdAoJhs1yR0')">
+  <div class="chanlogo">
+    <img class="chanlogo_img" src="https://yt3.ggpht.com/a/AATXAJwCevVu_FMnOojiJesgg-xOsfHZ4XBXvaGvHw=s88" style="margin:0" />
+  </div>
+<div class="chan_name"><a href="https://youtube.com/channel/UC_Ll41JS0VQO9L1iOv6LDQg" class="chanlink" style="color:slategrey;text-decoration:none">Aude GG</a></div>
+<div class="vid_desc">Qui est Vigdis Finnbogadottir ?</div>
+
+<div class="vidlogo"><div class="length">2:22</div>
+<div class="imgdiv seen" style="background-image: url(https://i.ytimg.com/vi/RdAoJhs1yR0/hqdefault.jpg);"> 
+
+<div class="opaque RdAoJhs1yR0"><div class="check"><i class="fa fa-check read-icon"></i></div></div>
+</div>
+</div> 
+<div class="vidtitle">#2 - Première Présidente de la République - Virago - Vigdis Finnbogadottir</div>
+<span class="viddesc" style="display:none"></span>
+</div>
+
+<div id="XRocjtP5In_o" class="videoline vidfr" onclick="changevid('RocjtP5In_o')">
+  <div class="chanlogo">
+    <img class="chanlogo_img" src="https://yt3.ggpht.com/a/AATXAJwCevVu_FMnOojiJesgg-xOsfHZ4XBXvaGvHw=s88" style="margin:0" />
+  </div>
+<div class="chan_name"><a href="https://youtube.com/channel/UC_Ll41JS0VQO9L1iOv6LDQg" class="chanlink" style="color:slategrey;text-decoration:none">Aude GG</a></div>
+<div class="vid_desc">Qui était Amelia Earhart ?</div>
+
+<div class="vidlogo"><div class="length">3:12</div>
+<div class="imgdiv seen" style="background-image: url(https://i.ytimg.com/vi/RocjtP5In_o/hqdefault.jpg);"> 
+
+<div class="opaque RocjtP5In_o"><div class="check"><i class="fa fa-check read-icon"></i></div></div>
+</div>
+</div> 
+<div class="vidtitle">#13 - L'aviatrice de tous les records - Virago Ft. Axolot - Amelia Earhart</div>
+<span class="viddesc" style="display:none"></span>
+</div>
+
+<div id="XW3_DwJe2DMk" class="videoline vidfr" onclick="changevid('W3_DwJe2DMk')">
+  <div class="chanlogo">
+    <img class="chanlogo_img" src="https://yt3.ggpht.com/a/AATXAJxnyKG6wP80O0G3pEQpuANKn64wFw3HIaYLwg=s88" style="margin:0" />
+  </div>
+<div class="chan_name"><a href="https://youtube.com/channel/UCnf0fDz1vTYW-sl36wbVMbg" class="chanlink" style="color:slategrey;text-decoration:none">Les Revues du Monde</a></div>
+<div class="vid_desc">Ou comment Thor Heyerdahl a traversé le Pacifique sur un radeau</div>
+
+<div class="vidlogo"><div class="length">6:10</div>
+<div class="imgdiv seen" style="background-image: url(https://i.ytimg.com/vi/W3_DwJe2DMk/hqdefault.jpg);"> 
+
+<div class="opaque W3_DwJe2DMk"><div class="check"><i class="fa fa-check read-icon"></i></div></div>
+</div>
+</div> 
+<div class="vidtitle">Traverser l'océan... Sur un radeau ? - RDM #12</div>
+<span class="viddesc" style="display:none">Les Revues du Monde, pour tous les curieux ! A la découverte du radeau qui traversa le pacifique avec 6 personnes à bord.</span>
+</div>
+
+<div id="XWvRT3olP-0I" class="videoline vidfr" onclick="changevid('WvRT3olP-0I')">
+  <div class="chanlogo">
+    <img class="chanlogo_img" src="https://yt3.ggpht.com/a/AATXAJwCevVu_FMnOojiJesgg-xOsfHZ4XBXvaGvHw=s88" style="margin:0" />
+  </div>
+<div class="chan_name"><a href="https://youtube.com/channel/UC_Ll41JS0VQO9L1iOv6LDQg" class="chanlink" style="color:slategrey;text-decoration:none">Aude GG</a></div>
+<div class="vid_desc">Qui était Olympe de Gouges ?</div>
+
+<div class="vidlogo"><div class="length">2:29</div>
+<div class="imgdiv seen" style="background-image: url(https://i.ytimg.com/vi/WvRT3olP-0I/hqdefault.jpg);"> 
+
+<div class="opaque WvRT3olP-0I"><div class="check"><i class="fa fa-check read-icon"></i></div></div>
+</div>
+</div> 
+<div class="vidtitle">#1 -  Les droits de la femme et de la citoyenne - Virago - Olympe de Gouges</div>
+<span class="viddesc" style="display:none"></span>
+</div>
+
+<div id="X_VwagSzKkEA" class="videoline vidfr" onclick="changevid('_VwagSzKkEA')">
+  <div class="chanlogo">
+    <img class="chanlogo_img" src="https://yt3.ggpht.com/a/AATXAJyvI28AWBoEErXVHWt-izXAxn3pBeUKcwk9vg=s88-c-k-c0xffffffff-no-rj-mo" style="margin:0" />
+  </div>
+<div class="chan_name"><a href="https://youtube.com/channel/UC4Jrte_YtwWfANKNyzse5iA" class="chanlink" style="color:slategrey;text-decoration:none">Avides de recherche</a></div>
+<div class="vid_desc">Comment la masculinité de Ryan Gosling se caractérise-t-elle ?</div>
+
+<div class="vidlogo"><div class="length">9:36</div>
+<div class="imgdiv seen" style="background-image: url(https://i.ytimg.com/vi/_VwagSzKkEA/hqdefault.jpg);"> 
+
+<div class="opaque _VwagSzKkEA"><div class="check"><i class="fa fa-check read-icon"></i></div></div>
+</div>
+</div> 
+<div class="vidtitle">La masculinité dans les films : le cas de Ryan Gosling</div>
+<span class="viddesc" style="display:none">Avides de Recherche est la chaine Youtube du magazine Mondes Sociaux dont l’objet est de mettre en images et en voix des travaux de recherche en SHS dans des formes susceptibles d’intéresser des publics larges. Animée par Léa Bello, ce format propose des vidéos réalisées à partir d’articles publiés dans des revues scientifiques. Ce 36e épisode d’Avides de Recherche présente en son et en images l'article de Jules Sandeau "Les multiples masculinités de Ryan Gosling ", à lire ici : https://journals.openedition.org/map/...</span>
+</div>
+
+<div id="X_d1ubqjUQ74" class="videoline vidfr" onclick="changevid('_d1ubqjUQ74')">
+  <div class="chanlogo">
+    <img class="chanlogo_img" src="https://yt3.ggpht.com/a/AATXAJwCevVu_FMnOojiJesgg-xOsfHZ4XBXvaGvHw=s88" style="margin:0" />
+  </div>
+<div class="chan_name"><a href="https://youtube.com/channel/UC_Ll41JS0VQO9L1iOv6LDQg" class="chanlink" style="color:slategrey;text-decoration:none">Aude GG</a></div>
+<div class="vid_desc">Qui était Noor Inayat Khan ?</div>
+
+<div class="vidlogo"><div class="length">3:29</div>
+<div class="imgdiv seen" style="background-image: url(https://i.ytimg.com/vi/_d1ubqjUQ74/hqdefault.jpg);"> 
+
+<div class="opaque _d1ubqjUQ74"><div class="check"><i class="fa fa-check read-icon"></i></div></div>
+</div>
+</div> 
+<div class="vidtitle">#9 - La Princesse espionne - Virago - Noor Inayat Khan</div>
+<span class="viddesc" style="display:none"></span>
+</div>
+
+<div id="XbEz9DvPmDj0" class="videoline vidfr" onclick="changevid('bEz9DvPmDj0')">
+  <div class="chanlogo">
+    <img class="chanlogo_img" src="https://yt3.ggpht.com/a/AATXAJwCevVu_FMnOojiJesgg-xOsfHZ4XBXvaGvHw=s88" style="margin:0" />
+  </div>
+<div class="chan_name"><a href="https://youtube.com/channel/UC_Ll41JS0VQO9L1iOv6LDQg" class="chanlink" style="color:slategrey;text-decoration:none">Aude GG</a></div>
+<div class="vid_desc">Qui était Ellen MacArthur ?</div>
+
+<div class="vidlogo"><div class="length">4:37</div>
+<div class="imgdiv seen" style="background-image: url(https://i.ytimg.com/vi/bEz9DvPmDj0/hqdefault.jpg);"> 
+
+<div class="opaque bEz9DvPmDj0"><div class="check"><i class="fa fa-check read-icon"></i></div></div>
+</div>
+</div> 
+<div class="vidtitle">#22 - Naviguer et sauver les océans  - Virago - Ellen MacArthur</div>
+<span class="viddesc" style="display:none"></span>
+</div>
+
+<div id="Xf96aiESSrJo" class="videoline vidfr" onclick="changevid('f96aiESSrJo')">
+  <div class="chanlogo">
+    <img class="chanlogo_img" src="https://yt3.ggpht.com/a/AATXAJzeRYyUEzcydzC8dwjACVKktVB9STFQLpbcrw=s88" style="margin:0" />
+  </div>
+<div class="chan_name"><a href="https://youtube.com/channel/UC2_OG1L8DLTzQ7UrZVOk7OA" class="chanlink" style="color:slategrey;text-decoration:none">Axolot</a></div>
+<div class="vid_desc">Qui fut William Montgomery McGovern ?</div>
+
+<div class="vidlogo"><div class="length">5:29</div>
+<div class="imgdiv seen" style="background-image: url(https://i.ytimg.com/vi/f96aiESSrJo/hqdefault.jpg);"> 
+
+<div class="opaque f96aiESSrJo"><div class="check"><i class="fa fa-check read-icon"></i></div></div>
+</div>
+</div> 
+<div class="vidtitle">Axoportraits #2 : Le Véritable Indiana Jones</div>
+<span class="viddesc" style="display:none">Dans ce deuxième épisode des Axoportraits, je vais vous raconter l'histoire d'un professeur d'université dont la carrière n'a rien à envier à celle d'Indiana Jones...</span>
+</div>
+
+<div id="XgmF3swYdHoY" class="videoline vidfr" onclick="changevid('gmF3swYdHoY')">
+  <div class="chanlogo">
+    <img class="chanlogo_img" src="https://yt3.ggpht.com/a/AATXAJwCevVu_FMnOojiJesgg-xOsfHZ4XBXvaGvHw=s88" style="margin:0" />
+  </div>
+<div class="chan_name"><a href="https://youtube.com/channel/UC_Ll41JS0VQO9L1iOv6LDQg" class="chanlink" style="color:slategrey;text-decoration:none">Aude GG</a></div>
+<div class="vid_desc">Qui est Malala ?</div>
+
+<div class="vidlogo"><div class="length">3:53</div>
+<div class="imgdiv seen" style="background-image: url(https://i.ytimg.com/vi/gmF3swYdHoY/hqdefault.jpg);"> 
+
+<div class="opaque gmF3swYdHoY"><div class="check"><i class="fa fa-check read-icon"></i></div></div>
+</div>
+</div> 
+<div class="vidtitle">#26 - Malala - Virago</div>
+<span class="viddesc" style="display:none"></span>
+</div>
+
+<div id="XjXORgHU3wbo" class="videoline vidfr" onclick="changevid('jXORgHU3wbo')">
+  <div class="chanlogo">
+    <img class="chanlogo_img" src="https://yt3.ggpht.com/a/AATXAJzeRYyUEzcydzC8dwjACVKktVB9STFQLpbcrw=s88" style="margin:0" />
+  </div>
+<div class="chan_name"><a href="https://youtube.com/channel/UC2_OG1L8DLTzQ7UrZVOk7OA" class="chanlink" style="color:slategrey;text-decoration:none">Axolot</a></div>
+<div class="vid_desc">Qui fut Marie Marvingt ?</div>
+
+<div class="vidlogo"><div class="length">8:45</div>
+<div class="imgdiv seen" style="background-image: url(https://i.ytimg.com/vi/jXORgHU3wbo/hqdefault.jpg);"> 
+
+<div class="opaque jXORgHU3wbo"><div class="check"><i class="fa fa-check read-icon"></i></div></div>
+</div>
+</div> 
+<div class="vidtitle">Axoportraits #4 : La Fiancée du Danger</div>
+<span class="viddesc" style="display:none">Marie Marvingt était l'une des femmes les plus extraordinaires du XXè siècle, pourtant, vous n'avez probablement jamais entendu son nom...</span>
+</div>
+
+<div id="XlUH4kzYqsSs" class="videoline vidfr" onclick="changevid('lUH4kzYqsSs')">
+  <div class="chanlogo">
+    <img class="chanlogo_img" src="https://yt3.ggpht.com/a/AATXAJzilcmC-OiWwMG76scOHNtD7kkmTlhlyc-yag=s88" style="margin:0" />
+  </div>
+<div class="chan_name"><a href="https://youtube.com/channel/UCP46_MXP_WG_auH88FnfS1A" class="chanlink" style="color:slategrey;text-decoration:none">Nota Bene</a></div>
+<div class="vid_desc">Qui était Leif Erikson ?</div>
+
+<div class="vidlogo"><div class="length">7:13</div>
+<div class="imgdiv seen" style="background-image: url(https://i.ytimg.com/vi/lUH4kzYqsSs/hqdefault.jpg);"> 
+
+<div class="opaque lUH4kzYqsSs"><div class="check"><i class="fa fa-check read-icon"></i></div></div>
+</div>
+</div> 
+<div class="vidtitle">Un viking découvre l’Amérique ? - Leif Erikson</div>
+<span class="viddesc" style="display:none">Un Viking aurait-il découvert l’Amérique avant Christophe Colomb ? 500 ans avant le célèbre explorateur, Leif, fils d’Erik le Rouge, part d’Islande pour explorer de nouvelles terres. Un voyage incroyable pour celui que l’on surnomme “Leif la Chance”, qui le mènera à la rencontre de paysages et de populations que les européens n’avaient jamais vu avant lui...</span>
+</div>
+
+<div id="XoqBd82Mo_d4" class="videoline vidfr" onclick="changevid('oqBd82Mo_d4')">
+  <div class="chanlogo">
+    <img class="chanlogo_img" src="https://yt3.ggpht.com/a/AATXAJwCevVu_FMnOojiJesgg-xOsfHZ4XBXvaGvHw=s88" style="margin:0" />
+  </div>
+<div class="chan_name"><a href="https://youtube.com/channel/UC_Ll41JS0VQO9L1iOv6LDQg" class="chanlink" style="color:slategrey;text-decoration:none">Aude GG</a></div>
+<div class="vid_desc">Qui était Eartha Kitt ?</div>
+
+<div class="vidlogo"><div class="length">3:13</div>
+<div class="imgdiv seen" style="background-image: url(https://i.ytimg.com/vi/oqBd82Mo_d4/hqdefault.jpg);"> 
+
+<div class="opaque oqBd82Mo_d4"><div class="check"><i class="fa fa-check read-icon"></i></div></div>
+</div>
+</div> 
+<div class="vidtitle">#5 - La chanteuse qu’on a fait taire - Virago - Eartha Kitt</div>
+<span class="viddesc" style="display:none"></span>
+</div>
+
+<div id="XsVwIoVItjQA" class="videoline vidfr" onclick="changevid('sVwIoVItjQA')">
+  <div class="chanlogo">
+    <img class="chanlogo_img" src="https://yt3.ggpht.com/a/AATXAJzilcmC-OiWwMG76scOHNtD7kkmTlhlyc-yag=s88" style="margin:0" />
+  </div>
+<div class="chan_name"><a href="https://youtube.com/channel/UCP46_MXP_WG_auH88FnfS1A" class="chanlink" style="color:slategrey;text-decoration:none">Nota Bene</a></div>
+<div class="vid_desc">Qui était Hannon ?</div>
+
+<div class="vidlogo"><div class="length">7:21</div>
+<div class="imgdiv seen" style="background-image: url(https://i.ytimg.com/vi/sVwIoVItjQA/hqdefault.jpg);"> 
+
+<div class="opaque sVwIoVItjQA"><div class="check"><i class="fa fa-check read-icon"></i></div></div>
+</div>
+</div> 
+<div class="vidtitle">Hannon et les colonies de Carthage</div>
+<span class="viddesc" style="display:none">Le VIe siècle avant notre ère est celui de l'apogée de la puissante Carthage. Le moment idéal pour Hannon, qu'on dit Roi de cette grande cité, de partir à l'aventure sur les mers pour établir de nouvelles colonies. Problème, les côtes africaines n'ayant pas vraiment été explorés jusqu'alors, les sources qu'on nous laisse sur son voyage restent floues sur ce qu'il a vraiment découvert...On va tenter d'y voir plus clair !</span>
+</div>
+
+<div id="Xts6Lo7t6VsM" class="videoline vidfr" onclick="changevid('ts6Lo7t6VsM')">
+  <div class="chanlogo">
+    <img class="chanlogo_img" src="https://yt3.ggpht.com/a/AATXAJzJhxZqaeN1ZPfYZleVzK_Dcb5vFFOY8s3GiQ=s88" style="margin:0" />
+  </div>
+<div class="chan_name"><a href="https://youtube.com/channel/UCeR8BYZS7IHYjk_9Mh5JgkA" class="chanlink" style="color:slategrey;text-decoration:none">Scilabus</a></div>
+<div class="vid_desc">Qui était Ada Lovelace ?</div>
+
+<div class="vidlogo"><div class="length">5:53</div>
+<div class="imgdiv seen" style="background-image: url(https://i.ytimg.com/vi/ts6Lo7t6VsM/hqdefault.jpg);"> 
+
+<div class="opaque ts6Lo7t6VsM"><div class="check"><i class="fa fa-check read-icon"></i></div></div>
+</div>
+</div> 
+<div class="vidtitle">La première programmeuse de l'histoire - Ada Lovelace en LEGO stop motion ft Monsieur Caron</div>
+<span class="viddesc" style="display:none">Découvrez Ada Lovelace, la première programmeuse de l'histoire raconté en stop motion avec des LEGO animés par MonsieurCaron.</span>
+</div>
+
+<div id="Xxss4l1IWvaI" class="videoline vidfr" onclick="changevid('xss4l1IWvaI')">
+  <div class="chanlogo">
+    <img class="chanlogo_img" src="https://yt3.ggpht.com/a/AATXAJwCevVu_FMnOojiJesgg-xOsfHZ4XBXvaGvHw=s88" style="margin:0" />
+  </div>
+<div class="chan_name"><a href="https://youtube.com/channel/UC_Ll41JS0VQO9L1iOv6LDQg" class="chanlink" style="color:slategrey;text-decoration:none">Aude GG</a></div>
+<div class="vid_desc">Qui était Amanishakheto ?</div>
+
+<div class="vidlogo"><div class="length">2:56</div>
+<div class="imgdiv seen" style="background-image: url(https://i.ytimg.com/vi/xss4l1IWvaI/hqdefault.jpg);"> 
+
+<div class="opaque xss4l1IWvaI"><div class="check"><i class="fa fa-check read-icon"></i></div></div>
+</div>
+</div> 
+<div class="vidtitle">#20 - Guerrières de mères en filles - Virago Ft. Shirley Souagnon - Amanishakheto</div>
+<span class="viddesc" style="display:none"></span>
+</div>
+
+<div id="Xz2iSf6QgJA8" class="videoline vidfr" onclick="changevid('z2iSf6QgJA8')">
+  <div class="chanlogo">
+    <img class="chanlogo_img" src="https://yt3.ggpht.com/a/AATXAJzilcmC-OiWwMG76scOHNtD7kkmTlhlyc-yag=s88" style="margin:0" />
+  </div>
+<div class="chan_name"><a href="https://youtube.com/channel/UCP46_MXP_WG_auH88FnfS1A" class="chanlink" style="color:slategrey;text-decoration:none">Nota Bene</a></div>
+<div class="vid_desc">Qui était Pytheas ?</div>
+
+<div class="vidlogo"><div class="length">8:27</div>
+<div class="imgdiv seen" style="background-image: url(https://i.ytimg.com/vi/z2iSf6QgJA8/hqdefault.jpg);"> 
+
+<div class="opaque z2iSf6QgJA8"><div class="check"><i class="fa fa-check read-icon"></i></div></div>
+</div>
+</div> 
+<div class="vidtitle">PYTHEAS, l'explorateur que PERSONNE ne croit</div>
+<span class="viddesc" style="display:none">Quand il prend la mer à l'âge de 50 ans, Pythéas, un savant grec de Massilia, ne se doute pas qu'il va découvrir tant de lieux incroyables...des découvertes si étonnantes qu'à son retour, personne ne le croira ! Dans ce nouvel épisode de Nota Bene, on revient sur son expédition incroyable !</span>
+</div>
+
+<div id="Xz8ItGWyP-3A" class="videoline vidfr" onclick="changevid('z8ItGWyP-3A')">
+  <div class="chanlogo">
+    <img class="chanlogo_img" src="https://yt3.ggpht.com/a/AATXAJwCevVu_FMnOojiJesgg-xOsfHZ4XBXvaGvHw=s88" style="margin:0" />
+  </div>
+<div class="chan_name"><a href="https://youtube.com/channel/UC_Ll41JS0VQO9L1iOv6LDQg" class="chanlink" style="color:slategrey;text-decoration:none">Aude GG</a></div>
+<div class="vid_desc">Qui était Helen Keller ?</div>
+
+<div class="vidlogo"><div class="length">2:54</div>
+<div class="imgdiv seen" style="background-image: url(https://i.ytimg.com/vi/z8ItGWyP-3A/hqdefault.jpg);"> 
+
+<div class="opaque z8ItGWyP-3A"><div class="check"><i class="fa fa-check read-icon"></i></div></div>
+</div>
+</div> 
+<div class="vidtitle">#4 - Transcender le handicap - Virago - Helen Keller</div>
+<span class="viddesc" style="display:none"></span>
+</div>
+
+<div id="Xzh51HZKHAeQ" class="videoline vidfr" onclick="changevid('zh51HZKHAeQ')">
+  <div class="chanlogo">
+    <img class="chanlogo_img" src="https://yt3.ggpht.com/a/AATXAJwCevVu_FMnOojiJesgg-xOsfHZ4XBXvaGvHw=s88" style="margin:0" />
+  </div>
+<div class="chan_name"><a href="https://youtube.com/channel/UC_Ll41JS0VQO9L1iOv6LDQg" class="chanlink" style="color:slategrey;text-decoration:none">Aude GG</a></div>
+<div class="vid_desc">Qui étaient les soeurs Trung ?</div>
+
+<div class="vidlogo"><div class="length">2:27</div>
+<div class="imgdiv seen" style="background-image: url(https://i.ytimg.com/vi/zh51HZKHAeQ/hqdefault.jpg);"> 
+
+<div class="opaque zh51HZKHAeQ"><div class="check"><i class="fa fa-check read-icon"></i></div></div>
+</div>
+</div> 
+<div class="vidtitle">#17 - Héroïnes vietnamiennes - Virago Ft. Nota Bene & Diem - Les Soeurs Trung</div>
+<span class="viddesc" style="display:none"></span>
+</div>
+
+<h2 id="voyage">Voyage</h2>
+<div id="X1lu5jVYRPKc" class="videoline vidfr" onclick="changevid('1lu5jVYRPKc')">
+  <div class="chanlogo">
+    <img class="chanlogo_img" src="https://yt3.ggpht.com/a/AATXAJxF1BJvGevYRzmRNHBKy675ggjm9Po9MvLjww=s88" style="margin:0" />
+  </div>
+<div class="chan_name"><a href="https://youtube.com/channel/UCKjDY4joMPcoRMmd-G1yz1Q" class="chanlink" style="color:slategrey;text-decoration:none">C'est une autre histoire</a></div>
+<div class="vid_desc">A la découverte de Vienne</div>
+
+<div class="vidlogo"><div class="length">18:33</div>
+<div class="imgdiv seen" style="background-image: url(https://i.ytimg.com/vi/1lu5jVYRPKc/hqdefault.jpg);"> 
+
+<div class="opaque 1lu5jVYRPKc"><div class="check"><i class="fa fa-check read-icon"></i></div></div>
+</div>
+</div> 
+<div class="vidtitle">Vienne au détail - découvrir la ville autrement</div>
+<span class="viddesc" style="display:none">Une dernière découverte pour cette année 2018 : la belle Vienne ! Mais c'est loin d'être le dernier voyage de la chaîne et on se retrouve en 2019 pour d'autres destinations ! Je vous fais l'affront de vous dire à l'année prochaine, oui oui, je le fais, donc À L'ANNÉE PROCHAINE !</span>
+</div>
+
+<div id="X361aEwr4Fic" class="videoline vidfr" onclick="changevid('361aEwr4Fic')">
+  <div class="chanlogo">
+    <img class="chanlogo_img" src="https://yt3.ggpht.com/a/AATXAJxF1BJvGevYRzmRNHBKy675ggjm9Po9MvLjww=s88" style="margin:0" />
+  </div>
+<div class="chan_name"><a href="https://youtube.com/channel/UCKjDY4joMPcoRMmd-G1yz1Q" class="chanlink" style="color:slategrey;text-decoration:none">C'est une autre histoire</a></div>
+<div class="vid_desc">A la découverte de Toulouse</div>
+
+<div class="vidlogo"><div class="length">9:33</div>
+<div class="imgdiv seen" style="background-image: url(https://i.ytimg.com/vi/361aEwr4Fic/hqdefault.jpg);"> 
+
+<div class="opaque 361aEwr4Fic"><div class="check"><i class="fa fa-check read-icon"></i></div></div>
+</div>
+</div> 
+<div class="vidtitle">10 détails insolites à Toulouse - Toulouse au détail</div>
+<span class="viddesc" style="display:none">Je t'embarque dans une visite à la loupe de la Ville de Toulouse, où je vivais jusqu'à fin 2018.</span>
+</div>
+
+<div id="X3Uivt0FcOJI" class="videoline vidfr" onclick="changevid('3Uivt0FcOJI')">
+  <div class="chanlogo">
+    <img class="chanlogo_img" src="https://yt3.ggpht.com/a/AATXAJzeRYyUEzcydzC8dwjACVKktVB9STFQLpbcrw=s88" style="margin:0" />
+  </div>
+<div class="chan_name"><a href="https://youtube.com/channel/UC2_OG1L8DLTzQ7UrZVOk7OA" class="chanlink" style="color:slategrey;text-decoration:none">Axolot</a></div>
+<div class="vid_desc">A la découverte de Londres</div>
+
+<div class="vidlogo"><div class="length">17:04</div>
+<div class="imgdiv seen" style="background-image: url(https://i.ytimg.com/vi/3Uivt0FcOJI/hqdefault.jpg);"> 
+
+<div class="opaque 3Uivt0FcOJI"><div class="check"><i class="fa fa-check read-icon"></i></div></div>
+</div>
+</div> 
+<div class="vidtitle">Etranges Escales #2 : Londres</div>
+<span class="viddesc" style="display:none">Dans ce deuxième épisode d’Étranges Escales, je vous invite à découvrir les mille et une curiosités de la capitale anglaise !</span>
+</div>
+
+<div id="X6NIMEJUMXXw" class="videoline vidfr" onclick="changevid('6NIMEJUMXXw')">
+  <div class="chanlogo">
+    <img class="chanlogo_img" src="https://yt3.ggpht.com/a/AATXAJzeRYyUEzcydzC8dwjACVKktVB9STFQLpbcrw=s88" style="margin:0" />
+  </div>
+<div class="chan_name"><a href="https://youtube.com/channel/UC2_OG1L8DLTzQ7UrZVOk7OA" class="chanlink" style="color:slategrey;text-decoration:none">Axolot</a></div>
+<div class="vid_desc">A la découverte de New York</div>
+
+<div class="vidlogo"><div class="length">14:33</div>
+<div class="imgdiv seen" style="background-image: url(https://i.ytimg.com/vi/6NIMEJUMXXw/hqdefault.jpg);"> 
+
+<div class="opaque 6NIMEJUMXXw"><div class="check"><i class="fa fa-check read-icon"></i></div></div>
+</div>
+</div> 
+<div class="vidtitle">Etranges Escales #1 : New York</div>
+<span class="viddesc" style="display:none">Dans cette série dérivée d'Axolot, je vous invite à découvrir les curiosités méconnues des villes du monde. On commence par la ville qui ne dort jamais !</span>
+</div>
+
+<div id="XEyNICWlfQSE" class="videoline vidfr" onclick="changevid('EyNICWlfQSE')">
+  <div class="chanlogo">
+    <img class="chanlogo_img" src="https://yt3.ggpht.com/a/AATXAJzeRYyUEzcydzC8dwjACVKktVB9STFQLpbcrw=s88" style="margin:0" />
+  </div>
+<div class="chan_name"><a href="https://youtube.com/channel/UC2_OG1L8DLTzQ7UrZVOk7OA" class="chanlink" style="color:slategrey;text-decoration:none">Axolot</a></div>
+<div class="vid_desc">A la découverte du Vaucluse</div>
+
+<div class="vidlogo"><div class="length">17:23</div>
+<div class="imgdiv seen" style="background-image: url(https://i.ytimg.com/vi/EyNICWlfQSE/hqdefault.jpg);"> 
+
+<div class="opaque EyNICWlfQSE"><div class="check"><i class="fa fa-check read-icon"></i></div></div>
+</div>
+</div> 
+<div class="vidtitle">Etranges Escales hors-série : les curiosités du Vaucluse</div>
+<span class="viddesc" style="display:none">Une source mystérieuse, un rocher diabolique, une oreille au fond de l'eau, ou encore des mines dignes du Seigneur des Anneaux... Dans cette escale hors-série, je vous emmène découvrir les curiosités du département où je suis né !</span>
+</div>
+
+<div id="XGx_JvbIOjmE" class="videoline vidfr" onclick="changevid('Gx_JvbIOjmE')">
+  <div class="chanlogo">
+    <img class="chanlogo_img" src="https://yt3.ggpht.com/a/AATXAJzeRYyUEzcydzC8dwjACVKktVB9STFQLpbcrw=s88" style="margin:0" />
+  </div>
+<div class="chan_name"><a href="https://youtube.com/channel/UC2_OG1L8DLTzQ7UrZVOk7OA" class="chanlink" style="color:slategrey;text-decoration:none">Axolot</a></div>
+<div class="vid_desc">A la découverte de Rome</div>
+
+<div class="vidlogo"><div class="length">15:04</div>
+<div class="imgdiv seen" style="background-image: url(https://i.ytimg.com/vi/Gx_JvbIOjmE/hqdefault.jpg);"> 
+
+<div class="opaque Gx_JvbIOjmE"><div class="check"><i class="fa fa-check read-icon"></i></div></div>
+</div>
+</div> 
+<div class="vidtitle">Etranges Escales : Rome</div>
+<span class="viddesc" style="display:none">Dans ce nouvel épisode des Etranges Escales, vous allez voir que les chemins de la curiosité, comme tous les autres, mènent à Rome !</span>
+</div>
+
+<div id="XK1sVDnyQwwo" class="videoline vidfr" onclick="changevid('K1sVDnyQwwo')">
+  <div class="chanlogo">
+    <img class="chanlogo_img" src="https://yt3.ggpht.com/a/AATXAJzeRYyUEzcydzC8dwjACVKktVB9STFQLpbcrw=s88" style="margin:0" />
+  </div>
+<div class="chan_name"><a href="https://youtube.com/channel/UC2_OG1L8DLTzQ7UrZVOk7OA" class="chanlink" style="color:slategrey;text-decoration:none">Axolot</a></div>
+<div class="vid_desc">A la découverte de Berlin</div>
+
+<div class="vidlogo"><div class="length">21:04</div>
+<div class="imgdiv seen" style="background-image: url(https://i.ytimg.com/vi/K1sVDnyQwwo/hqdefault.jpg);"> 
+
+<div class="opaque K1sVDnyQwwo"><div class="check"><i class="fa fa-check read-icon"></i></div></div>
+</div>
+</div> 
+<div class="vidtitle">Etranges Escales : Berlin</div>
+<span class="viddesc" style="display:none">Dans ce nouvel épisode des Etranges Escales, nous partons explorer les curiosités de Berlin !</span>
+</div>
+
+<div id="XLeqDpTH0l84" class="videoline vidfr" onclick="changevid('LeqDpTH0l84')">
+  <div class="chanlogo">
+    <img class="chanlogo_img" src="https://yt3.ggpht.com/a/AATXAJxF1BJvGevYRzmRNHBKy675ggjm9Po9MvLjww=s88" style="margin:0" />
+  </div>
+<div class="chan_name"><a href="https://youtube.com/channel/UCKjDY4joMPcoRMmd-G1yz1Q" class="chanlink" style="color:slategrey;text-decoration:none">C'est une autre histoire</a></div>
+<div class="vid_desc">A la découverte du Havre</div>
+
+<div class="vidlogo"><div class="length">10:55</div>
+<div class="imgdiv seen" style="background-image: url(https://i.ytimg.com/vi/LeqDpTH0l84/hqdefault.jpg);"> 
+
+<div class="opaque LeqDpTH0l84"><div class="check"><i class="fa fa-check read-icon"></i></div></div>
+</div>
+</div> 
+<div class="vidtitle">5 curieuses anecdotes sur Le Havre - Le Havre au détail</div>
+<span class="viddesc" style="display:none">Mais dites-donc !! C'est que c'est le grand retour des villes au détail !! Voici 5 petits détails de la ville du Havre que tu ne connaissais peut-être pas ! J'espère que ça te donnera l'envie d'arpenter ses rues !</span>
+</div>
+
+<div id="XOAde967UNV0" class="videoline vidfr" onclick="changevid('OAde967UNV0')">
+  <div class="chanlogo">
+    <img class="chanlogo_img" src="https://yt3.ggpht.com/a/AATXAJyBPqffFg7IVj5FtE8DIlOsdu_XEODalusjmQ=s88-c-k-c0xffffffff-no-rj-mo" style="margin:0" />
+  </div>
+<div class="chan_name"><a href="https://youtube.com/channel/UC6KUvtitNkyAZdJpR03DAHg" class="chanlink" style="color:slategrey;text-decoration:none">Google France</a></div>
+<div class="vid_desc">A la découverte de Lyon</div>
+
+<div class="vidlogo"><div class="length">8:22</div>
+<div class="imgdiv seen" style="background-image: url(https://i.ytimg.com/vi/OAde967UNV0/hqdefault.jpg);"> 
+
+<div class="opaque OAde967UNV0"><div class="check"><i class="fa fa-check read-icon"></i></div></div>
+</div>
+</div> 
+<div class="vidtitle">À la découverte des trésors de Lyon avec Manon Bril - Google France</div>
+<span class="viddesc" style="display:none">À la découverte des trésors de Lyon avec Manon Bril - Google France. Manon Bril nous fait découvrir les incontournables de l’art et de la culture à Lyon : le musée des Beaux-Arts, l’Opéra National de Lyon, le musée des Confluences, la Biennale de Lyon, ainsi que les lieux d’histoire qui jalonnent la ville. Au menu : des histoires d’escaliers, des secrets de musée, du patois lyonnais, de l’art éphémère et des oeuvres éternelles à découvrir sur https://g.co/lyon</span>
+</div>
+
+<div id="XRlw_09vk_dk" class="videoline vidfr" onclick="changevid('Rlw_09vk_dk')">
+  <div class="chanlogo">
+    <img class="chanlogo_img" src="https://yt3.ggpht.com/a/AATXAJxF1BJvGevYRzmRNHBKy675ggjm9Po9MvLjww=s88" style="margin:0" />
+  </div>
+<div class="chan_name"><a href="https://youtube.com/channel/UCKjDY4joMPcoRMmd-G1yz1Q" class="chanlink" style="color:slategrey;text-decoration:none">C'est une autre histoire</a></div>
+<div class="vid_desc">A la découverte de Bangkok</div>
+
+<div class="vidlogo"><div class="length">6:42</div>
+<div class="imgdiv seen" style="background-image: url(https://i.ytimg.com/vi/Rlw_09vk_dk/hqdefault.jpg);"> 
+
+<div class="opaque Rlw_09vk_dk"><div class="check"><i class="fa fa-check read-icon"></i></div></div>
+</div>
+</div> 
+<div class="vidtitle">3 trucs insolites sur Bangkok - Bangkok au détail</div>
+<span class="viddesc" style="display:none">En novembre 2016, avec Bart, mon cadreur de l'extrême, on est allés rendre visite à la famille Grasset en Thaïlande (tu sais, Dirtybiology et Ayeah!). Du coup c'était une occasion incontournable pour vous faire une petite série de vidéos, à commencer bien sûr, par Bangkok au détail ! Sauf que. Trouver des trucs originaux à dire quand TOUT EST ORIGINAL POUR TOI, c'est pas évident. Alors je vous ai sélectionné 3 anecdotes, et la dernière nous permet de discuter un peu plus longuement de la situation du pays (mais pas non plus de manière très poussée, il faut bien le dire).</span>
+</div>
+
+<div id="XVo8VlWStU50" class="videoline vidfr" onclick="changevid('Vo8VlWStU50')">
+  <div class="chanlogo">
+    <img class="chanlogo_img" src="https://yt3.ggpht.com/a/AATXAJzeRYyUEzcydzC8dwjACVKktVB9STFQLpbcrw=s88" style="margin:0" />
+  </div>
+<div class="chan_name"><a href="https://youtube.com/channel/UC2_OG1L8DLTzQ7UrZVOk7OA" class="chanlink" style="color:slategrey;text-decoration:none">Axolot</a></div>
+<div class="vid_desc">A la découverte de Paris</div>
+
+<div class="vidlogo"><div class="length">23:27</div>
+<div class="imgdiv seen" style="background-image: url(https://i.ytimg.com/vi/Vo8VlWStU50/hqdefault.jpg);"> 
+
+<div class="opaque Vo8VlWStU50"><div class="check"><i class="fa fa-check read-icon"></i></div></div>
+</div>
+</div> 
+<div class="vidtitle">Etranges Escales : Paris</div>
+<span class="viddesc" style="display:none">Dans ce nouvel épisode des Etranges Escales, je vous invite à découvrir ce qui se cache dans l'ombre de la ville lumière !</span>
+</div>
+
+<div id="XY6pLSjNksX0" class="videoline vidfr" onclick="changevid('Y6pLSjNksX0')">
+  <div class="chanlogo">
+    <img class="chanlogo_img" src="https://yt3.ggpht.com/a/AATXAJxF1BJvGevYRzmRNHBKy675ggjm9Po9MvLjww=s88" style="margin:0" />
+  </div>
+<div class="chan_name"><a href="https://youtube.com/channel/UCKjDY4joMPcoRMmd-G1yz1Q" class="chanlink" style="color:slategrey;text-decoration:none">C'est une autre histoire</a></div>
+<div class="vid_desc">A la découverte d'Amiens</div>
+
+<div class="vidlogo"><div class="length">14:16</div>
+<div class="imgdiv seen" style="background-image: url(https://i.ytimg.com/vi/Y6pLSjNksX0/hqdefault.jpg);"> 
+
+<div class="opaque Y6pLSjNksX0"><div class="check"><i class="fa fa-check read-icon"></i></div></div>
+</div>
+</div> 
+<div class="vidtitle">Amiens au détail - Ft. STUDIO VRAC</div>
+<span class="viddesc" style="display:none">Hé alors, t'as cru qu'y avait rien à Amiens ou quoi !?! Bah détrompe-toi, je vais te montrer comme c'est nice (enfin c'est Amiens, pas Nice LOOOOL) ! Ah, peut-être que tu connais déjà ? T'avais déjà remarqué tous ces petits détails ? Hésite pas à nous en partager d'autres en commentaire !</span>
+</div>
+
+<div id="XYdk980TIBoc" class="videoline vidfr" onclick="changevid('Ydk980TIBoc')">
+  <div class="chanlogo">
+    <img class="chanlogo_img" src="https://yt3.ggpht.com/a/AATXAJxF1BJvGevYRzmRNHBKy675ggjm9Po9MvLjww=s88" style="margin:0" />
+  </div>
+<div class="chan_name"><a href="https://youtube.com/channel/UCKjDY4joMPcoRMmd-G1yz1Q" class="chanlink" style="color:slategrey;text-decoration:none">C'est une autre histoire</a></div>
+<div class="vid_desc">A la découverte de New York</div>
+
+<div class="vidlogo"><div class="length">9:53</div>
+<div class="imgdiv seen" style="background-image: url(https://i.ytimg.com/vi/Ydk980TIBoc/hqdefault.jpg);"> 
+
+<div class="opaque Ydk980TIBoc"><div class="check"><i class="fa fa-check read-icon"></i></div></div>
+</div>
+</div> 
+<div class="vidtitle">10 trucs insolites à New York - New York Au Détail</div>
+<span class="viddesc" style="display:none">Hey ! Cette fois on était à New York ! Tu peux découvrir ou redécouvrir la ville autrement, en faisant autre chose que la statue de la liberté toussa tu vois, même si c'est bien aussi tu sais.</span>
+</div>
+
+<div id="XZEoAL4fcsCQ" class="videoline vidfr" onclick="changevid('ZEoAL4fcsCQ')">
+  <div class="chanlogo">
+    <img class="chanlogo_img" src="https://yt3.ggpht.com/a/AATXAJxF1BJvGevYRzmRNHBKy675ggjm9Po9MvLjww=s88" style="margin:0" />
+  </div>
+<div class="chan_name"><a href="https://youtube.com/channel/UCKjDY4joMPcoRMmd-G1yz1Q" class="chanlink" style="color:slategrey;text-decoration:none">C'est une autre histoire</a></div>
+<div class="vid_desc">A la découverte de Barcelone</div>
+
+<div class="vidlogo"><div class="length">9:35</div>
+<div class="imgdiv seen" style="background-image: url(https://i.ytimg.com/vi/ZEoAL4fcsCQ/hqdefault.jpg);"> 
+
+<div class="opaque ZEoAL4fcsCQ"><div class="check"><i class="fa fa-check read-icon"></i></div></div>
+</div>
+</div> 
+<div class="vidtitle">Barcelone au détail - Découvrir la ville autrement</div>
+<span class="viddesc" style="display:none">Viens, on sort un peu des circuits de tourisme classiques. Je te propose de découvrir 5 anecdotes historiques et culturelles sur la ville de Barcelone, notamment des détails auxquels on ne prête pas forcément attention mais qui sont chargés d'histoire.</span>
+</div>
+
+<div id="XaRd-QCrEdsA" class="videoline vidfr" onclick="changevid('aRd-QCrEdsA')">
+  <div class="chanlogo">
+    <img class="chanlogo_img" src="https://yt3.ggpht.com/a/AATXAJxF1BJvGevYRzmRNHBKy675ggjm9Po9MvLjww=s88" style="margin:0" />
+  </div>
+<div class="chan_name"><a href="https://youtube.com/channel/UCKjDY4joMPcoRMmd-G1yz1Q" class="chanlink" style="color:slategrey;text-decoration:none">C'est une autre histoire</a></div>
+<div class="vid_desc">A la découverte de Bucarest</div>
+
+<div class="vidlogo"><div class="length">10:18</div>
+<div class="imgdiv seen" style="background-image: url(https://i.ytimg.com/vi/aRd-QCrEdsA/hqdefault.jpg);"> 
+
+<div class="opaque aRd-QCrEdsA"><div class="check"><i class="fa fa-check read-icon"></i></div></div>
+</div>
+</div> 
+<div class="vidtitle">Bucarest au détail - Découvrir la ville autrement</div>
+<span class="viddesc" style="display:none">Tu connais Bucarest ? C'est une ville pleine de charme et assez fascinante. Je te propose de découvrir des anecdotes culturelles sur son patrimoine, notamment des détails auxquels on ne prête pas forcément attention mais qui sont chargés d'histoire.</span>
+</div>
+
+<div id="Xeqoz2fiM_WI" class="videoline vidfr" onclick="changevid('eqoz2fiM_WI')">
+  <div class="chanlogo">
+    <img class="chanlogo_img" src="https://yt3.ggpht.com/a/AATXAJxF1BJvGevYRzmRNHBKy675ggjm9Po9MvLjww=s88" style="margin:0" />
+  </div>
+<div class="chan_name"><a href="https://youtube.com/channel/UCKjDY4joMPcoRMmd-G1yz1Q" class="chanlink" style="color:slategrey;text-decoration:none">C'est une autre histoire</a></div>
+<div class="vid_desc">A la découverte de Bratislava</div>
+
+<div class="vidlogo"><div class="length">13:04</div>
+<div class="imgdiv seen" style="background-image: url(https://i.ytimg.com/vi/eqoz2fiM_WI/hqdefault.jpg);"> 
+
+<div class="opaque eqoz2fiM_WI"><div class="check"><i class="fa fa-check read-icon"></i></div></div>
+</div>
+</div> 
+<div class="vidtitle">Bratislava au détail - Découvrir la ville autrement</div>
+<span class="viddesc" style="display:none">Tu connaissais Bratislava ? Moi non en tout cas, du coup je te propose de découvrir !</span>
+</div>
+
+<div id="Xn3rgcFUB-Ko" class="videoline vidfr" onclick="changevid('n3rgcFUB-Ko')">
+  <div class="chanlogo">
+    <img class="chanlogo_img" src="https://yt3.ggpht.com/a/AATXAJxF1BJvGevYRzmRNHBKy675ggjm9Po9MvLjww=s88" style="margin:0" />
+  </div>
+<div class="chan_name"><a href="https://youtube.com/channel/UCKjDY4joMPcoRMmd-G1yz1Q" class="chanlink" style="color:slategrey;text-decoration:none">C'est une autre histoire</a></div>
+<div class="vid_desc">A la découverte de Paris</div>
+
+<div class="vidlogo"><div class="length">13:09</div>
+<div class="imgdiv seen" style="background-image: url(https://i.ytimg.com/vi/n3rgcFUB-Ko/hqdefault.jpg);"> 
+
+<div class="opaque n3rgcFUB-Ko"><div class="check"><i class="fa fa-check read-icon"></i></div></div>
+</div>
+</div> 
+<div class="vidtitle">8 détails insolites de Paris - Paris au détail</div>
+<span class="viddesc" style="display:none">Connaissez-vous bien Paris ? Oui, non mais je ne parle pas de ses grands monuments touristiques, légèrement blindés de monde, qu'on adore, mais qui sont loin d'être les seuls centres d'intérêt pour les curieux et les passionnés. Ça vous dit qu'on se balade un peu, parfois justement dans ces endroits très touristiques, mais pour regarder autre chose ? Ces petits détails devant lesquels on passe tous les jours, sans les remarquer et qui pourtant ont beaucoup à nous raconter aussi. Allez, sortez vos loupes et suivez-nous dans cette ballade historico-rigolote, pour prendre plaisir à voir autre chose, peut-être redécouvrir ce que vous pensez connaître et jeter un nouveau regard sur la ville.</span>
+</div>
+
+<div id="XnTr14aMxloM" class="videoline vidfr" onclick="changevid('nTr14aMxloM')">
+  <div class="chanlogo">
+    <img class="chanlogo_img" src="https://yt3.ggpht.com/a/AATXAJxF1BJvGevYRzmRNHBKy675ggjm9Po9MvLjww=s88" style="margin:0" />
+  </div>
+<div class="chan_name"><a href="https://youtube.com/channel/UCKjDY4joMPcoRMmd-G1yz1Q" class="chanlink" style="color:slategrey;text-decoration:none">C'est une autre histoire</a></div>
+<div class="vid_desc">A la découverte d'Athènes</div>
+
+<div class="vidlogo"><div class="length">11:57</div>
+<div class="imgdiv seen" style="background-image: url(https://i.ytimg.com/vi/nTr14aMxloM/hqdefault.jpg);"> 
+
+<div class="opaque nTr14aMxloM"><div class="check"><i class="fa fa-check read-icon"></i></div></div>
+</div>
+</div> 
+<div class="vidtitle">Athènes au détail - découvrir la ville autrement</div>
+<span class="viddesc" style="display:none">Bon ok, l'Acropole c'est le truc de base à voir Athènes. Mais je te propose de découvrir l'histoire de la ville autrement, en se faisant une petite balade dans le temps ! Et si tu connaissais déjà tout ça, bah BRAVO TU VEUX UNE MÉDAILLE ? Bon ok, tu l'as méritée. Tiens. Non non vraiment j'insiste.</span>
+</div>
+
+<div id="XpQRNRmmF_ZU" class="videoline vidfr" onclick="changevid('pQRNRmmF_ZU')">
+  <div class="chanlogo">
+    <img class="chanlogo_img" src="https://yt3.ggpht.com/a/AATXAJzeRYyUEzcydzC8dwjACVKktVB9STFQLpbcrw=s88" style="margin:0" />
+  </div>
+<div class="chan_name"><a href="https://youtube.com/channel/UC2_OG1L8DLTzQ7UrZVOk7OA" class="chanlink" style="color:slategrey;text-decoration:none">Axolot</a></div>
+<div class="vid_desc">A la découverte de Tokyo</div>
+
+<div class="vidlogo"><div class="length">23:19</div>
+<div class="imgdiv seen" style="background-image: url(https://i.ytimg.com/vi/pQRNRmmF_ZU/hqdefault.jpg);"> 
+
+<div class="opaque pQRNRmmF_ZU"><div class="check"><i class="fa fa-check read-icon"></i></div></div>
+</div>
+</div> 
+<div class="vidtitle">Etranges Escales : Tokyo</div>
+<span class="viddesc" style="display:none">Dans ce nouvel épisode des Etranges Escales, nous explorons la mégapole la plus peuplée du monde !</span>
+</div>
+
+<div id="XxFZ8r6pTSF8" class="videoline vidfr" onclick="changevid('xFZ8r6pTSF8')">
+  <div class="chanlogo">
+    <img class="chanlogo_img" src="https://yt3.ggpht.com/a/AATXAJxF1BJvGevYRzmRNHBKy675ggjm9Po9MvLjww=s88" style="margin:0" />
+  </div>
+<div class="chan_name"><a href="https://youtube.com/channel/UCKjDY4joMPcoRMmd-G1yz1Q" class="chanlink" style="color:slategrey;text-decoration:none">C'est une autre histoire</a></div>
+<div class="vid_desc">A la découverte de la Polynésie</div>
+
+<div class="vidlogo"><div class="length">28:22</div>
+<div class="imgdiv seen" style="background-image: url(https://i.ytimg.com/vi/xFZ8r6pTSF8/hqdefault.jpg);"> 
+
+<div class="opaque xFZ8r6pTSF8"><div class="check"><i class="fa fa-check read-icon"></i></div></div>
+</div>
+</div> 
+<div class="vidtitle">Découvrez Tahiti à travers ses légendes - La Polynésie au détail</div>
+<span class="viddesc" style="display:none">Les paysages paradisiaques oui, of course, mais avec de la culture en plus, carrément !! Viens, je te fais découvrir un petit peu de mythologie polynésienne.</span>
+</div>
+
+<div id="XxRfLxZQqHjM" class="videoline vidfr" onclick="changevid('xRfLxZQqHjM')">
+  <div class="chanlogo">
+    <img class="chanlogo_img" src="https://yt3.ggpht.com/a/AATXAJzeRYyUEzcydzC8dwjACVKktVB9STFQLpbcrw=s88" style="margin:0" />
+  </div>
+<div class="chan_name"><a href="https://youtube.com/channel/UC2_OG1L8DLTzQ7UrZVOk7OA" class="chanlink" style="color:slategrey;text-decoration:none">Axolot</a></div>
+<div class="vid_desc">A la découverte de Prague</div>
+
+<div class="vidlogo"><div class="length">16:57</div>
+<div class="imgdiv seen" style="background-image: url(https://i.ytimg.com/vi/xRfLxZQqHjM/hqdefault.jpg);"> 
+
+<div class="opaque xRfLxZQqHjM"><div class="check"><i class="fa fa-check read-icon"></i></div></div>
+</div>
+</div> 
+<div class="vidtitle">Etranges Escales : Prague</div>
+<span class="viddesc" style="display:none">Capitale de l'alchimie et de l'ésotérisme au XVIè siècle, Prague est une ville remplie de mystères et de curiosités. Idéal pour une Etrange Escale, donc !</span>
+</div>
+
+<h2 id="et-si">Et si... ?</h2>
+<div id="XbHc-xz1yNUs" class="videoline vidfr" onclick="changevid('bHc-xz1yNUs')">
+  <div class="chanlogo">
+    <img class="chanlogo_img" src="https://yt3.ggpht.com/a/AATXAJzL3BssRoXUCyqdn7Z4HfW3h8ttbk822YJTLw=s88" style="margin:0" />
+  </div>
+<div class="chan_name"><a href="https://youtube.com/channel/UCtqICqGbPSbTN09K1_7VZ3Q" class="chanlink" style="color:slategrey;text-decoration:none">DirtyBiology</a></div>
+<div class="vid_desc">Que se passerait-il si la nature se retournait contre l'être humain ?</div>
+
+<div class="vidlogo"><div class="length">18:48</div>
+<div class="imgdiv seen" style="background-image: url(https://i.ytimg.com/vi/bHc-xz1yNUs/hqdefault.jpg);"> 
+
+<div class="opaque bHc-xz1yNUs"><div class="check"><i class="fa fa-check read-icon"></i></div></div>
+</div>
+</div> 
+<div class="vidtitle">Que se passerait-il si la Nature se rebellait ? - LetsPlayScience #2</div>
+<span class="viddesc" style="display:none"></span>
+</div>
+
+<div id="XnsrLkKthYDw" class="videoline vidfr" onclick="changevid('nsrLkKthYDw')">
+  <div class="chanlogo">
+    <img class="chanlogo_img" src="https://yt3.ggpht.com/a/AATXAJzL3BssRoXUCyqdn7Z4HfW3h8ttbk822YJTLw=s88" style="margin:0" />
+  </div>
+<div class="chan_name"><a href="https://youtube.com/channel/UCtqICqGbPSbTN09K1_7VZ3Q" class="chanlink" style="color:slategrey;text-decoration:none">DirtyBiology</a></div>
+<div class="vid_desc">Coment déplacer la planète ?</div>
+
+<div class="vidlogo"><div class="length">5:58</div>
+<div class="imgdiv seen" style="background-image: url(https://i.ytimg.com/vi/nsrLkKthYDw/hqdefault.jpg);"> 
+
+<div class="opaque nsrLkKthYDw"><div class="check"><i class="fa fa-check read-icon"></i></div></div>
+</div>
+</div> 
+<div class="vidtitle">Comment déplacer la planète ? - Ctrl+F #4</div>
+<span class="viddesc" style="display:none"></span>
+</div>
+
+<div id="XuRvhBz-88m8" class="videoline vidfr" onclick="changevid('uRvhBz-88m8')">
+  <div class="chanlogo">
+    <img class="chanlogo_img" src="https://yt3.ggpht.com/a/AATXAJzL3BssRoXUCyqdn7Z4HfW3h8ttbk822YJTLw=s88" style="margin:0" />
+  </div>
+<div class="chan_name"><a href="https://youtube.com/channel/UCtqICqGbPSbTN09K1_7VZ3Q" class="chanlink" style="color:slategrey;text-decoration:none">DirtyBiology</a></div>
+<div class="vid_desc">Godzilla pourrait-il exister ?</div>
+
+<div class="vidlogo"><div class="length">6:08</div>
+<div class="imgdiv seen" style="background-image: url(https://i.ytimg.com/vi/uRvhBz-88m8/hqdefault.jpg);"> 
+
+<div class="opaque uRvhBz-88m8"><div class="check"><i class="fa fa-check read-icon"></i></div></div>
+</div>
+</div> 
+<div class="vidtitle">Godzilla aurait-il pu exister ? - Ctrl+F #1</div>
+<span class="viddesc" style="display:none"></span>
+</div>
+
+<div id="XvpmrR7HBNh8" class="videoline vidfr" onclick="changevid('vpmrR7HBNh8')">
+  <div class="chanlogo">
+    <img class="chanlogo_img" src="https://yt3.ggpht.com/a/AATXAJzL3BssRoXUCyqdn7Z4HfW3h8ttbk822YJTLw=s88" style="margin:0" />
+  </div>
+<div class="chan_name"><a href="https://youtube.com/channel/UCtqICqGbPSbTN09K1_7VZ3Q" class="chanlink" style="color:slategrey;text-decoration:none">DirtyBiology</a></div>
+<div class="vid_desc">Que faudrait-il pour qu'un dragon crache du feu ?</div>
+
+<div class="vidlogo"><div class="length">9:49</div>
+<div class="imgdiv seen" style="background-image: url(https://i.ytimg.com/vi/vpmrR7HBNh8/hqdefault.jpg);"> 
+
+<div class="opaque vpmrR7HBNh8"><div class="check"><i class="fa fa-check read-icon"></i></div></div>
+</div>
+</div> 
+<div class="vidtitle">Les dragons pourraient-ils cracher du feu ? - LetsPlayScience #1</div>
+<span class="viddesc" style="display:none"></span>
+</div>
+  </div>
+
+<script>
+  var e_mainFrame = document.getElementById('frame');
+  var e_title = document.getElementById('pvidtitle');
+  var e_logo = document.getElementById('pchanlogo_img');
+  var e_desc = document.getElementById('pvid_desc');
+  var e_channame = document.getElementById('pchan_name');
+  var e_extr = document.getElementById('extr');
+
+
+  function changevid(v) {
+    newtitle = document.querySelector('#X' +v+' .vidtitle').innerText
+    newlogo = document.querySelector('#X' +v+' .chanlogo_img').src
+    newchan = document.querySelector('#X' +v+' .chan_name').innerText
+    newdesc = document.querySelector('#X' +v+' .viddesc').innerText
+  e_mainFrame.src = "https://www.youtube.com/embed/" + v+"?autoplay=1";
+  e_title.innerHTML = newtitle;
+  e_desc.innerHTML = newdesc + '';
+  e_channame.innerText = newchan;
+  e_logo.src = newlogo;
+  e_extr.style.display='block';
+  window.localStorage.setItem(v, 1);
+  /* if small screen */
+  if(window.innerWidth < 600) {
+  document.getElementById("content").style.display="none";
+  document.getElementById("left_content").style.display = "inline";
+  document.getElementById("left_content").style.width="90%";
+  document.getElementById("arrow").style.display = "block";
+  }
+}
+
+function backsmallscreen() {
+  document.getElementById("left_content").style.display="none";
+  document.getElementById("content").style.display="block";
+  e_mainFrame.src = "";}
+
+</script>
+
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
+        
+          <a href="../Ecologie/Energies/Nucl%C3%A9aire/" title="Nucléaire" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+            </div>
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Précédent
+                </span>
+                Nucléaire
+              </div>
+            </div>
+          </a>
+        
+        
+          <a href="../Musique/" title="Musique" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Suivant
+                </span>
+                Musique
+              </div>
+            </div>
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../assets/javascripts/vendor.d710d30a.min.js"></script>
+      <script src="../assets/javascripts/bundle.7f4f3c92.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copier dans le presse-papier", "clipboard.copied": "Copi\u00e9 dans le presse-papier", "search.config.lang": "fr", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Taper pour d\u00e9marrer la recherche", "search.result.none": "Aucun document trouv\u00e9", "search.result.one": "1 document trouv\u00e9", "search.result.other": "# documents trouv\u00e9s"}</script>
+      
+      <script>
+        app = initialize({
+          base: "..",
+          features: [],
+          search: Object.assign({
+            worker: "../assets/javascripts/worker/search.9b3611bd.min.js"
+          }, typeof search !== "undefined" && search)
+        })
+      </script>
+      
+        <script src="../extra.js"></script>
+      
+    
+  </body>
+</html>

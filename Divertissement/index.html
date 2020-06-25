@@ -1,0 +1,2870 @@
+
+
+
+<!doctype html>
+<html lang="fr" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      <link rel="shortcut icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-5.3.2">
+    
+    
+      
+        <title>Divertissement - YoutubeMap</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.fe0cca5b.min.css">
+      
+        <link rel="stylesheet" href="../assets/stylesheets/palette.a46bcfb3.min.css">
+      
+      
+        
+        
+        <meta name="theme-color" content="#ef5350">
+      
+    
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono",SFMono-Regular,Consolas,Menlo,monospace}</style>
+      
+    
+    
+    
+      <link rel="stylesheet" href="../extra.css">
+    
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="red" data-md-color-accent="red">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#divertissement" class="md-skip">
+          Aller au contenu
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+<header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid" aria-label="Header">
+    <a href=".." title="YoutubeMap" class="md-header-nav__button md-logo" aria-label="YoutubeMap">
+      
+  <img src="../yt.png" alt="logo">
+
+    </a>
+    <label class="md-header-nav__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header-nav__title" data-md-component="header-title">
+        <div class="md-header-nav__ellipsis md-ellipsis">
+          <span class="md-header-nav__topic md-ellipsis">          
+          Divertissement
+        </span>
+        <span class="md-header-nav__topic md-ellipsis">
+          <a href="chaines/">
+          <i class="fa fa-list-ul" aria-hidden="true"></i>         
+          Chaînes
+        </a>
+        </span>
+        <span class="md-header-nav__topic md-ellipsis" onclick="random_page()">   
+          <i class="fa fa-random" aria-hidden="true"></i>       
+          Au hasard
+        </span>
+        </div>
+    </div>
+    
+      <label class="md-header-nav__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Rechercher" placeholder="Rechercher" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active">
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" data-md-component="search-reset" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+</header>
+
+    <div class="md-container" data-md-component="container">
+      
+        
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="YoutubeMap" class="md-nav__button md-logo" aria-label="YoutubeMap">
+      
+  <img src="../yt.png" alt="logo">
+
+    </a>
+    YoutubeMap
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href=".." title="Bienvenue sur Youtube Map !" class="md-nav__link">
+      Bienvenue sur Youtube Map !
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Divertissement
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 9h14V7H3v2m0 4h14v-2H3v2m0 4h14v-2H3v2m16 0h2v-2h-2v2m0-10v2h2V7h-2m0 6h2v-2h-2v2z"/></svg>
+        </span>
+      </label>
+    
+    <a href="./" title="Divertissement" class="md-nav__link md-nav__link--active">
+      Divertissement
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#cinema" class="md-nav__link">
+    Cinéma
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#arts" class="md-nav__link">
+    Arts
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#litterature" class="md-nav__link">
+    Littérature
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#jeux-videos" class="md-nav__link">
+    Jeux vidéos
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#series" class="md-nav__link">
+    Séries
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+    
+    <label class="md-nav__link" for="nav-3">
+      Ecologie
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
+      </span>
+    </label>
+    <nav class="md-nav" aria-label="Ecologie" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        </span>
+        Ecologie
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Ecologie/" title="Ecologie" class="md-nav__link">
+      Ecologie
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3-2" type="checkbox" id="nav-3-2">
+    
+    <label class="md-nav__link" for="nav-3-2">
+      Energies
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
+      </span>
+    </label>
+    <nav class="md-nav" aria-label="Energies" data-md-level="2">
+      <label class="md-nav__title" for="nav-3-2">
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        </span>
+        Energies
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Ecologie/Energies/" title="Energies" class="md-nav__link">
+      Energies
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Ecologie/Energies/Nucl%C3%A9aire/" title="Nucléaire" class="md-nav__link">
+      Nucléaire
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../Insolite/" title="Insolite" class="md-nav__link">
+      Insolite
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../Musique/" title="Musique" class="md-nav__link">
+      Musique
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../Mythes%20et%20traditions/" title="Mythes et traditions" class="md-nav__link">
+      Mythes et traditions
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-7" type="checkbox" id="nav-7">
+    
+    <label class="md-nav__link" for="nav-7">
+      Philosophie
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
+      </span>
+    </label>
+    <nav class="md-nav" aria-label="Philosophie" data-md-level="1">
+      <label class="md-nav__title" for="nav-7">
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        </span>
+        Philosophie
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Philosophie/" title="Philosophie" class="md-nav__link">
+      Philosophie
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Philosophie/Philosophie%20morale/" title="Philosophie morale" class="md-nav__link">
+      Philosophie morale
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-8" type="checkbox" id="nav-8">
+    
+    <label class="md-nav__link" for="nav-8">
+      Sciences appliquées
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
+      </span>
+    </label>
+    <nav class="md-nav" aria-label="Sciences appliquées" data-md-level="1">
+      <label class="md-nav__title" for="nav-8">
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        </span>
+        Sciences appliquées
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Sciences%20appliqu%C3%A9es/" title="Sciences appliquées" class="md-nav__link">
+      Sciences appliquées
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Sciences%20appliqu%C3%A9es/Informatique/" title="Informatique" class="md-nav__link">
+      Informatique
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Sciences%20appliqu%C3%A9es/Ing%C3%A9nierie/" title="Ingénierie" class="md-nav__link">
+      Ingénierie
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Sciences%20appliqu%C3%A9es/Maths/" title="Maths" class="md-nav__link">
+      Maths
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-8-5" type="checkbox" id="nav-8-5">
+    
+    <label class="md-nav__link" for="nav-8-5">
+      Médecine
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
+      </span>
+    </label>
+    <nav class="md-nav" aria-label="Médecine" data-md-level="2">
+      <label class="md-nav__title" for="nav-8-5">
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        </span>
+        Médecine
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Sciences%20appliqu%C3%A9es/M%C3%A9decine/" title="Médecine" class="md-nav__link">
+      Médecine
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Sciences%20appliqu%C3%A9es/M%C3%A9decine/Maladies/" title="Maladies" class="md-nav__link">
+      Maladies
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Sciences%20appliqu%C3%A9es/Statistiques/" title="Statistiques" class="md-nav__link">
+      Statistiques
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-9" type="checkbox" id="nav-9">
+    
+    <label class="md-nav__link" for="nav-9">
+      Sciences de la nature
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
+      </span>
+    </label>
+    <nav class="md-nav" aria-label="Sciences de la nature" data-md-level="1">
+      <label class="md-nav__title" for="nav-9">
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        </span>
+        Sciences de la nature
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Sciences%20de%20la%20nature/" title="Sciences de la nature" class="md-nav__link">
+      Sciences de la nature
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Sciences%20de%20la%20nature/Biologie/" title="Biologie" class="md-nav__link">
+      Biologie
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Sciences%20de%20la%20nature/Physique/" title="Physique" class="md-nav__link">
+      Physique
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-10" type="checkbox" id="nav-10">
+    
+    <label class="md-nav__link" for="nav-10">
+      Sciences formelles
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
+      </span>
+    </label>
+    <nav class="md-nav" aria-label="Sciences formelles" data-md-level="1">
+      <label class="md-nav__title" for="nav-10">
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        </span>
+        Sciences formelles
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Sciences%20formelles/" title="Sciences formelles" class="md-nav__link">
+      Sciences formelles
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Sciences%20formelles/Informatique%20th%C3%A9orique/" title="Informatique théorique" class="md-nav__link">
+      Informatique théorique
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Sciences%20formelles/Maths/" title="Maths" class="md-nav__link">
+      Maths
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-11" type="checkbox" id="nav-11">
+    
+    <label class="md-nav__link" for="nav-11">
+      Sciences humaines
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
+      </span>
+    </label>
+    <nav class="md-nav" aria-label="Sciences humaines" data-md-level="1">
+      <label class="md-nav__title" for="nav-11">
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        </span>
+        Sciences humaines
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Sciences%20humaines/" title="Sciences humaines" class="md-nav__link">
+      Sciences humaines
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Sciences%20humaines/Anthropologie/" title="Anthropologie" class="md-nav__link">
+      Anthropologie
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Sciences%20humaines/Economie/" title="Economie" class="md-nav__link">
+      Economie
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-11-4" type="checkbox" id="nav-11-4">
+    
+    <label class="md-nav__link" for="nav-11-4">
+      Histoire
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
+      </span>
+    </label>
+    <nav class="md-nav" aria-label="Histoire" data-md-level="2">
+      <label class="md-nav__title" for="nav-11-4">
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        </span>
+        Histoire
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Sciences%20humaines/Histoire/" title="Histoire" class="md-nav__link">
+      Histoire
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Sciences%20humaines/Histoire/Antiquit%C3%A9/" title="Antiquité" class="md-nav__link">
+      Antiquité
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Sciences%20humaines/Histoire/XIX%C3%A8me%20si%C3%A8cle/" title="XIXème siècle" class="md-nav__link">
+      XIXème siècle
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-11-4-4" type="checkbox" id="nav-11-4-4">
+    
+    <label class="md-nav__link" for="nav-11-4-4">
+      XXème siècle
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
+      </span>
+    </label>
+    <nav class="md-nav" aria-label="XXème siècle" data-md-level="3">
+      <label class="md-nav__title" for="nav-11-4-4">
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        </span>
+        XXème siècle
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Sciences%20humaines/Histoire/XX%C3%A8me%20si%C3%A8cle/" title="XXème siècle" class="md-nav__link">
+      XXème siècle
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Sciences%20humaines/Histoire/XX%C3%A8me%20si%C3%A8cle/2%C3%A8me%20guerre%20mondiale/" title="2ème guerre mondiale" class="md-nav__link">
+      2ème guerre mondiale
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Sciences%20humaines/Linguistique/" title="Linguistique" class="md-nav__link">
+      Linguistique
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-12" type="checkbox" id="nav-12">
+    
+    <label class="md-nav__link" for="nav-12">
+      Société
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
+      </span>
+    </label>
+    <nav class="md-nav" aria-label="Société" data-md-level="1">
+      <label class="md-nav__title" for="nav-12">
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        </span>
+        Société
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Soci%C3%A9t%C3%A9/" title="Société" class="md-nav__link">
+      Société
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Soci%C3%A9t%C3%A9/%20Politique/" title="Société/ Politique" class="md-nav__link">
+      Société/ Politique
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Soci%C3%A9t%C3%A9/Esprit%20Critique/" title="Esprit Critique" class="md-nav__link">
+      Esprit Critique
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#cinema" class="md-nav__link">
+    Cinéma
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#arts" class="md-nav__link">
+    Arts
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#litterature" class="md-nav__link">
+    Littérature
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#jeux-videos" class="md-nav__link">
+    Jeux vidéos
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#series" class="md-nav__link">
+    Séries
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+
+<div id="left_content">
+  <div id="arrow" style="width:90%;display:none;margin-top:-1rem;" onclick="backsmallscreen()">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" style="height:2rem;fill:#777;">
+    <path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"></path></svg>
+  </div>
+    <div style="position:relative;padding-top:56.25%;">
+    <iframe id="frame" class="youtube-player" type="text/html" src="" frameborder="0" allowfullscreen
+      style=""></iframe></div>
+
+      <div id="description">
+          <div id="pvidtitle"></div>
+          <div id="pchanlogo"><img id="pchanlogo_img" src="" style="margin-top:0;border-radius:20px;" /></div>
+        <div id="pchan_name"></div>
+      </div>
+      <div id="desc_extract">
+        
+        <div id="pvid_desc"></div>
+        <span id="extr" title="Extrait de description originale" style="display:none;color:#888;">
+        <i class="fa fa-info-circle" aria-hidden="true"></i></span>
+        
+        </div>
+</div>
+<div id="content">
+  <h1 id="divertissement">Divertissement</h1>
+<div id="XGkc7euz7Y74" class="videoline vidfr" onclick="changevid('Gkc7euz7Y74')">
+  <div class="chanlogo">
+    <img class="chanlogo_img" src="https://yt3.ggpht.com/a/AATXAJzL3BssRoXUCyqdn7Z4HfW3h8ttbk822YJTLw=s88" style="margin:0" />
+  </div>
+<div class="chan_name"><a href="https://youtube.com/channel/UCtqICqGbPSbTN09K1_7VZ3Q" class="chanlink" style="color:slategrey;text-decoration:none">DirtyBiology</a></div>
+<div class="vid_desc">Pourquoi aime-t-on tant les histoires ?</div>
+
+<div class="vidlogo"><div class="length">8:49</div>
+<div class="imgdiv seen" style="background-image: url(https://i.ytimg.com/vi/Gkc7euz7Y74/hqdefault.jpg);"> 
+
+<div class="opaque Gkc7euz7Y74"><div class="check"><i class="fa fa-check read-icon"></i></div></div>
+</div>
+</div> 
+<div class="vidtitle">Des histoires pour l'humanité - DBY #9</div>
+<span class="viddesc" style="display:none"></span>
+</div>
+
+<div id="XgBi3QPo2PJo" class="videoline vidfr" onclick="changevid('gBi3QPo2PJo')">
+  <div class="chanlogo">
+    <img class="chanlogo_img" src="https://yt3.ggpht.com/a/AATXAJyvI28AWBoEErXVHWt-izXAxn3pBeUKcwk9vg=s88-c-k-c0xffffffff-no-rj-mo" style="margin:0" />
+  </div>
+<div class="chan_name"><a href="https://youtube.com/channel/UC4Jrte_YtwWfANKNyzse5iA" class="chanlink" style="color:slategrey;text-decoration:none">Avides de recherche</a></div>
+<div class="vid_desc">Comment mai 68 est-il traité dans les BDs ?</div>
+
+<div class="vidlogo"><div class="length">11:57</div>
+<div class="imgdiv seen" style="background-image: url(https://i.ytimg.com/vi/gBi3QPo2PJo/hqdefault.jpg);"> 
+
+<div class="opaque gBi3QPo2PJo"><div class="check"><i class="fa fa-check read-icon"></i></div></div>
+</div>
+</div> 
+<div class="vidtitle">Mai 68 dans la BD - Avides de recherche #20</div>
+<span class="viddesc" style="display:none">Avides de Recherche est la chaine Youtube du magazine Mondes Sociaux dont l’objet est de mettre en images et en voix des travaux de recherche en SHS dans des formes susceptibles d’intéresser des publics larges. Animée par Manon Bril, doctorante en histoire à l’UT2J, ce format propose des vidéos réalisées à partir d’articles publiés dans des revues scientifiques. Ce 20e épisode d’Avides de Recherche, la chaine Youtube de Mondes Sociaux, présente en son et en images l’article de Matthew Screech “The Myth of May 1968 in bandes dessinées ”, publié dans Belphégor N°15-2 en 2017, à lire ici : https://journals.openedition.org/belp...</span>
+</div>
+
+<h2 id="cinema">Cinéma</h2>
+<div id="X-L50y_cezC8" class="videoline vidfr" onclick="changevid('-L50y_cezC8')">
+  <div class="chanlogo">
+    <img class="chanlogo_img" src="https://yt3.ggpht.com/a/AATXAJyP2EPAXeEppKwqNM0HTm-jC0_TbyIbFtmKAw=s88" style="margin:0" />
+  </div>
+<div class="chan_name"><a href="https://youtube.com/channel/UCn2odfT6D4WPg4y-zRIgU5g" class="chanlink" style="color:slategrey;text-decoration:none">Fabien Campaner & Lucie Card</a></div>
+<div class="vid_desc">Comment le conte "le Chat Botté" a-t-il été adapté au cinéma ?</div>
+
+<div class="vidlogo"><div class="length">36:31</div>
+<div class="imgdiv seen" style="background-image: url(https://i.ytimg.com/vi/-L50y_cezC8/hqdefault.jpg);"> 
+
+<div class="opaque -L50y_cezC8"><div class="check"><i class="fa fa-check read-icon"></i></div></div>
+</div>
+</div> 
+<div class="vidtitle">Le Chat botté - CONTES À REBOURS #2</div>
+<span class="viddesc" style="display:none">On poursuit nos "Contes à Rebours" avec cette fois un petit retour sur les origines du Chat botté. Depuis son apparition dans la saga "Shrek", il paraît difficile d'imaginer le félin chaussé autrement qu'avec un petit attirail de mousquetaire, doublé d'un accent espagnol à couper au fleuret. Mais qu'en est-il des anciennes représentations ? On espère que la vidéo vous plaira !</span>
+</div>
+
+<div id="X-LTHKpu6Rrw" class="videoline vidfr" onclick="changevid('-LTHKpu6Rrw')">
+  <div class="chanlogo">
+    <img class="chanlogo_img" src="https://yt3.ggpht.com/a/AATXAJzilcmC-OiWwMG76scOHNtD7kkmTlhlyc-yag=s88" style="margin:0" />
+  </div>
+<div class="chan_name"><a href="https://youtube.com/channel/UCP46_MXP_WG_auH88FnfS1A" class="chanlink" style="color:slategrey;text-decoration:none">Nota Bene</a></div>
+<div class="vid_desc">De quels évènements s'inspire le film "Windtalkers" ?</div>
+
+<div class="vidlogo"><div class="length">15:14</div>
+<div class="imgdiv seen" style="background-image: url(https://i.ytimg.com/vi/-LTHKpu6Rrw/hqdefault.jpg);"> 
+
+<div class="opaque -LTHKpu6Rrw"><div class="check"><i class="fa fa-check read-icon"></i></div></div>
+</div>
+</div> 
+<div class="vidtitle">La véritable histoire de Windtalkers !</div>
+<span class="viddesc" style="display:none">6ème épisode de Motion VS History dédié à Windtalkers. Pendant la seconde guerre mondiale, les américains se confrontent aux forces japonaises, notamment sur l'île de Saipan. Les codetalkers navajos jouent dans ce conflit un rôle méconnu mais pourtant très important, permettant aux américains de communiquer en toute sécurité. Entre propagande et hommage à ces hommes qui n'avaient rien et qui ont tout donné, petit retour sur un film très...hollywoodien !</span>
+</div>
+
+<div id="X1Du8bfuO69o" class="videoline vidfr" onclick="changevid('1Du8bfuO69o')">
+  <div class="chanlogo">
+    <img class="chanlogo_img" src="https://yt3.ggpht.com/a/AATXAJyP2EPAXeEppKwqNM0HTm-jC0_TbyIbFtmKAw=s88" style="margin:0" />
+  </div>
+<div class="chan_name"><a href="https://youtube.com/channel/UCn2odfT6D4WPg4y-zRIgU5g" class="chanlink" style="color:slategrey;text-decoration:none">Fabien Campaner & Lucie Card</a></div>
+<div class="vid_desc">Comment le conte "Blanche Neige" a-t-il été adapté au cinéma ?</div>
+
+<div class="vidlogo"><div class="length">41:21</div>
+<div class="imgdiv seen" style="background-image: url(https://i.ytimg.com/vi/1Du8bfuO69o/hqdefault.jpg);"> 
+
+<div class="opaque 1Du8bfuO69o"><div class="check"><i class="fa fa-check read-icon"></i></div></div>
+</div>
+</div> 
+<div class="vidtitle">Blanche-Neige - CONTES À REBOURS #3</div>
+<span class="viddesc" style="display:none">On part sur les traces des frères Grimm pour mieux savoir d'où vient la jolie figure de Blanche-Neige et comprendre pourquoi Walt Disney s'est dit que cette histoire ferait un bon film. On verra qu'il existe beaucoup d'autres adaptations du conte au cinéma, et que la grande majorité a du mal à se détacher complètement de la version Disney. Si la vidéo vous plaît, on vous remerciera jamais assez de la partager avec le monde, c'est comme ça qu'elle pourra avoir une belle vie ;)</span>
+</div>
+
+<div id="X1Jzb-AOivgA" class="videoline vidfr" onclick="changevid('1Jzb-AOivgA')">
+  <div class="chanlogo">
+    <img class="chanlogo_img" src="https://yt3.ggpht.com/a/AATXAJxkcj3cCL5eWmllLKK4HkI4Dw9gWCgg0UJuUw=s88" style="margin:0" />
+  </div>
+<div class="chan_name"><a href="https://youtube.com/channel/UCPF7JOWMDWZmnP_cQfyAezg" class="chanlink" style="color:slategrey;text-decoration:none">Scinéma</a></div>
+<div class="vid_desc">Quelle réalité physique derrière les films catastrophes ?</div>
+
+<div class="vidlogo"><div class="length">25:23</div>
+<div class="imgdiv seen" style="background-image: url(https://i.ytimg.com/vi/1Jzb-AOivgA/hqdefault.jpg);"> 
+
+<div class="opaque 1Jzb-AOivgA"><div class="check"><i class="fa fa-check read-icon"></i></div></div>
+</div>
+</div> 
+<div class="vidtitle">SCINEMA EP.1 : LES CATASTROPHES NATURELLES</div>
+<span class="viddesc" style="display:none">Episode avec plein de problèmes mais il faut bien faire une première vidéo, non ? 2012 et le Jour d’Après, science ou fiction ? Le scénario de ces deux films de “science-fiction” réalisés par Roland Emmerich en 2009 et 2004 se veut d’être proche d’une réalité scientifique. Quand le Jour d’Après s’appuie sur l’arrêt du Gulf Stream pour expliquer l’apparition d’une nouvelle ère glaciaire, il traite d’une thématique plus que d’actualité qu’est le réchauffement climatique. De son côté, 2012 utilise la “mutation” des neutrinos au coeur du Soleil pour expliquer la recrudescence des événements extrêmes sur Terre. Malgré cet apparent recours à la science, ces oeuvres restent des films dits de catastrophes qui usent de concepts scientifiques plus ou moins approximatifs et avérés pour divertir leur audience. Dans cette chronique, nous proposons un éclairage scientifique de ces deux films, avec l’intervention notamment de M Gonin, directeur de recherche au CNRS et professeur de physique à l’Ecole polytechnique et de M. Stegner, chercheur au laboratoire de météorologie dynamique de l’Ecole polytechnique.</span>
+</div>
+
+<div id="X1fYuAZRR3HQ" class="videoline vidfr" onclick="changevid('1fYuAZRR3HQ')">
+  <div class="chanlogo">
+    <img class="chanlogo_img" src="https://yt3.ggpht.com/a/AATXAJzilcmC-OiWwMG76scOHNtD7kkmTlhlyc-yag=s88" style="margin:0" />
+  </div>
+<div class="chan_name"><a href="https://youtube.com/channel/UCP46_MXP_WG_auH88FnfS1A" class="chanlink" style="color:slategrey;text-decoration:none">Nota Bene</a></div>
+<div class="vid_desc">Quelles inspirations historiques dans Star wars ?</div>
+
+<div class="vidlogo"><div class="length">25:11</div>
+<div class="imgdiv seen" style="background-image: url(https://i.ytimg.com/vi/1fYuAZRR3HQ/hqdefault.jpg);"> 
+
+<div class="opaque 1fYuAZRR3HQ"><div class="check"><i class="fa fa-check read-icon"></i></div></div>
+</div>
+</div> 
+<div class="vidtitle">Star Wars histoire et mythologie - Motion VS History #5</div>
+<span class="viddesc" style="display:none">5ème épisode de Motion VS History dédié à Star Wars. La saga la plus célèbre de toute l'histoire du cinéma se serait-elle inspiré de notre histoire et de nos mythologies ? Quel héros grec n'a rien à envier à Dark Vador ? Quelle planète est inspiré d'une des plus vieilles civilisations de notre histoire ?</span>
+</div>
+
+<div id="X3pYanWIad24" class="videoline vidfr" onclick="changevid('3pYanWIad24')">
+  <div class="chanlogo">
+    <img class="chanlogo_img" src="https://yt3.ggpht.com/a/AATXAJxkcj3cCL5eWmllLKK4HkI4Dw9gWCgg0UJuUw=s88" style="margin:0" />
+  </div>
+<div class="chan_name"><a href="https://youtube.com/channel/UCPF7JOWMDWZmnP_cQfyAezg" class="chanlink" style="color:slategrey;text-decoration:none">Scinéma</a></div>
+<div class="vid_desc">Quelle puissance a réellement Yoda ?</div>
+
+<div class="vidlogo"><div class="length">4:40</div>
+<div class="imgdiv seen" style="background-image: url(https://i.ytimg.com/vi/3pYanWIad24/hqdefault.jpg);"> 
+
+<div class="opaque 3pYanWIad24"><div class="check"><i class="fa fa-check read-icon"></i></div></div>
+</div>
+</div> 
+<div class="vidtitle">SCINEMA EP.3 : YODA = TWINGO ?</div>
+<span class="viddesc" style="display:none">Cet épisode s'intéresse à la puissance de Yoda dans l'Empire Contre-Attaque. Je ne parle pas de ce qu'il peut faire pendant la prélogie (pouah).</span>
+</div>
+
+<div id="X70VQtuho8fc" class="videoline vidfr" onclick="changevid('70VQtuho8fc')">
+  <div class="chanlogo">
+    <img class="chanlogo_img" src="https://yt3.ggpht.com/a/AATXAJyvI28AWBoEErXVHWt-izXAxn3pBeUKcwk9vg=s88-c-k-c0xffffffff-no-rj-mo" style="margin:0" />
+  </div>
+<div class="chan_name"><a href="https://youtube.com/channel/UC4Jrte_YtwWfANKNyzse5iA" class="chanlink" style="color:slategrey;text-decoration:none">Avides de recherche</a></div>
+<div class="vid_desc">Comment la lumière peut-elle être utilisée au cinéma ?</div>
+
+<div class="vidlogo"><div class="length">8:43</div>
+<div class="imgdiv seen" style="background-image: url(https://i.ytimg.com/vi/70VQtuho8fc/hqdefault.jpg);"> 
+
+<div class="opaque 70VQtuho8fc"><div class="check"><i class="fa fa-check read-icon"></i></div></div>
+</div>
+</div> 
+<div class="vidtitle">Filmer la lumière… - Avides de recherche #28</div>
+<span class="viddesc" style="display:none">Avides de Recherche est la chaine Youtube du magazine Mondes Sociaux dont l’objet est de mettre en images et en voix des travaux de recherche en SHS dans des formes susceptibles d’intéresser des publics larges. Animée par Manon Bril, docteure en histoire à l’UT2J, ce format propose des vidéos réalisées à partir d’articles publiés dans des revues scientifiques. Ce 28e épisode d’Avides de Recherche présente en son et en images l'article d'Eva Pervolovici "Manifestations de la lumière dans le cinéma contemporain : contemplation, mémoire, érotisme, mort " publié dans Lumières. Regards croisés des sciences humaines sur un objet d’étude transdisciplinaire, à lire ici : https://books.openedition.org/irhis/6...</span>
+</div>
+
+<div id="XC_6HHMMghZo" class="videoline vidfr" onclick="changevid('C_6HHMMghZo')">
+  <div class="chanlogo">
+    <img class="chanlogo_img" src="https://yt3.ggpht.com/a/AATXAJxfcbhONA94WAF4cBlNJVYGX5XVowbrbJFoFA=s88" style="margin:0" />
+  </div>
+<div class="chan_name"><a href="https://youtube.com/channel/UCCTDcg7VBiWDqwpK_nbvX2A" class="chanlink" style="color:slategrey;text-decoration:none">Trucs de philo</a></div>
+<div class="vid_desc"></div>
+
+<div class="vidlogo"><div class="length">18:25</div>
+<div class="imgdiv seen" style="background-image: url(https://i.ytimg.com/vi/C_6HHMMghZo/hqdefault.jpg);"> 
+
+<div class="opaque C_6HHMMghZo"><div class="check"><i class="fa fa-check read-icon"></i></div></div>
+</div>
+</div> 
+<div class="vidtitle">Gattaca : déterminisme et libre-arbitre. 3/3</div>
+<span class="viddesc" style="display:none">Cette fois, on étudie l'un des thèmes sous-jacents du film : la querelle déterminisme/libre-arbitre !</span>
+</div>
+
+<div id="XC_JPvt2Lof0" class="videoline vidfr" onclick="changevid('C_JPvt2Lof0')">
+  <div class="chanlogo">
+    <img class="chanlogo_img" src="https://yt3.ggpht.com/a/AATXAJxkcj3cCL5eWmllLKK4HkI4Dw9gWCgg0UJuUw=s88" style="margin:0" />
+  </div>
+<div class="chan_name"><a href="https://youtube.com/channel/UCPF7JOWMDWZmnP_cQfyAezg" class="chanlink" style="color:slategrey;text-decoration:none">Scinéma</a></div>
+<div class="vid_desc">Qu'est-ce que la résolution d'une image ?</div>
+
+<div class="vidlogo"><div class="length">9:03</div>
+<div class="imgdiv seen" style="background-image: url(https://i.ytimg.com/vi/C_JPvt2Lof0/hqdefault.jpg);"> 
+
+<div class="opaque C_JPvt2Lof0"><div class="check"><i class="fa fa-check read-icon"></i></div></div>
+</div>
+</div> 
+<div class="vidtitle">SCINEMA TECH #2 : 4K CACA</div>
+<span class="viddesc" style="display:none">Aujourd'hui on parle d'un gros débat qui recommence à agiter du monde avec l'arrivée de la 8K : le mythe de la résolution.</span>
+</div>
+
+<div id="XCm1QngjOkso" class="videoline vidfr" onclick="changevid('Cm1QngjOkso')">
+  <div class="chanlogo">
+    <img class="chanlogo_img" src="https://yt3.ggpht.com/a/AATXAJwndeI8bzCKEKXvYr_uT_hmEy3gKTcvLSv8=s88" style="margin:0" />
+  </div>
+<div class="chan_name"><a href="https://youtube.com/channel/UC-4WUubuVGowG_R7gdgesPA" class="chanlink" style="color:slategrey;text-decoration:none">Max Bird</a></div>
+<div class="vid_desc">Analyse du classement au box-office</div>
+
+<div class="vidlogo"><div class="length">6:49</div>
+<div class="imgdiv seen" style="background-image: url(https://i.ytimg.com/vi/Cm1QngjOkso/hqdefault.jpg);"> 
+
+<div class="opaque Cm1QngjOkso"><div class="check"><i class="fa fa-check read-icon"></i></div></div>
+</div>
+</div> 
+<div class="vidtitle">IDÉE REÇUE #36 : Avengers Endgame est un des plus gros succès de tous les temps ?</div>
+<span class="viddesc" style="display:none"></span>
+</div>
+
+<div id="XG6LIp32R_f0" class="videoline vidfr" onclick="changevid('G6LIp32R_f0')">
+  <div class="chanlogo">
+    <img class="chanlogo_img" src="https://yt3.ggpht.com/a/AATXAJzilcmC-OiWwMG76scOHNtD7kkmTlhlyc-yag=s88" style="margin:0" />
+  </div>
+<div class="chan_name"><a href="https://youtube.com/channel/UCP46_MXP_WG_auH88FnfS1A" class="chanlink" style="color:slategrey;text-decoration:none">Nota Bene</a></div>
+<div class="vid_desc">Quelles erreurs commet le film "Chevalier" ?</div>
+
+<div class="vidlogo"><div class="length">24:40</div>
+<div class="imgdiv seen" style="background-image: url(https://i.ytimg.com/vi/G6LIp32R_f0/hqdefault.jpg);"> 
+
+<div class="opaque G6LIp32R_f0"><div class="check"><i class="fa fa-check read-icon"></i></div></div>
+</div>
+</div> 
+<div class="vidtitle">La joute médiévale et Chevalier - Motion VS History #17</div>
+<span class="viddesc" style="display:none">Faire un film médiéval qui ne soit pas un gros cliché sur patte, c’est plutôt compliqué ! Que penser alors d’une comédie qui prend comme époque le Moyen ge ? On l’a vu avec le “Chevalier Black”, c’était pas vraiment réussi. Et dans le film “Chevalier” alors ? On a quand même un casting un peu plus classe qui pourrait nous rassurer sur le traitement du film non ? Aujourd’hui on s’attarde sur un film que j’apprécie beaucoup et qui vous allez le voir, réserve quelques surprises...</span>
+</div>
+
+<div id="XGXvXCqWe3G4" class="videoline vidfr" onclick="changevid('GXvXCqWe3G4')">
+  <div class="chanlogo">
+    <img class="chanlogo_img" src="https://yt3.ggpht.com/a/AATXAJxkcj3cCL5eWmllLKK4HkI4Dw9gWCgg0UJuUw=s88" style="margin:0" />
+  </div>
+<div class="chan_name"><a href="https://youtube.com/channel/UCPF7JOWMDWZmnP_cQfyAezg" class="chanlink" style="color:slategrey;text-decoration:none">Scinéma</a></div>
+<div class="vid_desc">Quelles différences entre les caméras numérique et pellicule ?</div>
+
+<div class="vidlogo"><div class="length">12:48</div>
+<div class="imgdiv seen" style="background-image: url(https://i.ytimg.com/vi/GXvXCqWe3G4/hqdefault.jpg);"> 
+
+<div class="opaque GXvXCqWe3G4"><div class="check"><i class="fa fa-check read-icon"></i></div></div>
+</div>
+</div> 
+<div class="vidtitle">SCINEMA TECH #1 : PELLICULE VS NUMERIQUE</div>
+<span class="viddesc" style="display:none">Aujourd'hui, on parle d'un débat qui a beaucoup agité certains (un peu moins aujourd'hui) : le combat entre les deux formats pellicule ou numérique.</span>
+</div>
+
+<div id="XJ8zAULniiRA" class="videoline vidfr" onclick="changevid('J8zAULniiRA')">
+  <div class="chanlogo">
+    <img class="chanlogo_img" src="https://yt3.ggpht.com/a/AATXAJzilcmC-OiWwMG76scOHNtD7kkmTlhlyc-yag=s88" style="margin:0" />
+  </div>
+<div class="chan_name"><a href="https://youtube.com/channel/UCP46_MXP_WG_auH88FnfS1A" class="chanlink" style="color:slategrey;text-decoration:none">Nota Bene</a></div>
+<div class="vid_desc">Quelles erreurs historiques commet le film Braveheart ?</div>
+
+<div class="vidlogo"><div class="length">20:14</div>
+<div class="imgdiv seen" style="background-image: url(https://i.ytimg.com/vi/J8zAULniiRA/hqdefault.jpg);"> 
+
+<div class="opaque J8zAULniiRA"><div class="check"><i class="fa fa-check read-icon"></i></div></div>
+</div>
+</div> 
+<div class="vidtitle">25 erreurs historiques dans Braveheart - Motion VS History #4</div>
+<span class="viddesc" style="display:none">4ème épisode de Motion VS History dédié à BRAVEHEART. Aujourd'hui on ne fait pas dans la finesse et je vais m'attacher à démonter en règle le célèbre film culte ! Préparez vos mouchoirs et découvrons ensemble 25 erreurs historiques toutes plus invraisemblables les unes que les autres !</span>
+</div>
+
+<div id="XKEtmZ8uMiWI" class="videoline vidfr" onclick="changevid('KEtmZ8uMiWI')">
+  <div class="chanlogo">
+    <img class="chanlogo_img" src="https://yt3.ggpht.com/a/AATXAJxkcj3cCL5eWmllLKK4HkI4Dw9gWCgg0UJuUw=s88" style="margin:0" />
+  </div>
+<div class="chan_name"><a href="https://youtube.com/channel/UCPF7JOWMDWZmnP_cQfyAezg" class="chanlink" style="color:slategrey;text-decoration:none">Scinéma</a></div>
+<div class="vid_desc">Quelle est la source d'énergie dans Monstres et Cie ?</div>
+
+<div class="vidlogo"><div class="length">10:14</div>
+<div class="imgdiv seen" style="background-image: url(https://i.ytimg.com/vi/KEtmZ8uMiWI/hqdefault.jpg);"> 
+
+<div class="opaque KEtmZ8uMiWI"><div class="check"><i class="fa fa-check read-icon"></i></div></div>
+</div>
+</div> 
+<div class="vidtitle">SCINEMA EP.8 : MONSTRES & ÉNERGIE</div>
+<span class="viddesc" style="display:none">Monsieur Bill c’est ça ?</span>
+</div>
+
+<div id="XP1VW4ZhPENA" class="videoline vidfr" onclick="changevid('P1VW4ZhPENA')">
+  <div class="chanlogo">
+    <img class="chanlogo_img" src="https://yt3.ggpht.com/a/AATXAJxkcj3cCL5eWmllLKK4HkI4Dw9gWCgg0UJuUw=s88" style="margin:0" />
+  </div>
+<div class="chan_name"><a href="https://youtube.com/channel/UCPF7JOWMDWZmnP_cQfyAezg" class="chanlink" style="color:slategrey;text-decoration:none">Scinéma</a></div>
+<div class="vid_desc">Comment représenter des fluides au cinéma ?</div>
+
+<div class="vidlogo"><div class="length">14:41</div>
+<div class="imgdiv seen" style="background-image: url(https://i.ytimg.com/vi/P1VW4ZhPENA/hqdefault.jpg);"> 
+
+<div class="opaque P1VW4ZhPENA"><div class="check"><i class="fa fa-check read-icon"></i></div></div>
+</div>
+</div> 
+<div class="vidtitle">SCINEMA EP.7 : EFFETS SPECI-EAU</div>
+<span class="viddesc" style="display:none">Cet épisode s'intéresse à la représentation des fluides en physique et au cinéma.</span>
+</div>
+
+<div id="XPhMd-YRWs9U" class="videoline vidfr" onclick="changevid('PhMd-YRWs9U')">
+  <div class="chanlogo">
+    <img class="chanlogo_img" src="https://yt3.ggpht.com/a/AATXAJyP2EPAXeEppKwqNM0HTm-jC0_TbyIbFtmKAw=s88" style="margin:0" />
+  </div>
+<div class="chan_name"><a href="https://youtube.com/channel/UCn2odfT6D4WPg4y-zRIgU5g" class="chanlink" style="color:slategrey;text-decoration:none">Fabien Campaner & Lucie Card</a></div>
+<div class="vid_desc">Comment les Trois Mousquetaires ont-ils été traités au cinéma ?</div>
+
+<div class="vidlogo"><div class="length">27:36</div>
+<div class="imgdiv seen" style="background-image: url(https://i.ytimg.com/vi/PhMd-YRWs9U/hqdefault.jpg);"> 
+
+<div class="opaque PhMd-YRWs9U"><div class="check"><i class="fa fa-check read-icon"></i></div></div>
+</div>
+</div> 
+<div class="vidtitle">ON VA FAIRE COURS #6 : Les Trois Mousquetaires - Les clichés de l'Histoire au cinéma</div>
+<span class="viddesc" style="display:none">Sixième épisode qui traite des mousquetaires de France, et plus particulièrement des films adapté du roman d'Alexandre Dumas et Auguste Maquet (Les Trois Mousquetaires). Avec en bonus, un petit passage sur les clichés véhiculés sur le cardinal de Richelieu.</span>
+</div>
+
+<div id="XSqdzdsIAGFE" class="videoline vidfr" onclick="changevid('SqdzdsIAGFE')">
+  <div class="chanlogo">
+    <img class="chanlogo_img" src="https://yt3.ggpht.com/a/AATXAJyvI28AWBoEErXVHWt-izXAxn3pBeUKcwk9vg=s88-c-k-c0xffffffff-no-rj-mo" style="margin:0" />
+  </div>
+<div class="chan_name"><a href="https://youtube.com/channel/UC4Jrte_YtwWfANKNyzse5iA" class="chanlink" style="color:slategrey;text-decoration:none">Avides de recherche</a></div>
+<div class="vid_desc">Quelles inspirations mythologiques ont été utilisées dans Star Wars ?</div>
+
+<div class="vidlogo"><div class="length">9:12</div>
+<div class="imgdiv seen" style="background-image: url(https://i.ytimg.com/vi/SqdzdsIAGFE/hqdefault.jpg);"> 
+
+<div class="opaque SqdzdsIAGFE"><div class="check"><i class="fa fa-check read-icon"></i></div></div>
+</div>
+</div> 
+<div class="vidtitle">Star Wars et l’Antiquité – Avides de recherche #35</div>
+<span class="viddesc" style="display:none">Avides de Recherche est la chaine Youtube du magazine Mondes Sociaux dont l’objet est de mettre en images et en voix des travaux de recherche en SHS dans des formes susceptibles d’intéresser des publics larges. Animée par Léa Bello, ce format propose des vidéos réalisées à partir d’articles publiés dans des revues scientifiques. Ce 35 épisode d’Avides de Recherche présente en son et en images l'article de Vincent Chollier "Star Wars : les origines antiques du mythe populaire", publié chez OpenEdition à lire ici : https://books.openedition.org/momedit...</span>
+</div>
+
+<div id="XVcPk6mI47rQ" class="videoline vidfr" onclick="changevid('VcPk6mI47rQ')">
+  <div class="chanlogo">
+    <img class="chanlogo_img" src="https://yt3.ggpht.com/a/AATXAJyP2EPAXeEppKwqNM0HTm-jC0_TbyIbFtmKAw=s88" style="margin:0" />
+  </div>
+<div class="chan_name"><a href="https://youtube.com/channel/UCn2odfT6D4WPg4y-zRIgU5g" class="chanlink" style="color:slategrey;text-decoration:none">Fabien Campaner & Lucie Card</a></div>
+<div class="vid_desc">Comment les Amérindiens ont-ils été traités au cinéma ?</div>
+
+<div class="vidlogo"><div class="length">9:54</div>
+<div class="imgdiv seen" style="background-image: url(https://i.ytimg.com/vi/VcPk6mI47rQ/hqdefault.jpg);"> 
+
+<div class="opaque VcPk6mI47rQ"><div class="check"><i class="fa fa-check read-icon"></i></div></div>
+</div>
+</div> 
+<div class="vidtitle">ON VA FAIRE COURS #2 : Les Amérindiens du Nord - Les clichés de l'Histoire au cinéma</div>
+<span class="viddesc" style="display:none">Important avant de regarder ! Je précise qu'il y a une erreur qui s'est glissée dans la frise. Lorsque je parle de "Washington" qui aurait décidé de parquer les amérindiens à l'Ouest, il est question de la ville et non du président "George Washington". Voilà, faut juste que j'apprenne à lire mes fiches, désolé ! Sinon, deuxième épisode sur les indiens d'Amérique et les petites approximations courantes concernant leur mode de vie à partir de la découverte "officielle" de leur continent en 1492. Si vous pensez que les amérindiens vivaient tous dans des tipis, scalpaient à tous va et chevauchaient de fiers destriers dans les grandes plaines, cet épisode est fait pour vous !</span>
+</div>
+
+<div id="XVcrtbPs1mmU" class="videoline vidfr" onclick="changevid('VcrtbPs1mmU')">
+  <div class="chanlogo">
+    <img class="chanlogo_img" src="https://yt3.ggpht.com/a/AATXAJwbMMZoNnPvTpsZHPFqOQJx-SDHRNIyFvvHkQ=s88" style="margin:0" />
+  </div>
+<div class="chan_name"><a href="https://youtube.com/channel/UCofQxJWd4qkqc7ZgaLkZfcw" class="chanlink" style="color:slategrey;text-decoration:none">Linguisticae</a></div>
+<div class="vid_desc">Retour sur le film Premier contact (Arrival en anglais)</div>
+
+<div class="vidlogo"><div class="length">22:07</div>
+<div class="imgdiv seen" style="background-image: url(https://i.ytimg.com/vi/VcrtbPs1mmU/hqdefault.jpg);"> 
+
+<div class="opaque VcrtbPs1mmU"><div class="check"><i class="fa fa-check read-icon"></i></div></div>
+</div>
+</div> 
+<div class="vidtitle">Premier Contact | Arrival [SPOIL]</div>
+<span class="viddesc" style="display:none">Parce que ce film est cool.</span>
+</div>
+
+<div id="XWUSJo0hNo-c" class="videoline vidfr" onclick="changevid('WUSJo0hNo-c')">
+  <div class="chanlogo">
+    <img class="chanlogo_img" src="https://yt3.ggpht.com/a/AATXAJyP2EPAXeEppKwqNM0HTm-jC0_TbyIbFtmKAw=s88" style="margin:0" />
+  </div>
+<div class="chan_name"><a href="https://youtube.com/channel/UCn2odfT6D4WPg4y-zRIgU5g" class="chanlink" style="color:slategrey;text-decoration:none">Fabien Campaner & Lucie Card</a></div>
+<div class="vid_desc">Comment les Templiers ont-ils été traités au cinéma ?</div>
+
+<div class="vidlogo"><div class="length">8:55</div>
+<div class="imgdiv seen" style="background-image: url(https://i.ytimg.com/vi/WUSJo0hNo-c/hqdefault.jpg);"> 
+
+<div class="opaque WUSJo0hNo-c"><div class="check"><i class="fa fa-check read-icon"></i></div></div>
+</div>
+</div> 
+<div class="vidtitle">ON VA FAIRE COURS #1 : Les Templiers - Les clichés de l'Histoire au cinéma</div>
+<span class="viddesc" style="display:none">Dans ce premier épisode, il est question des stéréotypes sur l'ordre des templiers qui a souvent été associés, au cinéma et à la télévision, à des mythes tels que le Graal et autres trésors cachés.</span>
+</div>
+
+<div id="XXS5vgEN4tV0" class="videoline vidfr" onclick="changevid('XS5vgEN4tV0')">
+  <div class="chanlogo">
+    <img class="chanlogo_img" src="https://yt3.ggpht.com/a/AATXAJwiJ3DP9jk13zuImf3HvjzWTr02GBPDtOV7GA=s144-c-k-c0xffffffff-no-rj-mo" style="margin:0" />
+  </div>
+<div class="chan_name"><a href="https://youtube.com/channel/UCLhOJJbPciPdocXTaAk2SdA" class="chanlink" style="color:slategrey;text-decoration:none">Passé sauvage</a></div>
+<div class="vid_desc">Indiana Jones est-il un archéologue ?</div>
+
+<div class="vidlogo"><div class="length">8:13</div>
+<div class="imgdiv seen" style="background-image: url(https://i.ytimg.com/vi/XS5vgEN4tV0/hqdefault.jpg);"> 
+
+<div class="opaque XS5vgEN4tV0"><div class="check"><i class="fa fa-check read-icon"></i></div></div>
+</div>
+</div> 
+<div class="vidtitle">Que vaut Indiana Jones pour les archéologues ?  / Passé Sauvage La mn nécessaire # 7</div>
+<span class="viddesc" style="display:none">7ème épisode de "la minute nécessaire" avec, en guest, le plus grand archéologue de tous les temps... ou pas.</span>
+</div>
+
+<div id="XZJZn6Vl2kxQ" class="videoline vidfr" onclick="changevid('ZJZn6Vl2kxQ')">
+  <div class="chanlogo">
+    <img class="chanlogo_img" src="https://yt3.ggpht.com/a/AATXAJyP2EPAXeEppKwqNM0HTm-jC0_TbyIbFtmKAw=s88" style="margin:0" />
+  </div>
+<div class="chan_name"><a href="https://youtube.com/channel/UCn2odfT6D4WPg4y-zRIgU5g" class="chanlink" style="color:slategrey;text-decoration:none">Fabien Campaner & Lucie Card</a></div>
+<div class="vid_desc">Comment le conte "la Belle et la Bête" a-t-il été adapté au cinéma ?</div>
+
+<div class="vidlogo"><div class="length">26:37</div>
+<div class="imgdiv seen" style="background-image: url(https://i.ytimg.com/vi/ZJZn6Vl2kxQ/hqdefault.jpg);"> 
+
+<div class="opaque ZJZn6Vl2kxQ"><div class="check"><i class="fa fa-check read-icon"></i></div></div>
+</div>
+</div> 
+<div class="vidtitle">La Belle et la Bête - CONTES À REBOURS #1</div>
+<span class="viddesc" style="display:none">Nouvelle émission pour les fêtes de fin d'année. En gros, "On va faire Cours" sur les contes, avec toujours le côté "Histoire et cinéma". Découvrez les origines du conte de "La Belle et la Bête" au coin du feu, à travers les versions de Madame de Villeneuve et Madame Leprince Beaumont, et quels sont les changements pour arriver à celles de Disney, Jean Cocteau et Christophe Gans. On espère que ça vous plaira !</span>
+</div>
+
+<div id="X_15Rx0TPqnE" class="videoline vidfr" onclick="changevid('_15Rx0TPqnE')">
+  <div class="chanlogo">
+    <img class="chanlogo_img" src="https://yt3.ggpht.com/a/AATXAJyP2EPAXeEppKwqNM0HTm-jC0_TbyIbFtmKAw=s88" style="margin:0" />
+  </div>
+<div class="chan_name"><a href="https://youtube.com/channel/UCn2odfT6D4WPg4y-zRIgU5g" class="chanlink" style="color:slategrey;text-decoration:none">Fabien Campaner & Lucie Card</a></div>
+<div class="vid_desc">Comment les Vikings ont-ils été traités au cinéma ?</div>
+
+<div class="vidlogo"><div class="length">30:51</div>
+<div class="imgdiv seen" style="background-image: url(https://i.ytimg.com/vi/_15Rx0TPqnE/hqdefault.jpg);"> 
+
+<div class="opaque _15Rx0TPqnE"><div class="check"><i class="fa fa-check read-icon"></i></div></div>
+</div>
+</div> 
+<div class="vidtitle">ON VA FAIRE COURS #5 : Les Vikings - Les clichés de l'Histoire au cinéma</div>
+<span class="viddesc" style="display:none">Cinquième épisode qui se déroule pendant les grandes vacances, Manchard et Boulier se retrouvent à la fac avec le professeur Baf pour éclaircir quelques points historiques sur les vikings. Perçus comme un peuple de fiers guerriers blonds aux yeux bleus qui passaient leurs temps libre à casser la binette à des moines sévèrement burés, il est temps de découvrir ou redécouvrir les autres facettes de nos scandinaves fantasmés.</span>
+</div>
+
+<div id="XfK6iZh1Ayfg" class="videoline vidfr" onclick="changevid('fK6iZh1Ayfg')">
+  <div class="chanlogo">
+    <img class="chanlogo_img" src="https://yt3.ggpht.com/a/AATXAJxfcbhONA94WAF4cBlNJVYGX5XVowbrbJFoFA=s88" style="margin:0" />
+  </div>
+<div class="chan_name"><a href="https://youtube.com/channel/UCCTDcg7VBiWDqwpK_nbvX2A" class="chanlink" style="color:slategrey;text-decoration:none">Trucs de philo</a></div>
+<div class="vid_desc"></div>
+
+<div class="vidlogo"><div class="length">26:09</div>
+<div class="imgdiv seen" style="background-image: url(https://i.ytimg.com/vi/fK6iZh1Ayfg/hqdefault.jpg);"> 
+
+<div class="opaque fK6iZh1Ayfg"><div class="check"><i class="fa fa-check read-icon"></i></div></div>
+</div>
+</div> 
+<div class="vidtitle">Matrix : la caverne de Platon ? °_°</div>
+<span class="viddesc" style="display:none">Back to basics. Deux monuments, l'un de la philosophie, l'autre de la SF.
+Attention, je spoil les trois premiers quarts d'heure, mais pas trop la suite.
+</span>
+</div>
+
+<div id="XhE_ycNsWOes" class="videoline vidfr" onclick="changevid('hE_ycNsWOes')">
+  <div class="chanlogo">
+    <img class="chanlogo_img" src="https://yt3.ggpht.com/a/AATXAJyP2EPAXeEppKwqNM0HTm-jC0_TbyIbFtmKAw=s88" style="margin:0" />
+  </div>
+<div class="chan_name"><a href="https://youtube.com/channel/UCn2odfT6D4WPg4y-zRIgU5g" class="chanlink" style="color:slategrey;text-decoration:none">Fabien Campaner & Lucie Card</a></div>
+<div class="vid_desc">Comment les archéologues ont-ils été traités au cinéma ?</div>
+
+<div class="vidlogo"><div class="length">18:37</div>
+<div class="imgdiv seen" style="background-image: url(https://i.ytimg.com/vi/hE_ycNsWOes/hqdefault.jpg);"> 
+
+<div class="opaque hE_ycNsWOes"><div class="check"><i class="fa fa-check read-icon"></i></div></div>
+</div>
+</div> 
+<div class="vidtitle">ON VA FAIRE COURS #4 : Les Archéologues - Les clichés de l'Histoire au cinéma</div>
+<span class="viddesc" style="display:none">Indiana Jones serait t'il davantage un pilleur de tombe qu'un véritable archéologue ?</span>
+</div>
+
+<div id="XhKnWeXovrpY" class="videoline vidfr" onclick="changevid('hKnWeXovrpY')">
+  <div class="chanlogo">
+    <img class="chanlogo_img" src="https://yt3.ggpht.com/a/AATXAJzilcmC-OiWwMG76scOHNtD7kkmTlhlyc-yag=s88" style="margin:0" />
+  </div>
+<div class="chan_name"><a href="https://youtube.com/channel/UCP46_MXP_WG_auH88FnfS1A" class="chanlink" style="color:slategrey;text-decoration:none">Nota Bene</a></div>
+<div class="vid_desc">Quelles erreurs commet le film "The King" ?</div>
+
+<div class="vidlogo"><div class="length">16:53</div>
+<div class="imgdiv seen" style="background-image: url(https://i.ytimg.com/vi/hKnWeXovrpY/hqdefault.jpg);"> 
+
+<div class="opaque hKnWeXovrpY"><div class="check"><i class="fa fa-check read-icon"></i></div></div>
+</div>
+</div> 
+<div class="vidtitle">The King : STOP au Frenchbashing ?!</div>
+<span class="viddesc" style="display:none">Il y a peu sortait sur Netflix le film "The King", nous proposant de revivre la bataille d'Azincourt. Un film "Historique" qui pourtant semble tout faire pour rabaisser les français et trafiquer l'histoire au profit d'une vision plutôt flatteuse des anglais. Je vous propose aujourd'hui d'analyser tout ça et de voir pourquoi et comment ce frenchbashing est mis en oeuvre...s'il existe vraiment !</span>
+</div>
+
+<div id="Xi4oVJWn6yn8" class="videoline vidfr" onclick="changevid('i4oVJWn6yn8')">
+  <div class="chanlogo">
+    <img class="chanlogo_img" src="https://yt3.ggpht.com/a/AATXAJzilcmC-OiWwMG76scOHNtD7kkmTlhlyc-yag=s88" style="margin:0" />
+  </div>
+<div class="chan_name"><a href="https://youtube.com/channel/UCP46_MXP_WG_auH88FnfS1A" class="chanlink" style="color:slategrey;text-decoration:none">Nota Bene</a></div>
+<div class="vid_desc">De quel évènement historique s'inspire le film "Le tombeau des lucioles" ?</div>
+
+<div class="vidlogo"><div class="length">16:00</div>
+<div class="imgdiv seen" style="background-image: url(https://i.ytimg.com/vi/i4oVJWn6yn8/hqdefault.jpg);"> 
+
+<div class="opaque i4oVJWn6yn8"><div class="check"><i class="fa fa-check read-icon"></i></div></div>
+</div>
+</div> 
+<div class="vidtitle">La véritable histoire du tombeau des lucioles - Motion VS History #16</div>
+<span class="viddesc" style="display:none">S'il fallait choisir un prix pour le film le plus triste de l'Histoire, nul doute que le tombeau des lucioles serait en bonne place pour remporter le titre. Et pourtant, ce qui rend le film encore plus profond, c'est qu'il s'inscrit dans un contexte historique très dur tout en s'inspirant, en partie, d'une histoire vraie... Je vous propose de revenir ensemble sur cette période tragique du Japon et sur cet anim cher à mon cœur !</span>
+</div>
+
+<div id="XiK_aphLDEUs" class="videoline vidfr" onclick="changevid('iK_aphLDEUs')">
+  <div class="chanlogo">
+    <img class="chanlogo_img" src="https://yt3.ggpht.com/a/AATXAJzilcmC-OiWwMG76scOHNtD7kkmTlhlyc-yag=s88" style="margin:0" />
+  </div>
+<div class="chan_name"><a href="https://youtube.com/channel/UCP46_MXP_WG_auH88FnfS1A" class="chanlink" style="color:slategrey;text-decoration:none">Nota Bene</a></div>
+<div class="vid_desc">De qui s'inspire le film "Le dernier Samouraï" ?</div>
+
+<div class="vidlogo"><div class="length">18:03</div>
+<div class="imgdiv seen" style="background-image: url(https://i.ytimg.com/vi/iK_aphLDEUs/hqdefault.jpg);"> 
+
+<div class="opaque iK_aphLDEUs"><div class="check"><i class="fa fa-check read-icon"></i></div></div>
+</div>
+</div> 
+<div class="vidtitle">La vérité sur le dernier samouraï - Motion VS History #7</div>
+<span class="viddesc" style="display:none">7ème épisode de Motion VS History dans lequel on va s'attacher à démêler le vrai du faux dans "le dernier samouraï" ! Une belle occasion de revenir sur l'histoire des samouraïs et du japon en traversant les époques, de la période Sengoku à la période Meiji en passant par l'époque Edo.</span>
+</div>
+
+<div id="Xm2CqV7BqEKo" class="videoline vidfr" onclick="changevid('m2CqV7BqEKo')">
+  <div class="chanlogo">
+    <img class="chanlogo_img" src="https://yt3.ggpht.com/a/AATXAJyP2EPAXeEppKwqNM0HTm-jC0_TbyIbFtmKAw=s88" style="margin:0" />
+  </div>
+<div class="chan_name"><a href="https://youtube.com/channel/UCn2odfT6D4WPg4y-zRIgU5g" class="chanlink" style="color:slategrey;text-decoration:none">Fabien Campaner & Lucie Card</a></div>
+<div class="vid_desc">Comment les Spartiates ont-ils été traités au cinéma ?</div>
+
+<div class="vidlogo"><div class="length">33:39</div>
+<div class="imgdiv seen" style="background-image: url(https://i.ytimg.com/vi/m2CqV7BqEKo/hqdefault.jpg);"> 
+
+<div class="opaque m2CqV7BqEKo"><div class="check"><i class="fa fa-check read-icon"></i></div></div>
+</div>
+</div> 
+<div class="vidtitle">ON VA FAIRE COURS #8 : Les Spartiates - Les clichés de l'Histoire au cinéma</div>
+<span class="viddesc" style="display:none">Huitième épisode qui se concentre sur le film "300" de Zack Snyder. Les spartiates étaient-ils des soldats ultimes ? La violence était-elle si présente dans leur société ? Ont-ils contribué à rendre la Grèce antique libre face au mysticisme et la tyrannie des méchants Perses ? "300" est-il un film raciste ?</span>
+</div>
+
+<div id="XmN_T8YaXnZg" class="videoline vidfr" onclick="changevid('mN_T8YaXnZg')">
+  <div class="chanlogo">
+    <img class="chanlogo_img" src="https://yt3.ggpht.com/a/AATXAJwZp5cTkzPJk-y4vGOo1cEIzCPbjg2xApZcRw=s88" style="margin:0" />
+  </div>
+<div class="chan_name"><a href="https://youtube.com/channel/UC9BnGZLT4iPaJtDOXYwQuHQ" class="chanlink" style="color:slategrey;text-decoration:none">Primum Non Nocere</a></div>
+<div class="vid_desc">Présentation du fonctionnement du coeur, de l'arrêt cardiaque et du défibrillateur</div>
+
+<div class="vidlogo"><div class="length">12:45</div>
+<div class="imgdiv seen" style="background-image: url(https://i.ytimg.com/vi/mN_T8YaXnZg/hqdefault.jpg);"> 
+
+<div class="opaque mN_T8YaXnZg"><div class="check"><i class="fa fa-check read-icon"></i></div></div>
+</div>
+</div> 
+<div class="vidtitle">PNN 10 - L'arrêt cardiaque au cinéma et à la télévision</div>
+<span class="viddesc" style="display:none">Pour cet épisode 10 on va s'attaquer au cinéma et à ses clichés. A un cliché en particulier : la gestion de l'arrêt cardiaque ! A quoi correspond le tracés plat ? A quoi sert le défibrillateur ? Peut-on relancer un coeur avec un choc éléctrique ? On va essayer de repondre à ces differentes questions et vous pourriez être surpris. Chargez à 300, on dégage !</span>
+</div>
+
+<div id="XnZvVzd2wIhc" class="videoline vidfr" onclick="changevid('nZvVzd2wIhc')">
+  <div class="chanlogo">
+    <img class="chanlogo_img" src="https://yt3.ggpht.com/a/AATXAJyP2EPAXeEppKwqNM0HTm-jC0_TbyIbFtmKAw=s88" style="margin:0" />
+  </div>
+<div class="chan_name"><a href="https://youtube.com/channel/UCn2odfT6D4WPg4y-zRIgU5g" class="chanlink" style="color:slategrey;text-decoration:none">Fabien Campaner & Lucie Card</a></div>
+<div class="vid_desc">Comment les Chevaliers de la Table ronde ont-ils été traités au cinéma ?</div>
+
+<div class="vidlogo"><div class="length">29:33</div>
+<div class="imgdiv seen" style="background-image: url(https://i.ytimg.com/vi/nZvVzd2wIhc/hqdefault.jpg);"> 
+
+<div class="opaque nZvVzd2wIhc"><div class="check"><i class="fa fa-check read-icon"></i></div></div>
+</div>
+</div> 
+<div class="vidtitle">ON VA FAIRE COURS #7 - Les Chevaliers de la Table Ronde - Les clichés de l'Histoire au cinéma</div>
+<span class="viddesc" style="display:none">Septième épisode dans lequel on aborde les Légendes Arthuriennes ! Le roi Arthur et ses chevaliers ont-ils vraiment existé ? Quelle est l'influence du mythe à travers l'Histoire et le cinéma ? On espère que cette vidéo vous plaira. N'hésitez pas à interagir dans les commentaires si vous avez des questions, on répondra.</span>
+</div>
+
+<div id="XnwQ8RZodYrY" class="videoline vidfr" onclick="changevid('nwQ8RZodYrY')">
+  <div class="chanlogo">
+    <img class="chanlogo_img" src="https://yt3.ggpht.com/a/AATXAJxfcbhONA94WAF4cBlNJVYGX5XVowbrbJFoFA=s88" style="margin:0" />
+  </div>
+<div class="chan_name"><a href="https://youtube.com/channel/UCCTDcg7VBiWDqwpK_nbvX2A" class="chanlink" style="color:slategrey;text-decoration:none">Trucs de philo</a></div>
+<div class="vid_desc"></div>
+
+<div class="vidlogo"><div class="length">17:35</div>
+<div class="imgdiv seen" style="background-image: url(https://i.ytimg.com/vi/nwQ8RZodYrY/hqdefault.jpg);"> 
+
+<div class="opaque nwQ8RZodYrY"><div class="check"><i class="fa fa-check read-icon"></i></div></div>
+</div>
+</div> 
+<div class="vidtitle">Gattaca : libéralisme et eugénisme. 2/3</div>
+<span class="viddesc" style="display:none">On fait le point sur le rapport de Gattaca à la science, et on aborde les sujets difficiles de l'eugénisme et du libéralisme philosophique en général. C'est pas facile.</span>
+</div>
+
+<div id="XoN-GVWd2UW8" class="videoline vidfr" onclick="changevid('oN-GVWd2UW8')">
+  <div class="chanlogo">
+    <img class="chanlogo_img" src="https://yt3.ggpht.com/a/AATXAJyP2EPAXeEppKwqNM0HTm-jC0_TbyIbFtmKAw=s88" style="margin:0" />
+  </div>
+<div class="chan_name"><a href="https://youtube.com/channel/UCn2odfT6D4WPg4y-zRIgU5g" class="chanlink" style="color:slategrey;text-decoration:none">Fabien Campaner & Lucie Card</a></div>
+<div class="vid_desc">Comment les sorcières ont-ils été traités au cinéma ?</div>
+
+<div class="vidlogo"><div class="length">48:55</div>
+<div class="imgdiv seen" style="background-image: url(https://i.ytimg.com/vi/oN-GVWd2UW8/hqdefault.jpg);"> 
+
+<div class="opaque oN-GVWd2UW8"><div class="check"><i class="fa fa-check read-icon"></i></div></div>
+</div>
+</div> 
+<div class="vidtitle">ON VA FAIRE COURS #9 : Les Sorcières - Les clichés de l'Histoire au cinéma</div>
+<span class="viddesc" style="display:none">Neuvième épisode spécial Halloween focalisé sur les sorcières du folklore occidental, avec une partie entièrement consacrée aux événements de Salem. D'où vient la caricature de la vilaine jeteuse de sorts ? Étaient-elles vraiment pourchassées en masse par l'Église ? Les procès de Salem étaient-ils les plus meurtriers de l'Histoire ?</span>
+</div>
+
+<div id="Xpnvz6wBfG68" class="videoline vidfr" onclick="changevid('pnvz6wBfG68')">
+  <div class="chanlogo">
+    <img class="chanlogo_img" src="https://yt3.ggpht.com/a/AATXAJxkcj3cCL5eWmllLKK4HkI4Dw9gWCgg0UJuUw=s88" style="margin:0" />
+  </div>
+<div class="chan_name"><a href="https://youtube.com/channel/UCPF7JOWMDWZmnP_cQfyAezg" class="chanlink" style="color:slategrey;text-decoration:none">Scinéma</a></div>
+<div class="vid_desc">Quelles techniques cinématographiques ont été utilisées dans le Seigneur des Anneaux ?</div>
+
+<div class="vidlogo"><div class="length">10:31</div>
+<div class="imgdiv seen" style="background-image: url(https://i.ytimg.com/vi/pnvz6wBfG68/hqdefault.jpg);"> 
+
+<div class="opaque pnvz6wBfG68"><div class="check"><i class="fa fa-check read-icon"></i></div></div>
+</div>
+</div> 
+<div class="vidtitle">SCINEMA EP.2 : COMMENT FILMER UN HOBBIT ?</div>
+<span class="viddesc" style="display:none">Cet épisode s'intéresse à la trilogie du Seigneur des Anneaux et surtout au problème du rendu des hobbits à l'écran.</span>
+</div>
+
+<div id="XtL4_0hajMzA" class="videoline vidfr" onclick="changevid('tL4_0hajMzA')">
+  <div class="chanlogo">
+    <img class="chanlogo_img" src="https://yt3.ggpht.com/a/AATXAJxfcbhONA94WAF4cBlNJVYGX5XVowbrbJFoFA=s88" style="margin:0" />
+  </div>
+<div class="chan_name"><a href="https://youtube.com/channel/UCCTDcg7VBiWDqwpK_nbvX2A" class="chanlink" style="color:slategrey;text-decoration:none">Trucs de philo</a></div>
+<div class="vid_desc"></div>
+
+<div class="vidlogo"><div class="length">18:50</div>
+<div class="imgdiv seen" style="background-image: url(https://i.ytimg.com/vi/tL4_0hajMzA/hqdefault.jpg);"> 
+
+<div class="opaque tL4_0hajMzA"><div class="check"><i class="fa fa-check read-icon"></i></div></div>
+</div>
+</div> 
+<div class="vidtitle">Gattaca : Utopie ou dystopie ? 1/3</div>
+<span class="viddesc" style="display:none">Pour cette première vidéo, on étudie la cité de Gattaca et ses liens à l'utopie et la dystopie, puis on fait un petit détour par la philosophie morale !</span>
+</div>
+
+<div id="XuuUIePCN6zo" class="videoline vidfr" onclick="changevid('uuUIePCN6zo')">
+  <div class="chanlogo">
+    <img class="chanlogo_img" src="https://yt3.ggpht.com/a/AATXAJzilcmC-OiWwMG76scOHNtD7kkmTlhlyc-yag=s88" style="margin:0" />
+  </div>
+<div class="chan_name"><a href="https://youtube.com/channel/UCP46_MXP_WG_auH88FnfS1A" class="chanlink" style="color:slategrey;text-decoration:none">Nota Bene</a></div>
+<div class="vid_desc">De quels évènements s'inspire le film "Joyeux Noël" ?</div>
+
+<div class="vidlogo"><div class="length">13:36</div>
+<div class="imgdiv seen" style="background-image: url(https://i.ytimg.com/vi/uuUIePCN6zo/hqdefault.jpg);"> 
+
+<div class="opaque uuUIePCN6zo"><div class="check"><i class="fa fa-check read-icon"></i></div></div>
+</div>
+</div> 
+<div class="vidtitle">Joyeux Noel et Exode de 1940 - Motion VS History #3</div>
+<span class="viddesc" style="display:none">Troisième épisode de "Motion VS History", l'émission qui sépare l'histoire d'une fiction de celle de la réalité ! Dans ce numéro nous reviendrons sur le film "Joyeux Noël" de Christian Carion et sur les inspirations qui l'ont poussé à réaliser un film sur la fraternisation dans les tranchées durant la 1ère guerre mondiale. Nous aborderons également une initiative autour de son prochain film qui vise à reccueillir un maximum de témoignage sur l'exode qu'on vécu des millions de français en 1940.</span>
+</div>
+
+<div id="XvUNPAkLGDiI" class="videoline vidfr" onclick="changevid('vUNPAkLGDiI')">
+  <div class="chanlogo">
+    <img class="chanlogo_img" src="https://yt3.ggpht.com/a/AATXAJxkcj3cCL5eWmllLKK4HkI4Dw9gWCgg0UJuUw=s88" style="margin:0" />
+  </div>
+<div class="chan_name"><a href="https://youtube.com/channel/UCPF7JOWMDWZmnP_cQfyAezg" class="chanlink" style="color:slategrey;text-decoration:none">Scinéma</a></div>
+<div class="vid_desc">Comment faire rire au cinéma ?</div>
+
+<div class="vidlogo"><div class="length">42:42</div>
+<div class="imgdiv seen" style="background-image: url(https://i.ytimg.com/vi/vUNPAkLGDiI/hqdefault.jpg);"> 
+
+<div class="opaque vUNPAkLGDiI"><div class="check"><i class="fa fa-check read-icon"></i></div></div>
+</div>
+</div> 
+<div class="vidtitle">SCINEMA EP.9 : LA LOGIQUE DE L'HUMOUR</div>
+<span class="viddesc" style="display:none">Une vidéo où je fais deux trucs parfaitement insupportables pour beaucoup de gens sur Internet : expliquer des blagues et longuement parler de The Office. J’espère que ça va bien passer.</span>
+</div>
+
+<div id="XxVg7YNu2cLc" class="videoline vidfr" onclick="changevid('xVg7YNu2cLc')">
+  <div class="chanlogo">
+    <img class="chanlogo_img" src="https://yt3.ggpht.com/a/AATXAJxkcj3cCL5eWmllLKK4HkI4Dw9gWCgg0UJuUw=s88" style="margin:0" />
+  </div>
+<div class="chan_name"><a href="https://youtube.com/channel/UCPF7JOWMDWZmnP_cQfyAezg" class="chanlink" style="color:slategrey;text-decoration:none">Scinéma</a></div>
+<div class="vid_desc">Comment Mary Poppins pourrait-elle voler dans la réalité ?</div>
+
+<div class="vidlogo"><div class="length">7:45</div>
+<div class="imgdiv seen" style="background-image: url(https://i.ytimg.com/vi/xVg7YNu2cLc/hqdefault.jpg);"> 
+
+<div class="opaque xVg7YNu2cLc"><div class="check"><i class="fa fa-check read-icon"></i></div></div>
+</div>
+</div> 
+<div class="vidtitle">SCINEMA EP.5 : MARY FLYING POPPINS</div>
+<span class="viddesc" style="display:none">Cet épisode s'intéresse à Mary Poppins et Weng Weng (de la Cruz) et sur leur capacité à voler.</span>
+</div>
+
+<div id="XzED2rFOvY40" class="videoline vidfr" onclick="changevid('zED2rFOvY40')">
+  <div class="chanlogo">
+    <img class="chanlogo_img" src="https://yt3.ggpht.com/a/AATXAJyvI28AWBoEErXVHWt-izXAxn3pBeUKcwk9vg=s88-c-k-c0xffffffff-no-rj-mo" style="margin:0" />
+  </div>
+<div class="chan_name"><a href="https://youtube.com/channel/UC4Jrte_YtwWfANKNyzse5iA" class="chanlink" style="color:slategrey;text-decoration:none">Avides de recherche</a></div>
+<div class="vid_desc">Comment les super-héroines sont-elles présentées dans le cinéma ?</div>
+
+<div class="vidlogo"><div class="length">10:54</div>
+<div class="imgdiv seen" style="background-image: url(https://i.ytimg.com/vi/zED2rFOvY40/hqdefault.jpg);"> 
+
+<div class="opaque zED2rFOvY40"><div class="check"><i class="fa fa-check read-icon"></i></div></div>
+</div>
+</div> 
+<div class="vidtitle">Les super-héroïnes se battent-elles comme des filles ?</div>
+<span class="viddesc" style="display:none">Avides de Recherche est la chaine Youtube du magazine Mondes Sociaux dont l’objet est de mettre en images et en voix des travaux de recherche en SHS dans des formes susceptibles d’intéresser des publics larges. Animé par Léa Bello, ce format propose des vidéos réalisées à partir d’articles publiés dans des revues scientifiques. Ce 39e épisode d’Avides de Recherche présente en son et en images l'article de Maxime Lerolle "Les super-héroïnes se battent-elles comme des filles ?" à lire ici : http://genreenseries.weebly.com/uploa...</span>
+</div>
+
+<div id="XzVj7YA2H7Lk" class="videoline vidfr" onclick="changevid('zVj7YA2H7Lk')">
+  <div class="chanlogo">
+    <img class="chanlogo_img" src="https://yt3.ggpht.com/a/AATXAJyP2EPAXeEppKwqNM0HTm-jC0_TbyIbFtmKAw=s88" style="margin:0" />
+  </div>
+<div class="chan_name"><a href="https://youtube.com/channel/UCn2odfT6D4WPg4y-zRIgU5g" class="chanlink" style="color:slategrey;text-decoration:none">Fabien Campaner & Lucie Card</a></div>
+<div class="vid_desc">Comment les Samouraïs ont-ils été traités au cinéma ?</div>
+
+<div class="vidlogo"><div class="length">15:06</div>
+<div class="imgdiv seen" style="background-image: url(https://i.ytimg.com/vi/zVj7YA2H7Lk/hqdefault.jpg);"> 
+
+<div class="opaque zVj7YA2H7Lk"><div class="check"><i class="fa fa-check read-icon"></i></div></div>
+</div>
+</div> 
+<div class="vidtitle">ON VA FAIRE COURS #3 : Les Samouraïs - Les clichés de l'Histoire au cinéma</div>
+<span class="viddesc" style="display:none">Dans cet épisode, on passe en revue les clichés sur les samouraïs au cinéma. La plupart des clichés abordés ont été véhiculés par le cinéma japonais et américain, qui ont souvent représentés les samouraïs comme des mercenaires défenseurs de la veuve et de l'orphelin, ce qui n'était pas forcément le cas. On retrouve cette image notamment dans "Les Sept Samouraïs" d'Akira Kurosawa, qui met en scène des rōnins protégeant un village en proie à une bande de bandits de grands chemins. Dans cet épisode, on traite surtout du film "Le Dernier Samouraï" d'Edward Zwick, avec Tom Cruise. Ce long-métrage, bien que foutrement divertissant, n’échappe pas aux raccourcis. Il s'agit en effet d'une réinterprétation de l'histoire vraie d'un officier français, Jules Brunet, envoyé au Japon pour former les soldats du shogun. Certes, la nationalité du personnage est changée pour attirer le public américain, mais surtout le contexte et l'époque sont complètement différents.</span>
+</div>
+
+<h2 id="arts">Arts</h2>
+<div id="X-Xgz_xKi03U" class="videoline vidfr" onclick="changevid('-Xgz_xKi03U')">
+  <div class="chanlogo">
+    <img class="chanlogo_img" src="https://yt3.ggpht.com/a/AATXAJxF1BJvGevYRzmRNHBKy675ggjm9Po9MvLjww=s88" style="margin:0" />
+  </div>
+<div class="chan_name"><a href="https://youtube.com/channel/UCKjDY4joMPcoRMmd-G1yz1Q" class="chanlink" style="color:slategrey;text-decoration:none">C'est une autre histoire</a></div>
+<div class="vid_desc">Comment l'Annonciation est-elle représentée dans la peinture ?</div>
+
+<div class="vidlogo"><div class="length">6:16</div>
+<div class="imgdiv seen" style="background-image: url(https://i.ytimg.com/vi/-Xgz_xKi03U/hqdefault.jpg);"> 
+
+<div class="opaque -Xgz_xKi03U"><div class="check"><i class="fa fa-check read-icon"></i></div></div>
+</div>
+</div> 
+<div class="vidtitle">L'Annonciation - Tu vois le tableau #5</div>
+<span class="viddesc" style="display:none">Un "Tu vois le tableau" présentant le thème de l'Annonciation. Bin l'annonciation c'est quand on annonce un truc, et là c'est pas une petite nouvelle, puisque c'est pour dire à Marie (la Vierge, pas ta voisine), qu'elle est enceinte ! Stylay non ?</span>
+</div>
+
+<div id="X1IRoQfTlno8" class="videoline vidfr" onclick="changevid('1IRoQfTlno8')">
+  <div class="chanlogo">
+    <img class="chanlogo_img" src="https://yt3.ggpht.com/a/AATXAJxF1BJvGevYRzmRNHBKy675ggjm9Po9MvLjww=s88" style="margin:0" />
+  </div>
+<div class="chan_name"><a href="https://youtube.com/channel/UCKjDY4joMPcoRMmd-G1yz1Q" class="chanlink" style="color:slategrey;text-decoration:none">C'est une autre histoire</a></div>
+<div class="vid_desc">Comment le mythe de Pygmalion est-il représenté dans l'art ?</div>
+
+<div class="vidlogo"><div class="length">9:14</div>
+<div class="imgdiv seen" style="background-image: url(https://i.ytimg.com/vi/1IRoQfTlno8/hqdefault.jpg);"> 
+
+<div class="opaque 1IRoQfTlno8"><div class="check"><i class="fa fa-check read-icon"></i></div></div>
+</div>
+</div> 
+<div class="vidtitle">Il tombe amoureux d'une statue, ça tourne bien ! Pygmalion ft. Le Psylab – TVLT #21</div>
+<span class="viddesc" style="display:none">Voici le mythe de Pygmalion, qui aimait si fort sa statue qu'elle a finit par devenir réelle. Cette histoire a donné naissance à un concept en psychologie, que le PsyLab nous explique ! Et maintenant vous saurez reconnaître l'histoire de Pygmalion au musée ! Et en bonus donc, une explication d'un concept en psychologie nommé d'après ce mythe, par Jeff (et Chris. Accessoirement. En option. En vrai j'ai tourné avant eux et il devait y avoir que Jeff ^^) du PsyLab.</span>
+</div>
+
+<div id="X6KWSmza-8Gw" class="videoline vidfr" onclick="changevid('6KWSmza-8Gw')">
+  <div class="chanlogo">
+    <img class="chanlogo_img" src="https://yt3.ggpht.com/a/AATXAJxF1BJvGevYRzmRNHBKy675ggjm9Po9MvLjww=s88" style="margin:0" />
+  </div>
+<div class="chan_name"><a href="https://youtube.com/channel/UCKjDY4joMPcoRMmd-G1yz1Q" class="chanlink" style="color:slategrey;text-decoration:none">C'est une autre histoire</a></div>
+<div class="vid_desc">Comment les mythes de Daphné et Syrinx sont-ils représentés dans l'art ?</div>
+
+<div class="vidlogo"><div class="length">8:25</div>
+<div class="imgdiv seen" style="background-image: url(https://i.ytimg.com/vi/6KWSmza-8Gw/hqdefault.jpg);"> 
+
+<div class="opaque 6KWSmza-8Gw"><div class="check"><i class="fa fa-check read-icon"></i></div></div>
+</div>
+</div> 
+<div class="vidtitle">2 astuces veganes contre le viol - Daphné et Syrinx - TVLT #20</div>
+<span class="viddesc" style="display:none">Les histoires de viol sont monnaie courante dans la mythologie, mais parfois les victimes développent des stratégies d’esquive comme… faire la plante verte. Astuce vegane contre le viol, donc, voici les histoires de Daphné et Syrinx, toutes deux changées en plante pour échapper à leurs violeurs divins (divins parce que c’est des dieux, pas parce qu’ils sont géniaux, t’as compris quoi.)</span>
+</div>
+
+<div id="X7T4PeujEY44" class="videoline vidfr" onclick="changevid('7T4PeujEY44')">
+  <div class="chanlogo">
+    <img class="chanlogo_img" src="https://yt3.ggpht.com/a/AATXAJxF1BJvGevYRzmRNHBKy675ggjm9Po9MvLjww=s88" style="margin:0" />
+  </div>
+<div class="chan_name"><a href="https://youtube.com/channel/UCKjDY4joMPcoRMmd-G1yz1Q" class="chanlink" style="color:slategrey;text-decoration:none">C'est une autre histoire</a></div>
+<div class="vid_desc">Comment Sainte Cécile est-elle représentée dans l'art ?</div>
+
+<div class="vidlogo"><div class="length">6:16</div>
+<div class="imgdiv seen" style="background-image: url(https://i.ytimg.com/vi/7T4PeujEY44/hqdefault.jpg);"> 
+
+<div class="opaque 7T4PeujEY44"><div class="check"><i class="fa fa-check read-icon"></i></div></div>
+</div>
+</div> 
+<div class="vidtitle">Elle rejetait la musique et maintenant les musiciens la vénèrent - sainte Cécile - TVLT #23</div>
+<span class="viddesc" style="display:none">Sainte Cécile, martyre romaine, est devenue la patronne des musiciens malgré elle, je te raconte comment. Pour en parler, j'ai été invitée par le Musée Ingres de Montauban, que je remercie pour ce partenariat.</span>
+</div>
+
+<div id="X88pmXMJnxus" class="videoline vidfr" onclick="changevid('88pmXMJnxus')">
+  <div class="chanlogo">
+    <img class="chanlogo_img" src="https://yt3.ggpht.com/a/AATXAJxF1BJvGevYRzmRNHBKy675ggjm9Po9MvLjww=s88" style="margin:0" />
+  </div>
+<div class="chan_name"><a href="https://youtube.com/channel/UCKjDY4joMPcoRMmd-G1yz1Q" class="chanlink" style="color:slategrey;text-decoration:none">C'est une autre histoire</a></div>
+<div class="vid_desc">Présentation du tableau Léda et le cygne de Dali</div>
+
+<div class="vidlogo"><div class="length">9:19</div>
+<div class="imgdiv seen" style="background-image: url(https://i.ytimg.com/vi/88pmXMJnxus/hqdefault.jpg);"> 
+
+<div class="opaque 88pmXMJnxus"><div class="check"><i class="fa fa-check read-icon"></i></div></div>
+</div>
+</div> 
+<div class="vidtitle">Léda et le cygne (FEAT. COPAIN DU WEB) - Tu vois le tableau #8</div>
+<span class="viddesc" style="display:none">Hey ! Tu connais l'histoire de Léda et du cygne ? Cygne qui en fait n'est autre que Zeus, attends, je t'explique. Et sinon, est-ce que tu connais bien Dalí ? Attends, copain du web t'explique. Une collab dont je suis trop contente et qui nous permet d'aller un peu plus loin dans le contenu de ce "tu vois le tableau", une fois n'est pas coutume !</span>
+</div>
+
+<div id="XGtxgIaxZXfk" class="videoline vidfr" onclick="changevid('GtxgIaxZXfk')">
+  <div class="chanlogo">
+    <img class="chanlogo_img" src="https://yt3.ggpht.com/a/AATXAJxF1BJvGevYRzmRNHBKy675ggjm9Po9MvLjww=s88" style="margin:0" />
+  </div>
+<div class="chan_name"><a href="https://youtube.com/channel/UCKjDY4joMPcoRMmd-G1yz1Q" class="chanlink" style="color:slategrey;text-decoration:none">C'est une autre histoire</a></div>
+<div class="vid_desc">Comment le mythe de Vénus désarmant Mars est-il représenté dans la peinture ?</div>
+
+<div class="vidlogo"><div class="length">4:33</div>
+<div class="imgdiv seen" style="background-image: url(https://i.ytimg.com/vi/GtxgIaxZXfk/hqdefault.jpg);"> 
+
+<div class="opaque GtxgIaxZXfk"><div class="check"><i class="fa fa-check read-icon"></i></div></div>
+</div>
+</div> 
+<div class="vidtitle">Mars désarmé par Vénus - Tu vois le tableau #4</div>
+<span class="viddesc" style="display:none">Finissons l'année 2015 avec chaleur : de l'amour et des coups de soleil. C'est en effet la dernière vidéo que nous ayons tournée cet été, et un peu de vitamine D ne peut pas nuire (même si notre hiver n'est pas si pourri) et oui, tu as le droit de rigoler de mon nez et mon dos cramoisis. Cette fois, on retourne dans la mythologie, puisqu'on ne se refait pas, et c'est de l'amour de Mars et Vénus qu'on va traiter.</span>
+</div>
+
+<div id="XJ7iK-JWLVNc" class="videoline vidfr" onclick="changevid('J7iK-JWLVNc')">
+  <div class="chanlogo">
+    <img class="chanlogo_img" src="https://yt3.ggpht.com/a/AATXAJxF1BJvGevYRzmRNHBKy675ggjm9Po9MvLjww=s88" style="margin:0" />
+  </div>
+<div class="chan_name"><a href="https://youtube.com/channel/UCKjDY4joMPcoRMmd-G1yz1Q" class="chanlink" style="color:slategrey;text-decoration:none">C'est une autre histoire</a></div>
+<div class="vid_desc">Comment le jugement de Pâris est-il représenté dans la peinture ?</div>
+
+<div class="vidlogo"><div class="length">6:06</div>
+<div class="imgdiv seen" style="background-image: url(https://i.ytimg.com/vi/J7iK-JWLVNc/hqdefault.jpg);"> 
+
+<div class="opaque J7iK-JWLVNc"><div class="check"><i class="fa fa-check read-icon"></i></div></div>
+</div>
+</div> 
+<div class="vidtitle">Le jugement de Pâris - Tu vois le tableau #1</div>
+<span class="viddesc" style="display:none">Deuxième vidéo de CUAH (C'est Une Autre Histoire) et deuxième format ! Dans celui-ci, je vous propose de vous donner des clés de lecture pour comprendre les œuvres que vous pouvez voir dans les musées. L'idée c'est d'apprendre à reconnaître les personnages, les histoires, les mythes ou les événements historiques pour pouvoir comprendre de quoi causent les artistes.</span>
+</div>
+
+<div id="XLL0116OPRF8" class="videoline vidfr" onclick="changevid('LL0116OPRF8')">
+  <div class="chanlogo">
+    <img class="chanlogo_img" src="https://yt3.ggpht.com/a/AATXAJxF1BJvGevYRzmRNHBKy675ggjm9Po9MvLjww=s88" style="margin:0" />
+  </div>
+<div class="chan_name"><a href="https://youtube.com/channel/UCKjDY4joMPcoRMmd-G1yz1Q" class="chanlink" style="color:slategrey;text-decoration:none">C'est une autre histoire</a></div>
+<div class="vid_desc">Comment le mythe d'Orphée et Eurydice est-il représenté dans l'art ?</div>
+
+<div class="vidlogo"><div class="length">6:44</div>
+<div class="imgdiv seen" style="background-image: url(https://i.ytimg.com/vi/LL0116OPRF8/hqdefault.jpg);"> 
+
+<div class="opaque LL0116OPRF8"><div class="check"><i class="fa fa-check read-icon"></i></div></div>
+</div>
+</div> 
+<div class="vidtitle">Descente aux enfers, Orphée et Eurydice - Tu vois le tableau #15</div>
+<span class="viddesc" style="display:none">Et si on commençait l'année par du positif ? Allez, je vous raconte une histoire d'amour. Bon ok, une histoire d'amour et de mort. Non mais... attendez ! C'est beau l'amour non ? Braver les enfers pour ton âme sœur c'est quand même stylé !!</span>
+</div>
+
+<div id="XNI4i0ko_XfA" class="videoline vidfr" onclick="changevid('NI4i0ko_XfA')">
+  <div class="chanlogo">
+    <img class="chanlogo_img" src="https://yt3.ggpht.com/a/AATXAJxF1BJvGevYRzmRNHBKy675ggjm9Po9MvLjww=s88" style="margin:0" />
+  </div>
+<div class="chan_name"><a href="https://youtube.com/channel/UCKjDY4joMPcoRMmd-G1yz1Q" class="chanlink" style="color:slategrey;text-decoration:none">C'est une autre histoire</a></div>
+<div class="vid_desc">Comment la naissance d'Athéna est-elle représentée dans l'art ?</div>
+
+<div class="vidlogo"><div class="length">6:04</div>
+<div class="imgdiv seen" style="background-image: url(https://i.ytimg.com/vi/NI4i0ko_XfA/hqdefault.jpg);"> 
+
+<div class="opaque NI4i0ko_XfA"><div class="check"><i class="fa fa-check read-icon"></i></div></div>
+</div>
+</div> 
+<div class="vidtitle">La naissance d'Athéna - Vidéo au MAH - Tu vois le tableau #11</div>
+<span class="viddesc" style="display:none">Pour la rentrée 2016, on vous propose une petite série de vidéos au Musée d'art et d'histoire de Genève ! Le premier thème est la naissance d'Athéna, un thème qui m'est cher, toi-même tu sais bb (enfin si tu sais pas, va voir ma vidéo où je présente ma thèse !</span>
+</div>
+
+<div id="XSIERb5HEzgM" class="videoline vidfr" onclick="changevid('SIERb5HEzgM')">
+  <div class="chanlogo">
+    <img class="chanlogo_img" src="https://yt3.ggpht.com/a/AATXAJxF1BJvGevYRzmRNHBKy675ggjm9Po9MvLjww=s88" style="margin:0" />
+  </div>
+<div class="chan_name"><a href="https://youtube.com/channel/UCKjDY4joMPcoRMmd-G1yz1Q" class="chanlink" style="color:slategrey;text-decoration:none">C'est une autre histoire</a></div>
+<div class="vid_desc">Comment le mythe de l'enlèvement d'Europe est-il représenté dans l'art ?</div>
+
+<div class="vidlogo"><div class="length">3:17</div>
+<div class="imgdiv seen" style="background-image: url(https://i.ytimg.com/vi/SIERb5HEzgM/hqdefault.jpg);"> 
+
+<div class="opaque SIERb5HEzgM"><div class="check"><i class="fa fa-check read-icon"></i></div></div>
+</div>
+</div> 
+<div class="vidtitle">L'enlèvement d'Europe (ou comment pécho en étant un taureau) -  TVLT #14</div>
+<span class="viddesc" style="display:none">Les techniques de dragues des dieux antiques : transforme-toi en taureau pour l'approcher, ou comment Zeus a réussi à pécho la belle Europe.</span>
+</div>
+
+<div id="XTllEsy2imPo" class="videoline vidfr" onclick="changevid('TllEsy2imPo')">
+  <div class="chanlogo">
+    <img class="chanlogo_img" src="https://yt3.ggpht.com/a/AATXAJxNpASANXYhprlovdw_nTos8twZaOK6gGgQxg=s88" style="margin:0" />
+  </div>
+<div class="chan_name"><a href="https://youtube.com/channel/UCafm6w_rPndqAtokQy04Jdw" class="chanlink" style="color:slategrey;text-decoration:none">Musée du Louvre</a></div>
+<div class="vid_desc">Présentation de quelques chefs d'oeuvre méconnus du Louvre</div>
+
+<div class="vidlogo"><div class="length">7:57</div>
+<div class="imgdiv seen" style="background-image: url(https://i.ytimg.com/vi/TllEsy2imPo/hqdefault.jpg);"> 
+
+<div class="opaque TllEsy2imPo"><div class="check"><i class="fa fa-check read-icon"></i></div></div>
+</div>
+</div> 
+<div class="vidtitle">Les chefs-d'œuvre méconnus du Louvre (Axolot)</div>
+<span class="viddesc" style="display:none">Carte blanche à AXOLOT, lors d'un jour de fermeture au Louvre.</span>
+</div>
+
+<div id="XUIYtu4O-jik" class="videoline vidfr" onclick="changevid('UIYtu4O-jik')">
+  <div class="chanlogo">
+    <img class="chanlogo_img" src="https://yt3.ggpht.com/a/AATXAJxF1BJvGevYRzmRNHBKy675ggjm9Po9MvLjww=s88" style="margin:0" />
+  </div>
+<div class="chan_name"><a href="https://youtube.com/channel/UCKjDY4joMPcoRMmd-G1yz1Q" class="chanlink" style="color:slategrey;text-decoration:none">C'est une autre histoire</a></div>
+<div class="vid_desc">Comment la passion du Christ est-elle représentée dans l'art ?</div>
+
+<div class="vidlogo"><div class="length">8:57</div>
+<div class="imgdiv seen" style="background-image: url(https://i.ytimg.com/vi/UIYtu4O-jik/hqdefault.jpg);"> 
+
+<div class="opaque UIYtu4O-jik"><div class="check"><i class="fa fa-check read-icon"></i></div></div>
+</div>
+</div> 
+<div class="vidtitle">La Passion du Christ - Tu vois le tableau #10</div>
+<span class="viddesc" style="display:none">Deuxième et dernière vidéo au musée des Augustins de Toulouse, avec un thème aussi glam que le précédent : la Passion du Christ.</span>
+</div>
+
+<div id="XUz0SlVBpo0g" class="videoline vidfr" onclick="changevid('Uz0SlVBpo0g')">
+  <div class="chanlogo">
+    <img class="chanlogo_img" src="https://yt3.ggpht.com/a/AATXAJzJhxZqaeN1ZPfYZleVzK_Dcb5vFFOY8s3GiQ=s88" style="margin:0" />
+  </div>
+<div class="chan_name"><a href="https://youtube.com/channel/UCeR8BYZS7IHYjk_9Mh5JgkA" class="chanlink" style="color:slategrey;text-decoration:none">Scilabus</a></div>
+<div class="vid_desc">Pourquoi les flashs sont-ils interdits dans les musées ?</div>
+
+<div class="vidlogo"><div class="length">12:25</div>
+<div class="imgdiv seen" style="background-image: url(https://i.ytimg.com/vi/Uz0SlVBpo0g/hqdefault.jpg);"> 
+
+<div class="opaque Uz0SlVBpo0g"><div class="check"><i class="fa fa-check read-icon"></i></div></div>
+</div>
+</div> 
+<div class="vidtitle">Pourquoi le flash est-il interdit dans les musées ?</div>
+<span class="viddesc" style="display:none">La lumière détruit-elle l'art ? Lorsque vous en avez l'occasion, regardez bien l'art. Dans quelques générations cet art, cette peinture, cette sculpture ne sera plus visible, il aura été dégradé par la lumière (et d'autres facteurs). La lumière affecte l'art. Toutes les formes d'art. Et toutes les lumières ont un impact. En parlant avec la restauratrice du musée d'art contemporain de Montréal, venez en apprendre plus sur l'impact de la lumière sur l'art.</span>
+</div>
+
+<div id="XZoGcUsdq9pI" class="videoline vidfr" onclick="changevid('ZoGcUsdq9pI')">
+  <div class="chanlogo">
+    <img class="chanlogo_img" src="https://yt3.ggpht.com/a/AATXAJxF1BJvGevYRzmRNHBKy675ggjm9Po9MvLjww=s88" style="margin:0" />
+  </div>
+<div class="chan_name"><a href="https://youtube.com/channel/UCKjDY4joMPcoRMmd-G1yz1Q" class="chanlink" style="color:slategrey;text-decoration:none">C'est une autre histoire</a></div>
+<div class="vid_desc">Comment la Vierge à l'enfant est-elle représentée dans la peinture ?</div>
+
+<div class="vidlogo"><div class="length">5:48</div>
+<div class="imgdiv seen" style="background-image: url(https://i.ytimg.com/vi/ZoGcUsdq9pI/hqdefault.jpg);"> 
+
+<div class="opaque ZoGcUsdq9pI"><div class="check"><i class="fa fa-check read-icon"></i></div></div>
+</div>
+</div> 
+<div class="vidtitle">La Vierge à l'enfant - Tu vois le tableau #7 - partenariat avec le musée du Luxembourg</div>
+<span class="viddesc" style="display:none">J'ai l'immense plaisir d'avoir fait une vidéo en partenariat avec la Réunion des musées nationaux-Grand Palais et le musée du Luxembourg (ouais moi aussi je trouve que ça claque), et donc voici un "Tu vois le tableau" sur le thème de la Vierge à l'enfant.</span>
+</div>
+
+<div id="X_ipLrGDY60I" class="videoline vidfr" onclick="changevid('_ipLrGDY60I')">
+  <div class="chanlogo">
+    <img class="chanlogo_img" src="https://yt3.ggpht.com/a/AATXAJxF1BJvGevYRzmRNHBKy675ggjm9Po9MvLjww=s88" style="margin:0" />
+  </div>
+<div class="chan_name"><a href="https://youtube.com/channel/UCKjDY4joMPcoRMmd-G1yz1Q" class="chanlink" style="color:slategrey;text-decoration:none">C'est une autre histoire</a></div>
+<div class="vid_desc">Comment le mythe de Persée combattant le dragon est-il représenté dans la peinture ?</div>
+
+<div class="vidlogo"><div class="length">4:49</div>
+<div class="imgdiv seen" style="background-image: url(https://i.ytimg.com/vi/_ipLrGDY60I/hqdefault.jpg);"> 
+
+<div class="opaque _ipLrGDY60I"><div class="check"><i class="fa fa-check read-icon"></i></div></div>
+</div>
+</div> 
+<div class="vidtitle">Dragon et Boobs : Persée et Andromède (et non pas game of thrones) - TVLT #13</div>
+<span class="viddesc" style="display:none">Manon enfin, quel titre catin à clic. Came for Game of Thrones, stayed for the painting.</span>
+</div>
+
+<div id="Xe2BsbHp36X0" class="videoline vidfr" onclick="changevid('e2BsbHp36X0')">
+  <div class="chanlogo">
+    <img class="chanlogo_img" src="https://yt3.ggpht.com/a/AATXAJxF1BJvGevYRzmRNHBKy675ggjm9Po9MvLjww=s88" style="margin:0" />
+  </div>
+<div class="chan_name"><a href="https://youtube.com/channel/UCKjDY4joMPcoRMmd-G1yz1Q" class="chanlink" style="color:slategrey;text-decoration:none">C'est une autre histoire</a></div>
+<div class="vid_desc">Comment le Buddha est-il représenté dans l'art ?</div>
+
+<div class="vidlogo"><div class="length">9:31</div>
+<div class="imgdiv seen" style="background-image: url(https://i.ytimg.com/vi/e2BsbHp36X0/hqdefault.jpg);"> 
+
+<div class="opaque e2BsbHp36X0"><div class="check"><i class="fa fa-check read-icon"></i></div></div>
+</div>
+</div> 
+<div class="vidtitle">Pourquoi Buddha n'est pas un gros rigoleur ? - Tu vois le tableau #19</div>
+<span class="viddesc" style="display:none">L'image du Buddha se construit selon des codes précis, je vous en présente quelques uns. Pour une fois, on sort un peu de la mythologie gréco-romaine et la chaîne va être amenée à se diversifier de plus en plus donc stay tuned ! C'est la 3e vidéo que je produis suite à mon voyage en Asie du Sud-Est en novembre 2016 et il devrait il y en avoir une dernière.</span>
+</div>
+
+<div id="XfZgs8H8Dy54" class="videoline vidfr" onclick="changevid('fZgs8H8Dy54')">
+  <div class="chanlogo">
+    <img class="chanlogo_img" src="https://yt3.ggpht.com/a/AATXAJxF1BJvGevYRzmRNHBKy675ggjm9Po9MvLjww=s88" style="margin:0" />
+  </div>
+<div class="chan_name"><a href="https://youtube.com/channel/UCKjDY4joMPcoRMmd-G1yz1Q" class="chanlink" style="color:slategrey;text-decoration:none">C'est une autre histoire</a></div>
+<div class="vid_desc">Comment le mythe de Cupidon et Psyché est-il représenté dans l'art ?</div>
+
+<div class="vidlogo"><div class="length">3:46</div>
+<div class="imgdiv seen" style="background-image: url(https://i.ytimg.com/vi/fZgs8H8Dy54/hqdefault.jpg);"> 
+
+<div class="opaque fZgs8H8Dy54"><div class="check"><i class="fa fa-check read-icon"></i></div></div>
+</div>
+</div> 
+<div class="vidtitle">Marier l'âme et l'amour - Cupidon et Psyché - TVLT #17</div>
+<span class="viddesc" style="display:none">L'âme et l'amour se sont déjà rencontrés, sont tombés amoureux mais... si seulement c'était si simple ! C'est l'histoire de Cupidon et Psyché. Franchement dit comme ça, ça pue la mièvrerie, mais t'inquiète je te le raconte à ma façon. Et on fait ça à la Alte Nationalgalerie de Berlin !</span>
+</div>
+
+<div id="Xs0lo2mrsj5E" class="videoline vidfr" onclick="changevid('s0lo2mrsj5E')">
+  <div class="chanlogo">
+    <img class="chanlogo_img" src="https://yt3.ggpht.com/a/AATXAJxF1BJvGevYRzmRNHBKy675ggjm9Po9MvLjww=s88" style="margin:0" />
+  </div>
+<div class="chan_name"><a href="https://youtube.com/channel/UCKjDY4joMPcoRMmd-G1yz1Q" class="chanlink" style="color:slategrey;text-decoration:none">C'est une autre histoire</a></div>
+<div class="vid_desc">Comment les miracles de la Bible sont-ils représentés dans l'art ?</div>
+
+<div class="vidlogo"><div class="length">4:26</div>
+<div class="imgdiv seen" style="background-image: url(https://i.ytimg.com/vi/s0lo2mrsj5E/hqdefault.jpg);"> 
+
+<div class="opaque s0lo2mrsj5E"><div class="check"><i class="fa fa-check read-icon"></i></div></div>
+</div>
+</div> 
+<div class="vidtitle">Miracles ! - Tu vois le tableau #12 au MAH de Genève</div>
+<span class="viddesc" style="display:none">Deuxième vidéo tournée en partenariat avec le musée d'Art et d'Histoire de Genève ! Cette fois on se penche sur deux miracles réalisés par Jésus. Le type quand même il peut faire apparaître des poissons et marcher sur l'eau, c'est pas pourri.</span>
+</div>
+
+<div id="XwhoVd2tyht8" class="videoline vidfr" onclick="changevid('whoVd2tyht8')">
+  <div class="chanlogo">
+    <img class="chanlogo_img" src="https://yt3.ggpht.com/a/AATXAJxF1BJvGevYRzmRNHBKy675ggjm9Po9MvLjww=s88" style="margin:0" />
+  </div>
+<div class="chan_name"><a href="https://youtube.com/channel/UCKjDY4joMPcoRMmd-G1yz1Q" class="chanlink" style="color:slategrey;text-decoration:none">C'est une autre histoire</a></div>
+<div class="vid_desc">Comment Saint Michel est-il représenté dans la peinture ?</div>
+
+<div class="vidlogo"><div class="length">4:04</div>
+<div class="imgdiv seen" style="background-image: url(https://i.ytimg.com/vi/whoVd2tyht8/hqdefault.jpg);"> 
+
+<div class="opaque whoVd2tyht8"><div class="check"><i class="fa fa-check read-icon"></i></div></div>
+</div>
+</div> 
+<div class="vidtitle">Saint-Michel - Tu vois le tableau # 3</div>
+<span class="viddesc" style="display:none">"Tu vois le tableau" c'est un format qui te propose d'apprendre à lire les grands sujets récurrents de la peinture. Tu sais, il y a des thèmes, des mythes, des sujets, des épisodes historiques qui reviennent régulièrement tout au long de l'histoire de l'art et qui sont représentés avec des codes précis pour que le spectateur puisse les reconnaître. Et faut dire que ça te casse un peu les cheveux de rien piger quand tu regardes ces tableaux hermétiques. Avec ces vidéos extraordinaires de la vie qui vit - parce que de la mort qui tue c'est glauque - je te propose de découvrir à chaque fois un de ces sujets et de ne plus être désemparé.e lorsque tu te balades dans les couloirs des expos. Tu apprendras à reconnaître tel personnage parce qu'il est sapé de telle façon et tient tel objet, telle scène parce que bidule et truc sont présents etc.. Par contre, ce n'est en rien une analyse d'histoire de l'art, donc le tableau choisi est juste un support pour parler du contenu et ne se prêtera pas à une analyse artistique, structurelle etc... Non non, pas la peine d'en réclamer, ce n'est pas du tout mon projet.</span>
+</div>
+
+<div id="XxPjgaGBgmpA" class="videoline vidfr" onclick="changevid('xPjgaGBgmpA')">
+  <div class="chanlogo">
+    <img class="chanlogo_img" src="https://yt3.ggpht.com/a/AATXAJxF1BJvGevYRzmRNHBKy675ggjm9Po9MvLjww=s88" style="margin:0" />
+  </div>
+<div class="chan_name"><a href="https://youtube.com/channel/UCKjDY4joMPcoRMmd-G1yz1Q" class="chanlink" style="color:slategrey;text-decoration:none">C'est une autre histoire</a></div>
+<div class="vid_desc">Comment le mythe de Prométhée et Pandore est-il représenté dans l'art ?</div>
+
+<div class="vidlogo"><div class="length">9:10</div>
+<div class="imgdiv seen" style="background-image: url(https://i.ytimg.com/vi/xPjgaGBgmpA/hqdefault.jpg);"> 
+
+<div class="opaque xPjgaGBgmpA"><div class="check"><i class="fa fa-check read-icon"></i></div></div>
+</div>
+</div> 
+<div class="vidtitle">Comment la femme a causé la perte de l'homme ? - Prométhée et Pandore - Tu vois le tableau #22</div>
+<span class="viddesc" style="display:none">La mythologie grecque nous raconte que c'est la première femme qui a apporté le malheur sur terre. Un épisode bien sûr sarcastique, mais qui t'apprendra à reconnaître des personnages récurrents dans l'histoire de l'art : Prométhée et Pandore.</span>
+</div>
+
+<div id="XxuHcXDh-kqs" class="videoline vidfr" onclick="changevid('xuHcXDh-kqs')">
+  <div class="chanlogo">
+    <img class="chanlogo_img" src="https://yt3.ggpht.com/a/AATXAJxF1BJvGevYRzmRNHBKy675ggjm9Po9MvLjww=s88" style="margin:0" />
+  </div>
+<div class="chan_name"><a href="https://youtube.com/channel/UCKjDY4joMPcoRMmd-G1yz1Q" class="chanlink" style="color:slategrey;text-decoration:none">C'est une autre histoire</a></div>
+<div class="vid_desc">Comment les "têtes coupées" de la Bible sont-elles représentées dans l'art ?</div>
+
+<div class="vidlogo"><div class="length">11:32</div>
+<div class="imgdiv seen" style="background-image: url(https://i.ytimg.com/vi/xuHcXDh-kqs/hqdefault.jpg);"> 
+
+<div class="opaque xuHcXDh-kqs"><div class="check"><i class="fa fa-check read-icon"></i></div></div>
+</div>
+</div> 
+<div class="vidtitle">Têtes coupées - Tu vois le tableau #9</div>
+<span class="viddesc" style="display:none">Hey ! Tu sais qu'on t'envoie toujours du glam avec bonheur. Cette fois-ci on a mis le paquet avec une vidéo spécial têtes coupées ! Et oui, on a voulu faire honneur au musée des Augustins de Toulouse qui nous a accueilli pour un tournage et on a choisi 3 histoires super nice tirées de la bible et qui vont te faire perdre la boule. LAUL. La boule. T'as compris ?</span>
+</div>
+
+<div id="XywPPSw1FXy0" class="videoline vidfr" onclick="changevid('ywPPSw1FXy0')">
+  <div class="chanlogo">
+    <img class="chanlogo_img" src="https://yt3.ggpht.com/a/AATXAJxF1BJvGevYRzmRNHBKy675ggjm9Po9MvLjww=s88" style="margin:0" />
+  </div>
+<div class="chan_name"><a href="https://youtube.com/channel/UCKjDY4joMPcoRMmd-G1yz1Q" class="chanlink" style="color:slategrey;text-decoration:none">C'est une autre histoire</a></div>
+<div class="vid_desc">Comment le mythe d'Héraclès combattant l'hydre de Lerne est-il représenté dans la peinture ?</div>
+
+<div class="vidlogo"><div class="length">6:01</div>
+<div class="imgdiv seen" style="background-image: url(https://i.ytimg.com/vi/ywPPSw1FXy0/hqdefault.jpg);"> 
+
+<div class="opaque ywPPSw1FXy0"><div class="check"><i class="fa fa-check read-icon"></i></div></div>
+</div>
+</div> 
+<div class="vidtitle">Héraclès et l'hydre de Lerne (feat. DIRTYBIOLOGY) - Tu vois le tableau #6</div>
+<span class="viddesc" style="display:none">Un "Tu vois le tableau" avec un invité spécial, qui sert à rien d'ailleurs, t'as remarqué, c'est moi qui fait tout le boulot. Bon qu'à faire des grimaces celui-là. Si tu es arrivé.e ici par Dirtybiology et que tu découvres la chaîne, bienvenue, tu vas voir, ici on est bien.</span>
+</div>
+
+<div id="XzZjWMmzM_dU" class="videoline vidfr" onclick="changevid('zZjWMmzM_dU')">
+  <div class="chanlogo">
+    <img class="chanlogo_img" src="https://yt3.ggpht.com/a/AATXAJxF1BJvGevYRzmRNHBKy675ggjm9Po9MvLjww=s88" style="margin:0" />
+  </div>
+<div class="chan_name"><a href="https://youtube.com/channel/UCKjDY4joMPcoRMmd-G1yz1Q" class="chanlink" style="color:slategrey;text-decoration:none">C'est une autre histoire</a></div>
+<div class="vid_desc">Comment le mythe de Narcisse est-il représenté dans la peinture ?</div>
+
+<div class="vidlogo"><div class="length">4:50</div>
+<div class="imgdiv seen" style="background-image: url(https://i.ytimg.com/vi/zZjWMmzM_dU/hqdefault.jpg);"> 
+
+<div class="opaque zZjWMmzM_dU"><div class="check"><i class="fa fa-check read-icon"></i></div></div>
+</div>
+</div> 
+<div class="vidtitle">Narcisse - Tu vois le tableau #2</div>
+<span class="viddesc" style="display:none">"Tu vois le tableau" est un format qui t'apprend à lire et à reconnaître les sujets récurrents dans la peinture et les arts en général. Le 2e épisode est consacré au mythe de Narcisse, et le tableau qui sert de support est celui de John William Waterhouse (1903). Pour rappel : c'est pas d'histoire de l'art dont je te parle. J'y connais rien en histoire de l'art. C'est juste des clés de lecture pour comprendre les sujets des tableaux et le propos ce n'est pas le tableau choisi en lui-même, qui n'est qu'un support, mais le thème représenté. Donc non, je ne te dirai absolument rien sur le courant artistique, la structure de l'oeuvre, ni même le peintre. Oui c'est comme ça mon poulet. Par contre, après avoir vu la vidéo et si tu ne connaissais pas le mythe de Narcisse, tu seras capable de le reconnaître à chaque fois que tu en vois un dans un musée, même si ce n'est pas celui de Waterhouse, car, disons-le franchement, ce n'est pas tous les 4 matins qu'on va à Liverpool. A moins qu'on soit Liverpuldien (hein, tu le connaissais pas celui-là ? Moi non plus, je te rassure).</span>
+</div>
+
+<h2 id="litterature">Littérature</h2>
+<div id="X-glSimcFqQQ" class="videoline vidfr" onclick="changevid('-glSimcFqQQ')">
+  <div class="chanlogo">
+    <img class="chanlogo_img" src="https://yt3.ggpht.com/a/AATXAJwbMMZoNnPvTpsZHPFqOQJx-SDHRNIyFvvHkQ=s88" style="margin:0" />
+  </div>
+<div class="chan_name"><a href="https://youtube.com/channel/UCofQxJWd4qkqc7ZgaLkZfcw" class="chanlink" style="color:slategrey;text-decoration:none">Linguisticae</a></div>
+<div class="vid_desc">Comment ont été construites les langues de Game of Thrones ?</div>
+
+<div class="vidlogo"><div class="length">58:55</div>
+<div class="imgdiv seen" style="background-image: url(https://i.ytimg.com/vi/-glSimcFqQQ/hqdefault.jpg);"> 
+
+<div class="opaque -glSimcFqQQ"><div class="check"><i class="fa fa-check read-icon"></i></div></div>
+</div>
+</div> 
+<div class="vidtitle">Les LANGUES de GAME OF THRONES (David J. Peterson)</div>
+<span class="viddesc" style="display:none"></span>
+</div>
+
+<div id="X4XPTCPWTJAk" class="videoline vidfr" onclick="changevid('4XPTCPWTJAk')">
+  <div class="chanlogo">
+    <img class="chanlogo_img" src="https://yt3.ggpht.com/a/AATXAJzilcmC-OiWwMG76scOHNtD7kkmTlhlyc-yag=s88" style="margin:0" />
+  </div>
+<div class="chan_name"><a href="https://youtube.com/channel/UCP46_MXP_WG_auH88FnfS1A" class="chanlink" style="color:slategrey;text-decoration:none">Nota Bene</a></div>
+<div class="vid_desc">De quels faits historiques s'est inspiré George R. R. Martin pour écrire Game of Thrones ?</div>
+
+<div class="vidlogo"><div class="length">15:14</div>
+<div class="imgdiv seen" style="background-image: url(https://i.ytimg.com/vi/4XPTCPWTJAk/hqdefault.jpg);"> 
+
+<div class="opaque 4XPTCPWTJAk"><div class="check"><i class="fa fa-check read-icon"></i></div></div>
+</div>
+</div> 
+<div class="vidtitle">Game Of Thrones - L'histoire derrière la fiction - Motion VS History #1</div>
+<span class="viddesc" style="display:none">Premier épisode de "Motion VS History", l'émission qui sépare l'histoire d'une fiction de celle de la réalité ! Dans cet épisode consacré à Game Of Thrones, nous reviendrons sur les inspirations de Georges Martin pour l'écriture de son roman, sur la géographie de l'univers et sa similarité avec le notre et enfin sur le personnage le plus important de Game of Thrones sans qui il n'y aurait pas eu d'intrigue !</span>
+</div>
+
+<div id="X4uXXI7yaF1I" class="videoline vidfr" onclick="changevid('4uXXI7yaF1I')">
+  <div class="chanlogo">
+    <img class="chanlogo_img" src="https://yt3.ggpht.com/a/AATXAJwbMMZoNnPvTpsZHPFqOQJx-SDHRNIyFvvHkQ=s88" style="margin:0" />
+  </div>
+<div class="chan_name"><a href="https://youtube.com/channel/UCofQxJWd4qkqc7ZgaLkZfcw" class="chanlink" style="color:slategrey;text-decoration:none">Linguisticae</a></div>
+<div class="vid_desc">Comment a été construite la novlangue de 1984 ?</div>
+
+<div class="vidlogo"><div class="length">45:24</div>
+<div class="imgdiv seen" style="background-image: url(https://i.ytimg.com/vi/4uXXI7yaF1I/hqdefault.jpg);"> 
+
+<div class="opaque 4uXXI7yaF1I"><div class="check"><i class="fa fa-check read-icon"></i></div></div>
+</div>
+</div> 
+<div class="vidtitle">La NOVLANGUE de 1984 (G. Orwell)</div>
+<span class="viddesc" style="display:none"></span>
+</div>
+
+<div id="X5NBxLgp0HGs" class="videoline vidfr" onclick="changevid('5NBxLgp0HGs')">
+  <div class="chanlogo">
+    <img class="chanlogo_img" src="https://yt3.ggpht.com/a/AATXAJwbMMZoNnPvTpsZHPFqOQJx-SDHRNIyFvvHkQ=s88" style="margin:0" />
+  </div>
+<div class="chan_name"><a href="https://youtube.com/channel/UCofQxJWd4qkqc7ZgaLkZfcw" class="chanlink" style="color:slategrey;text-decoration:none">Linguisticae</a></div>
+<div class="vid_desc">Comment ont été construites les langues elfiques du Seigneur des Anneaux ?</div>
+
+<div class="vidlogo"><div class="length">43:37</div>
+<div class="imgdiv seen" style="background-image: url(https://i.ytimg.com/vi/5NBxLgp0HGs/hqdefault.jpg);"> 
+
+<div class="opaque 5NBxLgp0HGs"><div class="check"><i class="fa fa-check read-icon"></i></div></div>
+</div>
+</div> 
+<div class="vidtitle">L'Elfique de la Terre du Milieu (J.R.R Tolkien)</div>
+<span class="viddesc" style="display:none"></span>
+</div>
+
+<div id="X7BCs9rQp0ag" class="videoline vidfr" onclick="changevid('7BCs9rQp0ag')">
+  <div class="chanlogo">
+    <img class="chanlogo_img" src="https://yt3.ggpht.com/a/AATXAJzilcmC-OiWwMG76scOHNtD7kkmTlhlyc-yag=s88" style="margin:0" />
+  </div>
+<div class="chan_name"><a href="https://youtube.com/channel/UCP46_MXP_WG_auH88FnfS1A" class="chanlink" style="color:slategrey;text-decoration:none">Nota Bene</a></div>
+<div class="vid_desc">Quelles inspirations historiques pour la Garde de nuit dans Game of Thrones ?</div>
+
+<div class="vidlogo"><div class="length">12:49</div>
+<div class="imgdiv seen" style="background-image: url(https://i.ytimg.com/vi/7BCs9rQp0ag/hqdefault.jpg);"> 
+
+<div class="opaque 7BCs9rQp0ag"><div class="check"><i class="fa fa-check read-icon"></i></div></div>
+</div>
+</div> 
+<div class="vidtitle">Garde de nuit VS Légion Etrangère - Game of Thrones - Motion VS History #13</div>
+<span class="viddesc" style="display:none">Quand un groupe de voleurs/assassins/désœuvré devient l'un des ordres les plus badass de Game of Thrones, ça intrigue un poil... Et si Georges Martin avait une nouvelle fois puisé dans l'Histoire l'inspiration pour créer la garde de nuit ? Légion étrangère, ordre des templiers...les similitudes sont étonnantes ! Une occasion pour revenir également sur la mort de John Snow et sa référence plus qu'évidente à celle de César !</span>
+</div>
+
+<div id="X7L7bZLjSDcU" class="videoline vidfr" onclick="changevid('7L7bZLjSDcU')">
+  <div class="chanlogo">
+    <img class="chanlogo_img" src="https://yt3.ggpht.com/a/AATXAJzilcmC-OiWwMG76scOHNtD7kkmTlhlyc-yag=s88" style="margin:0" />
+  </div>
+<div class="chan_name"><a href="https://youtube.com/channel/UCP46_MXP_WG_auH88FnfS1A" class="chanlink" style="color:slategrey;text-decoration:none">Nota Bene</a></div>
+<div class="vid_desc">La religion dans Game of Thrones est-elle crédible ?</div>
+
+<div class="vidlogo"><div class="length">11:49</div>
+<div class="imgdiv seen" style="background-image: url(https://i.ytimg.com/vi/7L7bZLjSDcU/hqdefault.jpg);"> 
+
+<div class="opaque 7L7bZLjSDcU"><div class="check"><i class="fa fa-check read-icon"></i></div></div>
+</div>
+</div> 
+<div class="vidtitle">Game of Thrones : une religion bancale ? -  Motions VS History #11</div>
+<span class="viddesc" style="display:none">On dit souvent que l'univers de Georges R.R. Martin est médiévalement crédible sur bien des aspects...et pourtant ! Ne se serait-il pas planté en beauté sur la religion ? Si le but d'une fiction n'est pas de reconstituer la réalité, ça serait bien trop chiant, nous allons voir dans cet épisode qu'il existe quelques lacunes dans la religion de Game of Thrones et que Martin, peut être conscient de cela, a corrigé le tir en cours de route ! Anciens dieux, nouveaux dieux, foi des septs, grand moineau, foi militante...c'est parti pour les inspirations historiques de la religion dans Game of Thrones !</span>
+</div>
+
+<div id="XBTgQ5t4-7SQ" class="videoline vidfr" onclick="changevid('BTgQ5t4-7SQ')">
+  <div class="chanlogo">
+    <img class="chanlogo_img" src="https://yt3.ggpht.com/a/AATXAJzilcmC-OiWwMG76scOHNtD7kkmTlhlyc-yag=s88" style="margin:0" />
+  </div>
+<div class="chan_name"><a href="https://youtube.com/channel/UCP46_MXP_WG_auH88FnfS1A" class="chanlink" style="color:slategrey;text-decoration:none">Nota Bene</a></div>
+<div class="vid_desc">Quelles inspirations historiques dans Harry Potter ?</div>
+
+<div class="vidlogo"><div class="length">28:44</div>
+<div class="imgdiv seen" style="background-image: url(https://i.ytimg.com/vi/BTgQ5t4-7SQ/hqdefault.jpg);"> 
+
+<div class="opaque BTgQ5t4-7SQ"><div class="check"><i class="fa fa-check read-icon"></i></div></div>
+</div>
+</div> 
+<div class="vidtitle">Les inspirations d'Harry Potter - Motion VS History #8</div>
+<span class="viddesc" style="display:none">Et si J.K. Rowling s'était inspirée de l'Histoire et de la Mythologie pour construire son univers ? A travers cet épisode, nous reviendrons sur les parallèles à tisser avec le roi Arthur, la mythologie grecque ou encore les diverses inspirations littéraires. Nous plongerons également au cœur de la 2nd guerre mondiale et vous découvrirez une nouvelle grille de lecture de votre saga préférée !</span>
+</div>
+
+<div id="XKMrvjaAl0Ps" class="videoline vidfr" onclick="changevid('KMrvjaAl0Ps')">
+  <div class="chanlogo">
+    <img class="chanlogo_img" src="https://yt3.ggpht.com/a/AATXAJzilcmC-OiWwMG76scOHNtD7kkmTlhlyc-yag=s88" style="margin:0" />
+  </div>
+<div class="chan_name"><a href="https://youtube.com/channel/UCP46_MXP_WG_auH88FnfS1A" class="chanlink" style="color:slategrey;text-decoration:none">Nota Bene</a></div>
+<div class="vid_desc">De quoi s'est inspiré George R. R. Martin pour créer le château des Eyriés ? </div>
+
+<div class="vidlogo"><div class="length">6:14</div>
+<div class="imgdiv seen" style="background-image: url(https://i.ytimg.com/vi/KMrvjaAl0Ps/hqdefault.jpg);"> 
+
+<div class="opaque KMrvjaAl0Ps"><div class="check"><i class="fa fa-check read-icon"></i></div></div>
+</div>
+</div> 
+<div class="vidtitle">LE château imprenable de Game of Thrones  - Motion VS History #10</div>
+<span class="viddesc" style="display:none">Georges R.R. Martin se serait-il inspiré d'un vrai château quand il a imaginé les Eyriés dans Game Of Thrones ? On va voir ça ensemble dans ce nouvel épisode Motion VS History de Nota Bene et on en profitera au passage pour faire un petit point sur les prisons au Moyen Âge !</span>
+</div>
+
+<div id="XTmTGyLyA0Ck" class="videoline vidfr" onclick="changevid('TmTGyLyA0Ck')">
+  <div class="chanlogo">
+    <img class="chanlogo_img" src="https://yt3.ggpht.com/a/AATXAJzilcmC-OiWwMG76scOHNtD7kkmTlhlyc-yag=s88" style="margin:0" />
+  </div>
+<div class="chan_name"><a href="https://youtube.com/channel/UCP46_MXP_WG_auH88FnfS1A" class="chanlink" style="color:slategrey;text-decoration:none">Nota Bene</a></div>
+<div class="vid_desc">Quelles sont les inspirations historiques derrière les fins de saison de Game of Thrones ?</div>
+
+<div class="vidlogo"><div class="length">13:40</div>
+<div class="imgdiv seen" style="background-image: url(https://i.ytimg.com/vi/TmTGyLyA0Ck/hqdefault.jpg);"> 
+
+<div class="opaque TmTGyLyA0Ck"><div class="check"><i class="fa fa-check read-icon"></i></div></div>
+</div>
+</div> 
+<div class="vidtitle">Game Of Thrones - Fin de saisons et inspirations historiques - Motion VS History #2</div>
+<span class="viddesc" style="display:none">Deuxième épisode de "Motion VS History", l'émission qui sépare l'histoire d'une fiction de celle de la réalité ! Dans cet épisode consacré à Game Of Thrones, nous reviendrons sur les inspirations historiques de Georges Martin et plus particulièrement pour les évènements de fin de saison (dans la série TV).</span>
+</div>
+
+<div id="XUxpXG7PP__c" class="videoline vidfr" onclick="changevid('UxpXG7PP__c')">
+  <div class="chanlogo">
+    <img class="chanlogo_img" src="https://yt3.ggpht.com/a/AATXAJzilcmC-OiWwMG76scOHNtD7kkmTlhlyc-yag=s88" style="margin:0" />
+  </div>
+<div class="chan_name"><a href="https://youtube.com/channel/UCP46_MXP_WG_auH88FnfS1A" class="chanlink" style="color:slategrey;text-decoration:none">Nota Bene</a></div>
+<div class="vid_desc">La marche de Cersei est-elle inspirée de faits réels ?</div>
+
+<div class="vidlogo"><div class="length">8:56</div>
+<div class="imgdiv seen" style="background-image: url(https://i.ytimg.com/vi/UxpXG7PP__c/hqdefault.jpg);"> 
+
+<div class="opaque UxpXG7PP__c"><div class="check"><i class="fa fa-check read-icon"></i></div></div>
+</div>
+</div> 
+<div class="vidtitle">GoT : La marche de Cersei inspirée d'un fait réel ? - Motion VS History #12</div>
+<span class="viddesc" style="display:none">S'il y a bien un épisode qui retourne le bide dans la série Game of Thrones, c'est bien celui de la marche de la honte de Cersei ! Condamnée à traverser nue la ville sous les crachats et les projectiles en tout genre du public, on a beau de pas aimer Cersei, on a tout de même de la peine pour elle ! Et si je vous disais que ce châtiment est en fait inspiré de fait réel ? Froid dans le dos hein ? Allez, je vous emmène du côté des inspirations historiques de Game of Thrones !</span>
+</div>
+
+<div id="XVjNLUolHcN4" class="videoline vidfr" onclick="changevid('VjNLUolHcN4')">
+  <div class="chanlogo">
+    <img class="chanlogo_img" src="https://yt3.ggpht.com/a/AATXAJzilcmC-OiWwMG76scOHNtD7kkmTlhlyc-yag=s88" style="margin:0" />
+  </div>
+<div class="chan_name"><a href="https://youtube.com/channel/UCP46_MXP_WG_auH88FnfS1A" class="chanlink" style="color:slategrey;text-decoration:none">Nota Bene</a></div>
+<div class="vid_desc">Quelles inspirations historiques pour Brienne dans Game of Thrones ?</div>
+
+<div class="vidlogo"><div class="length">13:37</div>
+<div class="imgdiv seen" style="background-image: url(https://i.ytimg.com/vi/VjNLUolHcN4/hqdefault.jpg);"> 
+
+<div class="opaque VjNLUolHcN4"><div class="check"><i class="fa fa-check read-icon"></i></div></div>
+</div>
+</div> 
+<div class="vidtitle">Brienne VS Jeanne d'Arc - Les guerrières du Moyen-âge et Game of Thrones</div>
+<span class="viddesc" style="display:none">Quand on jette un oeil à Game of Thrones, on se rend rapidement compte d'un truc : il fait pas bon d'être un mec dans cet univers sans pitié ! Georges Martin a laissé beaucoup de place aux personnages féminins forts et il serait dommage de se priver de faire quelques parrallèles historiques avec des femmes bien badass qui ont réellement existé au Moyen Âge !</span>
+</div>
+
+<div id="XWFcT2Wqfwvo" class="videoline vidfr" onclick="changevid('WFcT2Wqfwvo')">
+  <div class="chanlogo">
+    <img class="chanlogo_img" src="https://yt3.ggpht.com/a/AATXAJzilcmC-OiWwMG76scOHNtD7kkmTlhlyc-yag=s88" style="margin:0" />
+  </div>
+<div class="chan_name"><a href="https://youtube.com/channel/UCP46_MXP_WG_auH88FnfS1A" class="chanlink" style="color:slategrey;text-decoration:none">Nota Bene</a></div>
+<div class="vid_desc">Les fer-nés de Game of Thrones sont-ils inspirés des Vikings ?</div>
+
+<div class="vidlogo"><div class="length">12:35</div>
+<div class="imgdiv seen" style="background-image: url(https://i.ytimg.com/vi/WFcT2Wqfwvo/hqdefault.jpg);"> 
+
+<div class="opaque WFcT2Wqfwvo"><div class="check"><i class="fa fa-check read-icon"></i></div></div>
+</div>
+</div> 
+<div class="vidtitle">Les vikings dans Game of Thrones - Motion VS History #15</div>
+<span class="viddesc" style="display:none">Georges Martin s’est inspiré de bien des choses quand il a créé l’univers de Game of Thrones. Les fer-nés sont ainsi les parfaits représentants de l’imaginaire viking et profitent de la moindre occasion pour sortir leurs bateaux et partir en raid. Une belle occasion de revenir sur ces marins/guerriers et de dégommer quelques clichés au passage !</span>
+</div>
+
+<div id="Xgo1i3XNa6yM" class="videoline vidfr" onclick="changevid('go1i3XNa6yM')">
+  <div class="chanlogo">
+    <img class="chanlogo_img" src="https://yt3.ggpht.com/a/AATXAJzilcmC-OiWwMG76scOHNtD7kkmTlhlyc-yag=s88" style="margin:0" />
+  </div>
+<div class="chan_name"><a href="https://youtube.com/channel/UCP46_MXP_WG_auH88FnfS1A" class="chanlink" style="color:slategrey;text-decoration:none">Nota Bene</a></div>
+<div class="vid_desc">Quelles inspirations historiques pour Khal Drogo dans Game of Thrones ?</div>
+
+<div class="vidlogo"><div class="length">5:15</div>
+<div class="imgdiv seen" style="background-image: url(https://i.ytimg.com/vi/go1i3XNa6yM/hqdefault.jpg);"> 
+
+<div class="opaque go1i3XNa6yM"><div class="check"><i class="fa fa-check read-icon"></i></div></div>
+</div>
+</div> 
+<div class="vidtitle">Khal Drogo VS Gengis Khan - Game of Thrones - Motion VS History #14</div>
+<span class="viddesc" style="display:none">Quel image du barbare nous renvoie donc Khal Drogo ? Si le parrallèle avec Gengis Khan ou Attila est tentant, est ce qu'on ne serait pas là dans un pur cliché historique ? On revient ensemble sur les inspirations qui ont poussé Georges Martin à imaginer les dothrakis de Game of Thrones !</span>
+</div>
+
+<h2 id="jeux-videos">Jeux vidéos</h2>
+<div id="X2R3E-SqChPU" class="videoline vidfr" onclick="changevid('2R3E-SqChPU')">
+  <div class="chanlogo">
+    <img class="chanlogo_img" src="https://yt3.ggpht.com/a/AATXAJwbMMZoNnPvTpsZHPFqOQJx-SDHRNIyFvvHkQ=s88" style="margin:0" />
+  </div>
+<div class="chan_name"><a href="https://youtube.com/channel/UCofQxJWd4qkqc7ZgaLkZfcw" class="chanlink" style="color:slategrey;text-decoration:none">Linguisticae</a></div>
+<div class="vid_desc">Comment le langage Wenja du jeu Far Cry Primal a-t-il été développé ?</div>
+
+<div class="vidlogo"><div class="length">9:37</div>
+<div class="imgdiv seen" style="background-image: url(https://i.ytimg.com/vi/2R3E-SqChPU/hqdefault.jpg);"> 
+
+<div class="opaque 2R3E-SqChPU"><div class="check"><i class="fa fa-check read-icon"></i></div></div>
+</div>
+</div> 
+<div class="vidtitle">le Wenja de Far Cry Primal (Brenna & Andrew Byrd) - LF#2</div>
+<span class="viddesc" style="display:none">Dans cet épisode de Lingua Franca, nous allons parler du Wenja mais aussi de l'udam et de l'izila, langues du jeu Far Cry Primal. Pour cela, nous allons aussi parler de leurs créateurs : Brenna & Andrew Byrd.</span>
+</div>
+
+<div id="X2Yq-I4JRH7s" class="videoline vidfr" onclick="changevid('2Yq-I4JRH7s')">
+  <div class="chanlogo">
+    <img class="chanlogo_img" src="https://yt3.ggpht.com/a/AATXAJzL3BssRoXUCyqdn7Z4HfW3h8ttbk822YJTLw=s88" style="margin:0" />
+  </div>
+<div class="chan_name"><a href="https://youtube.com/channel/UCtqICqGbPSbTN09K1_7VZ3Q" class="chanlink" style="color:slategrey;text-decoration:none">DirtyBiology</a></div>
+<div class="vid_desc">Comment les jeux en ligne peuvent être utilisés pour étudier la propagation des épidémies ?</div>
+
+<div class="vidlogo"><div class="length">6:28</div>
+<div class="imgdiv seen" style="background-image: url(https://i.ytimg.com/vi/2Yq-I4JRH7s/hqdefault.jpg);"> 
+
+<div class="opaque 2Yq-I4JRH7s"><div class="check"><i class="fa fa-check read-icon"></i></div></div>
+</div>
+</div> 
+<div class="vidtitle">La pandémie de World of Warcraft - DBY #4</div>
+<span class="viddesc" style="display:none"></span>
+</div>
+
+<div id="X9bf3GaSyX6U" class="videoline vidfr" onclick="changevid('9bf3GaSyX6U')">
+  <div class="chanlogo">
+    <img class="chanlogo_img" src="https://yt3.ggpht.com/a/AATXAJyvI28AWBoEErXVHWt-izXAxn3pBeUKcwk9vg=s88-c-k-c0xffffffff-no-rj-mo" style="margin:0" />
+  </div>
+<div class="chan_name"><a href="https://youtube.com/channel/UC4Jrte_YtwWfANKNyzse5iA" class="chanlink" style="color:slategrey;text-decoration:none">Avides de recherche</a></div>
+<div class="vid_desc">Comment les jeux vidéos intègrent-ils des éléments économiques ?</div>
+
+<div class="vidlogo"><div class="length">9:10</div>
+<div class="imgdiv seen" style="background-image: url(https://i.ytimg.com/vi/9bf3GaSyX6U/hqdefault.jpg);"> 
+
+<div class="opaque 9bf3GaSyX6U"><div class="check"><i class="fa fa-check read-icon"></i></div></div>
+</div>
+</div> 
+<div class="vidtitle">De Pac-Man à WOW : jouer et consommer dans les jeux vidéo</div>
+<span class="viddesc" style="display:none">Avides de Recherche est la chaine Youtube du magazine Mondes Sociaux dont l’objet est de mettre en images et en voix des travaux de recherche en SHS dans des formes susceptibles d’intéresser des publics larges. Animée par Léa Bello, ce format propose des vidéos réalisées à partir d’articles publiés dans des revues scientifiques. Ce 36e épisode d’Avides de Recherche présente en son et en images l'article de David M. Higgins "Rêves d’accumulation : l’économie dans les jeux vidéo de science-fiction" à lire ici : https://journals.openedition.org/resf...</span>
+</div>
+
+<div id="XAkIpH5DkFWA" class="videoline vidfr" onclick="changevid('AkIpH5DkFWA')">
+  <div class="chanlogo">
+    <img class="chanlogo_img" src="https://yt3.ggpht.com/a/AATXAJzilcmC-OiWwMG76scOHNtD7kkmTlhlyc-yag=s88" style="margin:0" />
+  </div>
+<div class="chan_name"><a href="https://youtube.com/channel/UCP46_MXP_WG_auH88FnfS1A" class="chanlink" style="color:slategrey;text-decoration:none">Nota Bene</a></div>
+<div class="vid_desc">Quels évènements ont inspiré le scénario du jeu Kingdom Come Delivrance ?</div>
+
+<div class="vidlogo"><div class="length">10:25</div>
+<div class="imgdiv seen" style="background-image: url(https://i.ytimg.com/vi/AkIpH5DkFWA/hqdefault.jpg);"> 
+
+<div class="opaque AkIpH5DkFWA"><div class="check"><i class="fa fa-check read-icon"></i></div></div>
+</div>
+</div> 
+<div class="vidtitle">La bohème du XVe siècle et KINGDOM COME Delivrance</div>
+<span class="viddesc" style="display:none">Marre de se taper des dragons quand vous avez seulement envie de profiter du paysage pas si paisible du Moyen-Âge ? Aujourd'hui on revient sur le jeu vidéo Kingdom Come Délivrance, un RPG qui se veut au plus près de la réalité historique ! Si un épisode de ma série ARTE Creative a déjà été consacré à ce jeu, je m'attarde ici sur le contexte lié au jeu, à la création du Saint Empire Romain, à la place de la bohème au XIV et XVe siècle, etc.</span>
+</div>
+
+<div id="XB-Ap34P7jV8" class="videoline vidfr" onclick="changevid('B-Ap34P7jV8')">
+  <div class="chanlogo">
+    <img class="chanlogo_img" src="https://yt3.ggpht.com/a/AATXAJxfcbhONA94WAF4cBlNJVYGX5XVowbrbJFoFA=s88" style="margin:0" />
+  </div>
+<div class="chan_name"><a href="https://youtube.com/channel/UCCTDcg7VBiWDqwpK_nbvX2A" class="chanlink" style="color:slategrey;text-decoration:none">Trucs de philo</a></div>
+<div class="vid_desc"></div>
+
+<div class="vidlogo"><div class="length">23:20</div>
+<div class="imgdiv seen" style="background-image: url(https://i.ytimg.com/vi/B-Ap34P7jV8/hqdefault.jpg);"> 
+
+<div class="opaque B-Ap34P7jV8"><div class="check"><i class="fa fa-check read-icon"></i></div></div>
+</div>
+</div> 
+<div class="vidtitle">Fortnite et le dilemme du prisonnier. (théorie des jeux 1/n)</div>
+<span class="viddesc" style="display:none">Introduction à la théorie des jeux (logique d'ensemble, dilemme du prisonnier, équilibre de Nash) via l'exemple de Fortnite. Ceux qui ne sont pas intéressés par fortnite peuvent ne regarder que les 12 premières minutes environ je pense ?</span>
+</div>
+
+<div id="XOXmZL5htLwA" class="videoline vidfr" onclick="changevid('OXmZL5htLwA')">
+  <div class="chanlogo">
+    <img class="chanlogo_img" src="https://yt3.ggpht.com/a/AATXAJzilcmC-OiWwMG76scOHNtD7kkmTlhlyc-yag=s88" style="margin:0" />
+  </div>
+<div class="chan_name"><a href="https://youtube.com/channel/UCP46_MXP_WG_auH88FnfS1A" class="chanlink" style="color:slategrey;text-decoration:none">Nota Bene</a></div>
+<div class="vid_desc">Comment le jeu Assassin's Creed Odysssey traite-t-il la guerre du Péloponnèse ?</div>
+
+<div class="vidlogo"><div class="length">17:33</div>
+<div class="imgdiv seen" style="background-image: url(https://i.ytimg.com/vi/OXmZL5htLwA/hqdefault.jpg);"> 
+
+<div class="opaque OXmZL5htLwA"><div class="check"><i class="fa fa-check read-icon"></i></div></div>
+</div>
+</div> 
+<div class="vidtitle">Sparte VS Athènes - L'Odyssey du Péloponnèse</div>
+<span class="viddesc" style="display:none">Le dernier opus de Assassin's Creed, Odyssey, vient de sortir et prend place en pleine guerre du Péloponnèse. Mais c'est quoi la guerre du Péloponnèse ? Et comment on s'y retrouve dans ce conflit entre Sparte et Athènes ? Suivez moi dans un roadtrip historique autour de la grèce afin de découvrir des lieux emblématiques de l'antiquité grecque. Des sites magnifiques reproduits par les équipes d'Ubisoft pour le jeu, l'occasion de revenir ensemble sur quelques petits ajustements de la part du développeur. Attention, quand je fais référence aux 40 000 soldats de Sparte je parle en fait de la ligue du Péloponnèse. On est également en droit de nuancer ces chiffres au regard des divergences manifestes qu'il y a entre les écrits.</span>
+</div>
+
+<div id="XOcKfWW7sAMk" class="videoline vidfr" onclick="changevid('OcKfWW7sAMk')">
+  <div class="chanlogo">
+    <img class="chanlogo_img" src="https://yt3.ggpht.com/a/AATXAJzL3BssRoXUCyqdn7Z4HfW3h8ttbk822YJTLw=s88" style="margin:0" />
+  </div>
+<div class="chan_name"><a href="https://youtube.com/channel/UCtqICqGbPSbTN09K1_7VZ3Q" class="chanlink" style="color:slategrey;text-decoration:none">DirtyBiology</a></div>
+<div class="vid_desc">Peut-on comprendre l'évolution en étudiant les pokémons ?</div>
+
+<div class="vidlogo"><div class="length">8:36</div>
+<div class="imgdiv seen" style="background-image: url(https://i.ytimg.com/vi/OcKfWW7sAMk/hqdefault.jpg);"> 
+
+<div class="opaque OcKfWW7sAMk"><div class="check"><i class="fa fa-check read-icon"></i></div></div>
+</div>
+</div> 
+<div class="vidtitle">Darwin chez les Pokémons- DBY #7</div>
+<span class="viddesc" style="display:none"></span>
+</div>
+
+<div id="XRJmBtFnIRIo" class="videoline vidfr" onclick="changevid('RJmBtFnIRIo')">
+  <div class="chanlogo">
+    <img class="chanlogo_img" src="https://yt3.ggpht.com/a/AATXAJzilcmC-OiWwMG76scOHNtD7kkmTlhlyc-yag=s88" style="margin:0" />
+  </div>
+<div class="chan_name"><a href="https://youtube.com/channel/UCP46_MXP_WG_auH88FnfS1A" class="chanlink" style="color:slategrey;text-decoration:none">Nota Bene</a></div>
+<div class="vid_desc">Comment l'histoire dela 1ère guerre mondiale est-elle traitée dans le jeu vidéo Battlefield 1 ?</div>
+
+<div class="vidlogo"><div class="length">22:39</div>
+<div class="imgdiv seen" style="background-image: url(https://i.ytimg.com/vi/RJmBtFnIRIo/hqdefault.jpg);"> 
+
+<div class="opaque RJmBtFnIRIo"><div class="check"><i class="fa fa-check read-icon"></i></div></div>
+</div>
+</div> 
+<div class="vidtitle">BATTLEFIELD 1, la polémique et l'histoire dans le jeux video</div>
+<span class="viddesc" style="display:none">Aujourd'hui on revient sur la polémique Battlefield 1 ! Est-elle justifié ? Pourquoi tant de bruit autour d'un jeu vidéo ? Est ce que le choix d'Electronic Arts est symptomatique d'un malaise plus profond ?</span>
+</div>
+
+<div id="XWZ78khR3NuA" class="videoline vidfr" onclick="changevid('WZ78khR3NuA')">
+  <div class="chanlogo">
+    <img class="chanlogo_img" src="https://yt3.ggpht.com/a/AATXAJzilcmC-OiWwMG76scOHNtD7kkmTlhlyc-yag=s88" style="margin:0" />
+  </div>
+<div class="chan_name"><a href="https://youtube.com/channel/UCP46_MXP_WG_auH88FnfS1A" class="chanlink" style="color:slategrey;text-decoration:none">Nota Bene</a></div>
+<div class="vid_desc">Quelles inspirations historiques dans le jeu "Age of Empires II" ?</div>
+
+<div class="vidlogo"><div class="length">31:36</div>
+<div class="imgdiv seen" style="background-image: url(https://i.ytimg.com/vi/WZ78khR3NuA/hqdefault.jpg);"> 
+
+<div class="opaque WZ78khR3NuA"><div class="check"><i class="fa fa-check read-icon"></i></div></div>
+</div>
+</div> 
+<div class="vidtitle">Trois véritables histoires d'Age of Empires II</div>
+<span class="viddesc" style="display:none">Vous vous souvenez d’Age of Empires II et de ses campagnes historiques qui nous ont tenu en haleine pendant des heures ? A l’époque, il est clair que ça a pu en intéresser plus d’un à l’Histoire, même si le jeu n’est pas faillible et qu’il y a quelques approximations ! Je vous propose de revenir ensemble sur la véritable histoire de trois protagonistes du jeu, Attila, Le cid et Saladin, et vous allez le voir, il y a matière à dire !</span>
+</div>
+
+<div id="XY02hVe8OzqM" class="videoline vidfr" onclick="changevid('Y02hVe8OzqM')">
+  <div class="chanlogo">
+    <img class="chanlogo_img" src="https://yt3.ggpht.com/a/AATXAJzilcmC-OiWwMG76scOHNtD7kkmTlhlyc-yag=s88" style="margin:0" />
+  </div>
+<div class="chan_name"><a href="https://youtube.com/channel/UCP46_MXP_WG_auH88FnfS1A" class="chanlink" style="color:slategrey;text-decoration:none">Nota Bene</a></div>
+<div class="vid_desc">Les femmes se sont-elles battues pendant la seconde guerre mondiale ?</div>
+
+<div class="vidlogo"><div class="length">5:03</div>
+<div class="imgdiv seen" style="background-image: url(https://i.ytimg.com/vi/Y02hVe8OzqM/hqdefault.jpg);"> 
+
+<div class="opaque Y02hVe8OzqM"><div class="check"><i class="fa fa-check read-icon"></i></div></div>
+</div>
+</div> 
+<div class="vidtitle">COUP DE GUEULE - LES FEMMES ET BATTLEFIELD V</div>
+<span class="viddesc" style="display:none">A l'occasion de la sortie de Battlefield V d'ici la fin de l'année, une polémique enfle sur les réseaux suite à un visuel du jeu mettant en scène une femme soldat pendant la 2nd guerre mondiale. LES FEMMES NE PEUVENT PAS FAIRE LA GUERRE ! C'EST DU REVISIONNISME HISTORIQUE ! Voilà ce qu'on peut lire à droite ou à gauche. L'occasion pour moi de remettre les pendules à l'heure. Je compte sur vous pour partager cette vidéo dans cette période où les femmes sont encore trop invisibilisées.</span>
+</div>
+
+<div id="Xafh-9EpkS2g" class="videoline vidfr" onclick="changevid('afh-9EpkS2g')">
+  <div class="chanlogo">
+    <img class="chanlogo_img" src="https://yt3.ggpht.com/a/AATXAJwndeI8bzCKEKXvYr_uT_hmEy3gKTcvLSv8=s88" style="margin:0" />
+  </div>
+<div class="chan_name"><a href="https://youtube.com/channel/UC-4WUubuVGowG_R7gdgesPA" class="chanlink" style="color:slategrey;text-decoration:none">Max Bird</a></div>
+<div class="vid_desc">Les jeux vidéo rendent-ils violents ?</div>
+
+<div class="vidlogo"><div class="length">5:59</div>
+<div class="imgdiv seen" style="background-image: url(https://i.ytimg.com/vi/afh-9EpkS2g/hqdefault.jpg);"> 
+
+<div class="opaque afh-9EpkS2g"><div class="check"><i class="fa fa-check read-icon"></i></div></div>
+</div>
+</div> 
+<div class="vidtitle">IDÉE REÇUE #42 : La violence des jeux vidéo est contagieuse</div>
+<span class="viddesc" style="display:none"></span>
+</div>
+
+<div id="XiErj6IJ-Wvw" class="videoline vidfr" onclick="changevid('iErj6IJ-Wvw')">
+  <div class="chanlogo">
+    <img class="chanlogo_img" src="https://yt3.ggpht.com/a/AATXAJzilcmC-OiWwMG76scOHNtD7kkmTlhlyc-yag=s88" style="margin:0" />
+  </div>
+<div class="chan_name"><a href="https://youtube.com/channel/UCP46_MXP_WG_auH88FnfS1A" class="chanlink" style="color:slategrey;text-decoration:none">Nota Bene</a></div>
+<div class="vid_desc">Quels inspirations dans Pokemon ?</div>
+
+<div class="vidlogo"><div class="length">31:41</div>
+<div class="imgdiv seen" style="background-image: url(https://i.ytimg.com/vi/iErj6IJ-Wvw/hqdefault.jpg);"> 
+
+<div class="opaque iErj6IJ-Wvw"><div class="check"><i class="fa fa-check read-icon"></i></div></div>
+</div>
+</div> 
+<div class="vidtitle">Les inspirations de Pokémon ! - Motion VS History #10</div>
+<span class="viddesc" style="display:none">Derrière la folie Pokémon qui aurait pu imaginer que l'on pourrait aborder des questions aussi complexes que l'évolution, la mythologie japonaise, les jeux du cirque ou encore la domestication des animaux ? Bah...moi je l'ai fais :p Dans cet épisode, découvrez les nombreux parallèles tissés entre l'univers Pokémon et le notre ! Une analyse jusqu'au bout des ongles qui vous laissera, je l'espère, sur votre siège !</span>
+</div>
+
+<div id="XroJOiQD1wHE" class="videoline vidfr" onclick="changevid('roJOiQD1wHE')">
+  <div class="chanlogo">
+    <img class="chanlogo_img" src="https://yt3.ggpht.com/a/AATXAJzJhxZqaeN1ZPfYZleVzK_Dcb5vFFOY8s3GiQ=s88" style="margin:0" />
+  </div>
+<div class="chan_name"><a href="https://youtube.com/channel/UCeR8BYZS7IHYjk_9Mh5JgkA" class="chanlink" style="color:slategrey;text-decoration:none">Scilabus</a></div>
+<div class="vid_desc">Comment créer des images dans les jeux vidéos ?</div>
+
+<div class="vidlogo"><div class="length">7:34</div>
+<div class="imgdiv seen" style="background-image: url(https://i.ytimg.com/vi/roJOiQD1wHE/hqdefault.jpg);"> 
+
+<div class="opaque roJOiQD1wHE"><div class="check"><i class="fa fa-check read-icon"></i></div></div>
+</div>
+</div> 
+<div class="vidtitle">Comment les jeux vidéos parviennent-ils à être aussi réalistes ?</div>
+<span class="viddesc" style="display:none">Les jeux ont des graphismes de plus en plus magnifiques. Mais derrière cette esthétique se cachent de très nombreuses astuces techniques pour permettre à nos consoles et ordinateurs d'afficher le jeu. Avec l'aide de Yannick Triqueneaux, développeur de jeux vidéos chez Ubisoft, découvrez une partie de leurs astuces.</span>
+</div>
+
+<div id="Xu6LnFQ8WPJA" class="videoline vidfr" onclick="changevid('u6LnFQ8WPJA')">
+  <div class="chanlogo">
+    <img class="chanlogo_img" src="https://yt3.ggpht.com/a/AATXAJzilcmC-OiWwMG76scOHNtD7kkmTlhlyc-yag=s88" style="margin:0" />
+  </div>
+<div class="chan_name"><a href="https://youtube.com/channel/UCP46_MXP_WG_auH88FnfS1A" class="chanlink" style="color:slategrey;text-decoration:none">Nota Bene</a></div>
+<div class="vid_desc">Comment l'Antiquité égyptienne est-elle représentée au British museum ?</div>
+
+<div class="vidlogo"><div class="length">19:23</div>
+<div class="imgdiv seen" style="background-image: url(https://i.ytimg.com/vi/u6LnFQ8WPJA/hqdefault.jpg);"> 
+
+<div class="opaque u6LnFQ8WPJA"><div class="check"><i class="fa fa-check read-icon"></i></div></div>
+</div>
+</div> 
+<div class="vidtitle">L'Egypte Antique et le British Museum feat Assassin's Creed !</div>
+<span class="viddesc" style="display:none">Assassin's Creed Origins au British Museum ? J'y étais ! L'occasion de rencontrer des égyptologues et l'équipe du dernier Assassin ! Un gros épisode qui regroupera plusieurs thématiques comme l'art et la religion dans l'Egypte Antique et les adaptations que les équipes d'Ubisoft on du faire pour les intégrer à l'écran ! J'espère que ça vous plaira :p</span>
+</div>
+
+<h2 id="series">Séries</h2>
+<div id="X2tzPgX9YrhU" class="videoline vidfr" onclick="changevid('2tzPgX9YrhU')">
+  <div class="chanlogo">
+    <img class="chanlogo_img" src="https://yt3.ggpht.com/a/AATXAJzilcmC-OiWwMG76scOHNtD7kkmTlhlyc-yag=s88" style="margin:0" />
+  </div>
+<div class="chan_name"><a href="https://youtube.com/channel/UCP46_MXP_WG_auH88FnfS1A" class="chanlink" style="color:slategrey;text-decoration:none">Nota Bene</a></div>
+<div class="vid_desc">Courte présentation de Louis XIV et de la série Versailles</div>
+
+<div class="vidlogo"><div class="length">10:00</div>
+<div class="imgdiv seen" style="background-image: url(https://i.ytimg.com/vi/2tzPgX9YrhU/hqdefault.jpg);"> 
+
+<div class="opaque 2tzPgX9YrhU"><div class="check"><i class="fa fa-check read-icon"></i></div></div>
+</div>
+</div> 
+<div class="vidtitle">J'AI INTERVIEWÉ LOUIS XIV !</div>
+<span class="viddesc" style="display:none">Il y a 303 ans, le "roi soleil" comme on l'appelle passait l'arme à gauche. Aujourd'hui, il revient du royaume des morts pour une ultime interview confession et devinez quoi ? C'est par ici que ça se passe ! Une occasion de revenir avec lui sur son accident de fontaine lors de son enfance, sur la révocation de l'Edit de Nantes ou encore sur sa vie à la cour.</span>
+</div>
+
+<div id="X692mNDLfHKw" class="videoline vidfr" onclick="changevid('692mNDLfHKw')">
+  <div class="chanlogo">
+    <img class="chanlogo_img" src="https://yt3.ggpht.com/a/AATXAJyvI28AWBoEErXVHWt-izXAxn3pBeUKcwk9vg=s88-c-k-c0xffffffff-no-rj-mo" style="margin:0" />
+  </div>
+<div class="chan_name"><a href="https://youtube.com/channel/UC4Jrte_YtwWfANKNyzse5iA" class="chanlink" style="color:slategrey;text-decoration:none">Avides de recherche</a></div>
+<div class="vid_desc">Jon Snow peut-il être comparé au roi Arthur ?</div>
+
+<div class="vidlogo"><div class="length">9:08</div>
+<div class="imgdiv seen" style="background-image: url(https://i.ytimg.com/vi/692mNDLfHKw/hqdefault.jpg);"> 
+
+<div class="opaque 692mNDLfHKw"><div class="check"><i class="fa fa-check read-icon"></i></div></div>
+</div>
+</div> 
+<div class="vidtitle">Jon Snow est-il le nouveau roi Arthur ? - Avides de recherche #18</div>
+<span class="viddesc" style="display:none">Avides de Recherche est la chaine Youtube du magazine Mondes Sociaux dont l’objet est de mettre en images et en voix des travaux de recherche en SHS dans des formes susceptibles d’intéresser des publics larges. Animée par Manon Bril, doctorante en histoire à l’UT2J, ce format propose des vidéos réalisées à partir d’articles publiés dans des revues scientifiques. Ce 18e épisode d’Avides de Recherche, la chaine Youtube de Mondes Sociaux, présente en son et en images l’article de Justine Breton, “Jon Snow : le nouveau roi Arthur de Game of Thrones”, publié dans TV/Series n°12 en 2017, à lire ici : http://journals.openedition.org/tvser...</span>
+</div>
+
+<div id="XBYHsnRvk8d8" class="videoline vidfr" onclick="changevid('BYHsnRvk8d8')">
+  <div class="chanlogo">
+    <img class="chanlogo_img" src="https://yt3.ggpht.com/a/AATXAJxnyKG6wP80O0G3pEQpuANKn64wFw3HIaYLwg=s88" style="margin:0" />
+  </div>
+<div class="chan_name"><a href="https://youtube.com/channel/UCnf0fDz1vTYW-sl36wbVMbg" class="chanlink" style="color:slategrey;text-decoration:none">Les Revues du Monde</a></div>
+<div class="vid_desc">Quelles stratégies militaires ont été utilisées au Moyen-Age, et à quel point les batailles de Game of Thrones sont crédibles ?</div>
+
+<div class="vidlogo"><div class="length">20:01</div>
+<div class="imgdiv seen" style="background-image: url(https://i.ytimg.com/vi/BYHsnRvk8d8/hqdefault.jpg);"> 
+
+<div class="opaque BYHsnRvk8d8"><div class="check"><i class="fa fa-check read-icon"></i></div></div>
+</div>
+</div> 
+<div class="vidtitle">Comment ne pas se faire bolosser par une armée - RDM #32</div>
+<span class="viddesc" style="display:none"></span>
+</div>
+
+<div id="XIaILZpU2tcI" class="videoline vidfr" onclick="changevid('IaILZpU2tcI')">
+  <div class="chanlogo">
+    <img class="chanlogo_img" src="https://yt3.ggpht.com/a/AATXAJxkcj3cCL5eWmllLKK4HkI4Dw9gWCgg0UJuUw=s88" style="margin:0" />
+  </div>
+<div class="chan_name"><a href="https://youtube.com/channel/UCPF7JOWMDWZmnP_cQfyAezg" class="chanlink" style="color:slategrey;text-decoration:none">Scinéma</a></div>
+<div class="vid_desc">Comment construire un caisson d'isolation sensorielle ?</div>
+
+<div class="vidlogo"><div class="length">6:01</div>
+<div class="imgdiv seen" style="background-image: url(https://i.ytimg.com/vi/IaILZpU2tcI/hqdefault.jpg);"> 
+
+<div class="opaque IaILZpU2tcI"><div class="check"><i class="fa fa-check read-icon"></i></div></div>
+</div>
+</div> 
+<div class="vidtitle">SCINEMA EP.4 : SALTY THINGS</div>
+<span class="viddesc" style="display:none">Cet épisode s'intéresse à la fabrication d'un caisson de flottaison, comme dans l'épisode 7 saison 1 de la série Stranger Things. Et on répond donc à la question : pourquoi on flotte mieux dans l'eau salée ? Fun fact : la Mer Morte est la mer la plus salée du monde et on y flotte aisément, vous avez plein de vidéos sur youtube qui illustrent ça ;)</span>
+</div>
+
+<div id="XOyBBzEglTFI" class="videoline vidfr" onclick="changevid('OyBBzEglTFI')">
+  <div class="chanlogo">
+    <img class="chanlogo_img" src="https://yt3.ggpht.com/a/AATXAJwbMMZoNnPvTpsZHPFqOQJx-SDHRNIyFvvHkQ=s88" style="margin:0" />
+  </div>
+<div class="chan_name"><a href="https://youtube.com/channel/UCofQxJWd4qkqc7ZgaLkZfcw" class="chanlink" style="color:slategrey;text-decoration:none">Linguisticae</a></div>
+<div class="vid_desc">De quelles langues le Dothraki de Games of Thrones s'inspire-t-il ?</div>
+
+<div class="vidlogo"><div class="length">13:37</div>
+<div class="imgdiv seen" style="background-image: url(https://i.ytimg.com/vi/OyBBzEglTFI/hqdefault.jpg);"> 
+
+<div class="opaque OyBBzEglTFI"><div class="check"><i class="fa fa-check read-icon"></i></div></div>
+</div>
+</div> 
+<div class="vidtitle">Le Dothraki de Game of Thrones (David J. Peterson) - LF#1</div>
+<span class="viddesc" style="display:none">Dans cet épisode de Lingua Franca, nous allons parler du Dothraki. Pour cela, nous sommes accompagnés de son créateur : David J. Peterson.</span>
+</div>
+
+<div id="XbsPiID21ucQ" class="videoline vidfr" onclick="changevid('bsPiID21ucQ')">
+  <div class="chanlogo">
+    <img class="chanlogo_img" src="https://yt3.ggpht.com/a/AATXAJyvI28AWBoEErXVHWt-izXAxn3pBeUKcwk9vg=s88-c-k-c0xffffffff-no-rj-mo" style="margin:0" />
+  </div>
+<div class="chan_name"><a href="https://youtube.com/channel/UC4Jrte_YtwWfANKNyzse5iA" class="chanlink" style="color:slategrey;text-decoration:none">Avides de recherche</a></div>
+<div class="vid_desc">Black Mirror porte-t-il vraiment un regard neuf sur la technologie ?</div>
+
+<div class="vidlogo"><div class="length">9:13</div>
+<div class="imgdiv seen" style="background-image: url(https://i.ytimg.com/vi/bsPiID21ucQ/hqdefault.jpg);"> 
+
+<div class="opaque bsPiID21ucQ"><div class="check"><i class="fa fa-check read-icon"></i></div></div>
+</div>
+</div> 
+<div class="vidtitle">Black Mirror porte-t-il vraiment un regard neuf sur la technologie ? – Avides de recherche #27</div>
+<span class="viddesc" style="display:none">Avides de Recherche est la chaine Youtube du magazine Mondes Sociaux dont l’objet est de mettre en images et en voix des travaux de recherche en SHS dans des formes susceptibles d’intéresser des publics larges. Animée par Manon Bril, docteure en histoire à l’UT2J, ce format propose des vidéos réalisées à partir d’articles publiés dans des revues scientifiques. Ce 27e épisode d’Avides de Recherche présente en son et en images l'article de David Roche "« You know, when you suspect something, it’s always better when it turns out to be true » : Mémoire et média dans l’épisode « The Entire History of You » (S01E03) de Black Mirror (2011-)" publié dans le n°14 de la revue TV/séries à lire ici : https://journals.openedition.org/tvse...</span>
+</div>
+  </div>
+
+<script>
+  var e_mainFrame = document.getElementById('frame');
+  var e_title = document.getElementById('pvidtitle');
+  var e_logo = document.getElementById('pchanlogo_img');
+  var e_desc = document.getElementById('pvid_desc');
+  var e_channame = document.getElementById('pchan_name');
+  var e_extr = document.getElementById('extr');
+
+
+  function changevid(v) {
+    newtitle = document.querySelector('#X' +v+' .vidtitle').innerText
+    newlogo = document.querySelector('#X' +v+' .chanlogo_img').src
+    newchan = document.querySelector('#X' +v+' .chan_name').innerText
+    newdesc = document.querySelector('#X' +v+' .viddesc').innerText
+  e_mainFrame.src = "https://www.youtube.com/embed/" + v+"?autoplay=1";
+  e_title.innerHTML = newtitle;
+  e_desc.innerHTML = newdesc + '';
+  e_channame.innerText = newchan;
+  e_logo.src = newlogo;
+  e_extr.style.display='block';
+  window.localStorage.setItem(v, 1);
+  /* if small screen */
+  if(window.innerWidth < 600) {
+  document.getElementById("content").style.display="none";
+  document.getElementById("left_content").style.display = "inline";
+  document.getElementById("left_content").style.width="90%";
+  document.getElementById("arrow").style.display = "block";
+  }
+}
+
+function backsmallscreen() {
+  document.getElementById("left_content").style.display="none";
+  document.getElementById("content").style.display="block";
+  e_mainFrame.src = "";}
+
+</script>
+
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
+        
+          <a href=".." title="Bienvenue sur Youtube Map !" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+            </div>
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Précédent
+                </span>
+                Bienvenue sur Youtube Map !
+              </div>
+            </div>
+          </a>
+        
+        
+          <a href="../Ecologie/" title="Ecologie" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Suivant
+                </span>
+                Ecologie
+              </div>
+            </div>
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../assets/javascripts/vendor.d710d30a.min.js"></script>
+      <script src="../assets/javascripts/bundle.7f4f3c92.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copier dans le presse-papier", "clipboard.copied": "Copi\u00e9 dans le presse-papier", "search.config.lang": "fr", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Taper pour d\u00e9marrer la recherche", "search.result.none": "Aucun document trouv\u00e9", "search.result.one": "1 document trouv\u00e9", "search.result.other": "# documents trouv\u00e9s"}</script>
+      
+      <script>
+        app = initialize({
+          base: "..",
+          features: [],
+          search: Object.assign({
+            worker: "../assets/javascripts/worker/search.9b3611bd.min.js"
+          }, typeof search !== "undefined" && search)
+        })
+      </script>
+      
+        <script src="../extra.js"></script>
+      
+    
+  </body>
+</html>

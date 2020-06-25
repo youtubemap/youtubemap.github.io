@@ -390,6 +390,15 @@ span.reverse {
     border-radius:5px;
   }
 
+  #desc_extract {
+    position:relative;
+    height:auto;
+  }
+  footer {
+    display: none;
+  }
+}
+
 @media only screen and (max-width: 450px) {
   .menutext {
     display:none;

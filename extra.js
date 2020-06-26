@@ -37,3 +37,55 @@ function random_page() {
       elements[i].style.display = "none";
     }
   }
+
+  parents = decodeURI(window.location.href).split('/');
+  parent = parents[parents.length-3];
+  url = parents.slice(0, parents.length-2).join('/');
+
+  if(parents.length > 6) {
+  menu = document.getElementsByClassName('md-nav--secondary')[0];
+  if(menu.innerText == "") {
+    menu.style["padding-left"] = "1rem";
+    menu.innerHTML = '<a href="'+url+'"><i class="fa fa-arrow-left" aria-hidden="true"></i> '+parent+'</a><br/><br>';
+  }
+  else {
+  x =  document.getElementsByClassName('md-nav__title');
+  bartitle = x[x.length-1];
+  bartitle.innerHTML = '<a href="'+url+'"><i class="fa fa-arrow-left" aria-hidden="true"></i> '+parent+'</a><br/><br>';
+  bartitle.innerHTML += 'Aller à...';
+  }
+}
+
+  var e_mainFrame = document.getElementById('frame');
+  var e_title = document.getElementById('pvidtitle');
+  var e_logo = document.getElementById('pchanlogo_img');
+  var e_desc = document.getElementById('pvid_desc');
+  var e_channame = document.getElementById('pchan_name');
+  var e_extr = document.getElementById('extr');
+
+
+  function changevid(v) {
+    newtitle = document.querySelector('#X' +v+' .vidtitle').innerText
+    newlogo = document.querySelector('#X' +v+' .chanlogo_img').src
+    newchan = document.querySelector('#X' +v+' .chan_name').innerText
+    newdesc = document.querySelector('#X' +v+' .viddesc').innerText
+  e_mainFrame.src = "https://www.youtube.com/embed/" + v+"?autoplay=1";
+  e_title.innerHTML = newtitle;
+  e_desc.innerHTML = newdesc + '';
+  e_channame.innerText = newchan;
+  e_logo.src = newlogo;
+  e_extr.style.display='block';
+  window.localStorage.setItem(v, 1);
+  /* if small screen */
+  if(window.innerWidth < 600) {
+  document.getElementById("content").style.display="none";
+  document.getElementById("left_content").style.display = "inline";
+  document.getElementById("left_content").style.width="90%";
+  document.getElementById("arrow").style.display = "block";
+  }
+}
+
+function backsmallscreen() {
+  document.getElementById("left_content").style.display="none";
+  document.getElementById("content").style.display="block";
+  e_mainFrame.src = "";}

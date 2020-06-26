@@ -30,16 +30,15 @@
 }
 
 .md-nav__title[for="__toc"] {
-  font-size:1px;
-  visibility: hidden;
 }
 
+/*
 .md-nav__title[for="__toc"]:after {
   font-size: 0.8rem;
   visibility: visible;
   display:block;
   content: "Aller à..";
-}
+}*/
 
 
 .md-nav--primary .md-nav__title {
@@ -60,7 +59,7 @@
   line-height: 1;
 }
 
-.md-nav__item--nested nav .md-nav__item:first-of-type {
+.md-nav__item--nested nav nav .md-nav__item:first-of-type {
   font-size:1rem;
 }
 
@@ -132,17 +131,14 @@ grid-row: 4;
 }
 
   .imgdiv {
-  width: 100%;
-  height:108px;
-  margin-right:0;
-  background-position: center;
-  background-size: cover;
+  width: 20vw;
   border-radius: 3px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.11);
+  height:11.25vw;
+  background-size:cover;
+  background-position:center;
 }
+
 .imgdiv:hover {
   border:1px solid #CCCCCC;
 }
@@ -320,14 +316,14 @@ span.reverse {
   color:white;
   background-color:black;
   float:left;
-  padding-left:7px;
-  padding-right:7px;
+  padding-left:3px;
+  padding-right:3px;
   border-radius: 5px;
   opacity:0.9;
   position: absolute;
-  margin:5px;
-  margin-top:77px;
+  margin:3px;
   border:1px solid #ffffff90;
+  line-height:1rem;
 }
 
 #left_content {
@@ -397,10 +393,28 @@ span.reverse {
   footer {
     display: none;
   }
+  .imgdiv {
+    width:46vw;
+    height:25.8vw;
+  }
 }
 
 @media only screen and (max-width: 450px) {
   .menutext {
     display:none;
+  }
+}
+
+@media only screen and (min-width: 960px) {
+  .imgdiv {
+    width:17vw;
+    height:9.56vw;
+  }
+}
+
+@media only screen and (min-width: 1220px) {
+  .imgdiv {
+    width:14vw;
+    height:7.87vw;
   }
 }

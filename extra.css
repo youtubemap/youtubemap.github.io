@@ -83,6 +83,10 @@
   cursor:pointer;
 }
 
+.md-header-nav__button.md-logo img {
+  width: auto;
+  border-radius:4px;
+}
 /* perso */
 
 #desc_extract {
@@ -329,9 +333,10 @@ span.reverse {
 #left_content {
   display:inline;
   position:fixed;
-  width:50%;
+  width:54%;
   margin-left:1rem;
   margin-right:1rem;
+  right: 0;
 }
 #frame {
   position:absolute;
@@ -410,11 +415,17 @@ span.reverse {
     width:17vw;
     height:9.56vw;
   }
+  #left_content {
+    width:48%;
+  }
 }
 
 @media only screen and (min-width: 1220px) {
   .imgdiv {
     width:14vw;
     height:7.87vw;
+  }
+  #left_content {
+    width:38%;
   }
 }

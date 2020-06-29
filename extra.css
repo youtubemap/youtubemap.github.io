@@ -426,6 +426,20 @@ span.reverse {
     height:7.87vw;
   }
   #left_content {
-    width:38%;
+    width:45%;
   }
+  .md-sidebar--secondary {
+    display: none;
+  }
+  .md-nav--primary > label {
+    display: none;
+  }
+}
+
+.md-sidebar__scrollwrap {
+  scrollbar-width: none;
+}
+
+.md-sidebar__scrollwrap::-webkit-scrollbar {
+  display: none;
 }

@@ -62,6 +62,8 @@ function random_page() {
   var e_desc = document.getElementById('pvid_desc');
   var e_channame = document.getElementById('pchan_name');
   var e_extr = document.getElementById('extr');
+  var e_social = document.querySelector('#pchan_social');
+  
 
 
   function changevid(v) {
@@ -75,6 +77,21 @@ function random_page() {
   e_channame.innerText = newchan;
   e_logo.src = newlogo;
   e_extr.style.display='block';
+  e_social.style.display='block';
+  
+  social = ['facebook', 'twitter', 'instagram', 'tip']
+  for(i=0; i<4; i++) {
+    el = document.querySelector('#pchan_social .'+social[i]);
+    href = document.querySelector('#X' +v+' .'+social[i]).innerText;
+
+    el.style.display='inline';
+    el.href = href
+    if(href == '') {
+      el.style.display = 'none';
+    }
+  }
+  //document.querySelector('#pchan_social .fa-tip').href = document.querySelector('#X' +v+' .tip').innerText;
+
   window.localStorage.setItem(v, 1);
   /* if small screen */
   if(window.innerWidth < 600) {

@@ -3,18 +3,20 @@
 }
 
 .md-nav--primary .md-nav__title[for="__drawer"] .md-nav__button {
-  left:1.8rem;
+  left:1rem;
 }
 
 .md-nav__title .md-nav__button.md-logo img {
   width: auto !important;
   border-radius:3px;
-  opacity:0.97;
+  opacity:1;
+  height:3rem;
 }
 
 .md-nav--primary .md-nav__title[for="__drawer"] {
   color: transparent;
-  height: 4rem;
+  height: 4.74rem;
+  padding: 0;
 }
 
 .md-footer-meta__inner {
@@ -46,8 +48,10 @@
 
 
 .md-nav--primary .md-nav__title {
-  font-size:0px;
-  height:0;
+  font-size:20px;
+  padding:0;
+  padding-left: 2.5rem;
+  height:2.37rem;
 }
 
 .md-header-nav__title {
@@ -60,7 +64,13 @@
 }
 
 .md-nav__item--nested nav nav .md-nav__item:first-of-type {
-  font-style: italic;
+  font-size: 0px;
+}
+
+.md-nav__item--nested nav nav .md-nav__item:first-of-type a:after {
+  font-size: 16px;
+  font-style:italic;
+  content: 'Toutes les playlists';
 }
 
 .md-nav__icon {
@@ -123,6 +133,15 @@
   padding-left:2px;
   grid-column: 2;
   grid-row: 2;
+}
+#pchan_social {
+  display: none;
+  grid-column: 3;
+  grid-row: 2;
+  float: right;
+  margin-right: 0;
+  text-align: right;
+  margin-right: 0px;
 }
 
 #pvid_desc {
@@ -355,7 +374,7 @@ span.reverse {
 }
 
 #content {
-  width:40%;
+  width:42%;
   float:left;
   margin:0 auto;
 }
@@ -416,33 +435,31 @@ span.reverse {
   }
 }
 
+.md-sidebar--secondary {
+  display: none;
+}
 @media only screen and (min-width: 960px) {
-  .imgdiv {
-    width:17vw;
-    height:9.56vw;
-  }
   #left_content {
-    width:48%;
+    width:54%;
   }
 }
 
 @media only screen and (min-width: 1220px) {
   .imgdiv {
-    width:14vw;
-    height:7.87vw;
+    width: 15vw;
+    height:8vw;
   }
   #left_content {
-    width:45%;
+    width:calc(70vw - 255px);
   }
-  .md-sidebar--secondary {
-    display: none;
+  #content {
+    margin-left:255px;
+    width:calc(38vw - 255px);
   }
-  .md-nav--primary > label {
-    display: none;
+  .md-header-nav__button {
+    padding-left:255px;
   }
-  .md-header-nav__topic.md-ellipsis:first-of-type {
-    display: none;
-}
+
 }
 
 .md-sidebar__scrollwrap {
@@ -453,14 +470,23 @@ span.reverse {
   display: none;
 }
 
-.md-header-nav__button {
-  padding:0;
-
-}
 
 .menutext {
   margin-right:0.3rem;
 }
 .md-header-nav__button.md-logo {
   padding:0;
+}
+
+@media only screen and (min-width: 1220px) {
+
+ .md-sidebar--primary { 
+  transform: translateX(12.1rem);
+  transition: none;
+  box-shadow: 0 8px 10px 1px rgba(0,0,0,.14), 0 3px 14px 2px rgba(0,0,0,.12), 0 5px 5px -3px rgba(0,0,0,.4);
+ }
+}
+
+.md-grid { 
+  max-width:100%;
 }

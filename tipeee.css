@@ -1,0 +1,18 @@
+#tipeeea {
+color: #fff;
+background-color: #d64758;
+border-color: #d13245;
+cursor: pointer;
+margin: 3px;
+padding: 3px;
+}
+
+.tip-icon-small {
+    font-size:14px;
+    
+    font-weight: 900;
+}
+
+.social {
+    margin-left:2px;
+}

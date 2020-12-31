@@ -64,14 +64,54 @@ function random_page() {
   var e_extr = document.getElementById('extr');
   var e_social = document.querySelector('#pchan_social');
   
+  var tag = document.createElement('script');
 
+  tag.src = "https://www.youtube.com/iframe_api";
+  var firstScriptTag = document.getElementsByTagName('script')[0];
+  firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+  var player;
+      function onYouTubeIframeAPIReady() {}
+      function ready_player(v) {
+        player = new YT.Player('player', {
+          width: '100%',
+          //height:'30vw',
+          videoId: v,
+          events: {
+            'onReady': onPlayerReady,
+            'onStateChange': onPlayerStateChange
+          }
+        });}
+
+        function onPlayerReady(event) {
+          lc = document.querySelector('#left_content');
+          lc.style['padding-top']="";
+          lc.style['background-color']="";
+          a = lc.offsetWidth;
+          player.setSize(a, 9/16*a);
+          event.target.playVideo();
+        }
+        function onPlayerStateChange(event) {
+          if (event.data == YT.PlayerState.ENDED) {
+              idx = player.getVideoUrl().slice(-11);
+              next_video = document.querySelector('#X'+idx).nextElementSibling.id.slice(1);
+              changevid(next_video);
+          }
+        }
 
   function changevid(v) {
+    if(player == null){
+      ready_player(v);
+    }
+    else {
+      player.loadVideoById(v);
+      player.playVideo();
+    }
     newtitle = document.querySelector('#X' +v+' .vidtitle').innerText
     newlogo = document.querySelector('#X' +v+' .chanlogo_img').src
     newchan = document.querySelector('#X' +v+' .chan_name').innerText
     newdesc = document.querySelector('#X' +v+' .viddesc').innerText
-  e_mainFrame.src = "https://www.youtube.com/embed/" + v+"?autoplay=1";
+  //e_mainFrame.src = "https://www.youtube.com/embed/" + v+"?autoplay=1";
   e_title.innerHTML = newtitle;
   e_desc.innerHTML = newdesc + '';
   e_channame.innerText = newchan;
